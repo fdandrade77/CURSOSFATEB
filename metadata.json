@@ -1,0 +1,8 @@
+{
+  "name": "Remix: FATEB",
+  "description": "Página de conversão de matrículas e cursos do Instituto de Formação Acadêmica FATEB.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

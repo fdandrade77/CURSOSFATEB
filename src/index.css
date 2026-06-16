@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-brand-blue-dark: #09172f;
+  --color-brand-blue-med: #112344;
+  --color-brand-blue-light: #1c355e;
+  --color-brand-gold: #dfab22;
+  --color-brand-gold-hover: #c49419;
+  --color-brand-cream: #fcf8f2;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #f8fafc;
+    color: #0f172a;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom glowing pulse for conversion CTAs */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(223, 171, 34, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 15px 5px rgba(223, 171, 34, 0.7);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2s infinite;
+}
