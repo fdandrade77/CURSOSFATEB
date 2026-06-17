@@ -420,16 +420,13 @@ export default function App() {
                   className="bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-md flex flex-col hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group"
                 >
                   {/* Image banner with overlay */}
-                  <div className="relative h-64 sm:h-72 overflow-hidden bg-slate-100">
+                  <div className="relative h-44 sm:h-48 overflow-hidden bg-slate-50 flex items-center justify-center p-3 border-b border-slate-100">
                     <img
                       src={course.imageUrl}
                       alt={course.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105"
                       referrerPolicy="no-referrer"
                     />
-                    
-                    {/* Dark gradient shadow behind overlays */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-80" />
                     
                     {/* Live MEC badge overlay */}
                     <div className="absolute top-3 left-3 flex flex-wrap gap-1">
@@ -440,19 +437,18 @@ export default function App() {
                         100% EAD
                       </span>
                     </div>
-
-                    {/* Custom text tag on bottom of cover mirroring original graphics as overlay banner */}
-                    <div className="absolute bottom-2 left-3 right-3 text-white">
-                      <span className="text-[10px] uppercase font-bold tracking-wider text-amber-200 line-clamp-1">
-                        {course.badgeText}
-                      </span>
-                    </div>
                   </div>
 
                   {/* Card Content body */}
                   <div className="p-5 flex-1 flex flex-col justify-between">
                     
                     <div>
+                      {/* Dynamic Promocional tag/badge */}
+                      <div className="mb-2.5">
+                        <span className="text-[10px] uppercase font-bold tracking-wider text-amber-700 bg-amber-50 border border-amber-200/50 px-2.5 py-1 rounded-lg inline-block">
+                          {course.badgeText}
+                        </span>
+                      </div>
                       {/* Course Title and emoji */}
                       <h3 className="font-display font-extrabold text-base text-slate-800 tracking-tight leading-tight mb-2 group-hover:text-brand-blue-med transition-colors flex items-start gap-1.5 min-h-[48px]">
                         <span className="text-xl inline-block mt-0.5 shrink-0">{course.logoEmoji}</span>
