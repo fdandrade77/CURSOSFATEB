@@ -286,24 +286,6 @@ export default function App() {
             Formação profissional acadêmica credenciada nas áreas de:
           </p>
 
-          {/* Value Badges List from Original */}
-          <div className="flex flex-wrap justify-center gap-3 md:gap-4 max-w-3xl mx-auto mb-12">
-            {[
-              { label: "Terapia", color: "from-pink-500/20 to-pink-500/10 border-pink-500/40 text-pink-200" },
-              { label: "Psicanálise", color: "from-purple-500/20 to-purple-500/10 border-purple-500/40 text-purple-200" },
-              { label: "Desenvolvimento Humano", color: "from-emerald-500/20 to-emerald-500/10 border-emerald-500/40 text-emerald-200" },
-              { label: "Aconselhamento Cristão", color: "from-amber-500/20 to-amber-500/10 border-amber-500/40 text-amber-200" }
-            ].map((field, i) => (
-              <div 
-                key={i} 
-                className={`flex items-center gap-2 px-4 py-2 rounded-full border bg-gradient-to-r ${field.color} shadow-sm backdrop-blur-sm`}
-              >
-                <CheckCircle2 className="w-4 h-4 text-brand-gold shrink-0" />
-                <span className="font-semibold text-sm md:text-base">{field.label}</span>
-              </div>
-            ))}
-          </div>
-
           {/* Master CTA Button Call to action */}
           <div className="inline-block relative">
             <button
@@ -569,29 +551,6 @@ export default function App() {
           </h2>
           <p className="text-slate-500 mt-2 text-sm max-w-lg mx-auto">
             Garantimos o preço promocional de lote apenas enquanto houver vagas disponíveis no servidor. A próxima turma está quase completa!
-          </p>
-
-          {/* Animated custom progress bar */}
-          <div className="mt-8 bg-slate-100 h-6.5 rounded-full p-1 overflow-hidden relative border border-slate-200 flex items-center shadow-inner">
-            <motion.div
-              initial={{ width: "0%" }}
-              animate={{ width: `${((50 - spotsLeft) / 50) * 100}%` }}
-              transition={{ duration: 1.5, ease: "easeOut" }}
-              className="h-full bg-gradient-to-r from-[#e5b23e] to-[#dfab22] rounded-full shadow-lg relative overflow-hidden"
-              style={{ minWidth: "15%" }}
-            >
-              {/* Stripe animation overlay */}
-              <div 
-                className="absolute inset-0 bg-[linear-gradient(45deg,rgba(255,255,255,0.15)_25%,transparent_25%,transparent_50%,rgba(255,255,255,0.15)_50%,rgba(255,255,255,0.15)_75%,transparent_75%,transparent)] bg-[size:15px_15px] opacity-100 animate-[pulse_1.5s_infinite]" 
-              />
-            </motion.div>
-            <span className="absolute right-4 font-display font-extrabold text-[10px] text-slate-700 tracking-wider">
-              {Math.round(((50 - spotsLeft) / 50) * 100)}% PREENCHIDO
-            </span>
-          </div>
-
-          <p className="mt-4 text-slate-700 font-display text-lg">
-            Vagas disponíveis restantes: <strong className="text-red-600 font-black text-2xl animate-pulse">{spotsLeft}</strong> de 50
           </p>
 
         </div>
