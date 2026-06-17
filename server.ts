@@ -1,18 +1,18 @@
 import express from "express";
 import path from "path";
-import { createServer as createViteServer } from "vite";
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// API routes
+app.get("/api/health", (req, res) => {
+  res.json({ status: "ok" });
+});
 
 async function startServer() {
-  const app = express();
-  const PORT = 3000;
-
-  // API routes
-  app.get("/api/health", (req, res) => {
-    res.json({ status: "ok" });
-  });
-
   // Vite middleware for development
   if (process.env.NODE_ENV !== "production") {
+    const { createServer: createViteServer } = await import("vite");
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: "spa",
@@ -26,9 +26,14 @@ async function startServer() {
     });
   }
 
-  app.listen(PORT, "0.0.0.0", () => {
+  app.listen(Number(PORT), "0.0.0.0", () => {
     console.log(`Server running on http://localhost:${PORT}`);
   });
 }
 
-startServer();
+startServer().catch((err) => {
+  console.error("Failed to start server:", err);
+});
+
+export default app;
+
