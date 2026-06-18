@@ -288,8 +288,15 @@ export default function App() {
         <div className="absolute top-[-100px] right-[-100px] w-[350px] h-[350px] bg-red-500/20 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-[-50px] left-[-50px] w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
         
-        {/* Subtle decorative grid overlay */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1.5px,transparent_1.5px),linear-gradient(90deg,rgba(255,255,255,0.01)_1.5px,transparent_1.5px)] bg-[size:30px_30px] opacity-40" />
+        {/* Beautiful high-visibility background image combined with academic grid overlay */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-60 pointer-events-none"
+          style={{ 
+            backgroundImage: `url('/banner-matriculas.jpeg')`
+          }}
+        />
+        {/* Dark brand overlay to ensure maximum text readability */}
+        <div className="absolute inset-0 bg-brand-blue-dark/65 pointer-events-none" />
 
         {/* Huge italic background brand watermark from the original layout 'Matrículas Abertas' */}
         <div className="absolute inset-x-0 top-12 flex justify-center select-none pointer-events-none opacity-5 overflow-hidden z-0">
@@ -310,9 +317,29 @@ export default function App() {
             />
           </div>
 
-          <p className="text-xl md:text-2xl font-serif text-slate-200 max-w-2xl mx-auto italic mb-8">
-            Formação profissional acadêmica credenciada nas áreas de:
+          <p className="text-lg md:text-xl font-display text-slate-200 max-w-2xl mx-auto mb-6">
+            Formação profissional nas áreas de:
           </p>
+
+          {/* Styled high-fidelity pill badges inline */}
+          <div className="flex flex-wrap justify-center items-center gap-3.5 max-w-4xl mx-auto mb-12">
+            <div className="backdrop-blur-md bg-brand-blue-dark/40 border border-white/15 px-5 py-2.5 rounded-full text-white/95 font-semibold text-xs md:text-sm tracking-wide shadow-lg transition-all hover:border-brand-gold/40 hover:bg-brand-blue-dark/65 inline-flex items-center gap-2">
+              <span className="text-brand-gold font-bold">✓</span>
+              <span>Terapia</span>
+            </div>
+            <div className="backdrop-blur-md bg-brand-blue-dark/40 border border-white/15 px-5 py-2.5 rounded-full text-white/95 font-semibold text-xs md:text-sm tracking-wide shadow-lg transition-all hover:border-brand-gold/40 hover:bg-brand-blue-dark/65 inline-flex items-center gap-2">
+              <span className="text-brand-gold font-bold">✓</span>
+              <span>Psicanálise</span>
+            </div>
+            <div className="backdrop-blur-md bg-brand-blue-dark/40 border border-white/15 px-5 py-2.5 rounded-full text-white/95 font-semibold text-xs md:text-sm tracking-wide shadow-lg transition-all hover:border-brand-gold/40 hover:bg-brand-blue-dark/65 inline-flex items-center gap-2">
+              <span className="text-brand-gold font-bold">✓</span>
+              <span>Teológica</span>
+            </div>
+            <div className="backdrop-blur-md bg-brand-blue-dark/40 border border-white/15 px-5 py-2.5 rounded-full text-white/95 font-semibold text-xs md:text-sm tracking-wide shadow-lg transition-all hover:border-brand-gold/40 hover:bg-brand-blue-dark/65 inline-flex items-center gap-2">
+              <span className="text-brand-gold font-bold">✓</span>
+              <span>Abordagem Cristã</span>
+            </div>
+          </div>
 
           {/* Master CTA Button Call to action */}
           <div className="inline-block relative">
@@ -327,49 +354,11 @@ export default function App() {
               <span>Iniciar minha formação agora</span>
               <ChevronRight className="w-5 h-5" />
             </button>
-            
-            {/* Urgency Counter indicator */}
-            <p className="text-xs text-slate-300 mt-4 flex items-center justify-center gap-1.5 font-medium">
-              <span className="inline-block w-2.5 h-2.5 bg-red-500 rounded-full animate-ping mr-1"></span>
-              Aproveite valores promocionais da última turma do semestre. Restam <strong className="text-white bg-red-600 px-1.5 py-0.5 rounded">{spotsLeft} vagas</strong>.
-            </p>
           </div>
 
         </div>
       </section>
 
-      {/* 2. TRUST SECTIONS (Se você está pensando em mudar de vida...) */}
-      <section className="bg-white py-12 border-b border-light" id="trust-factors">
-        <div className="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="flex items-start gap-4 p-3 hover:bg-slate-50 rounded-2xl transition">
-            <div className="p-3 bg-brand-cream text-brand-gold rounded-xl shrink-0">
-              <ShieldCheck className="w-6 h-6" />
-            </div>
-            <div>
-              <h3 className="font-display font-bold text-lg text-brand-blue-dark">Metodologia Aprovada</h3>
-              <p className="text-sm text-slate-600 mt-1">Nossos cursos são validados e estruturados para você começar a atuar imediatamente.</p>
-            </div>
-          </div>
-          <div className="flex items-start gap-4 p-3 hover:bg-slate-50 rounded-2xl transition">
-            <div className="p-3 bg-brand-cream text-brand-gold rounded-xl shrink-0">
-              <TrendingUp className="w-6 h-6" />
-            </div>
-            <div>
-              <h3 className="font-display font-bold text-lg text-brand-blue-dark">Alta Demanda</h3>
-              <p className="text-sm text-slate-600 mt-1">O mercado de saúde mental e psicanálise cresce a cada ano com excelentes retornos financeiros.</p>
-            </div>
-          </div>
-          <div className="flex items-start gap-4 p-3 hover:bg-slate-50 rounded-2xl transition">
-            <div className="p-3 bg-brand-cream text-brand-gold rounded-xl shrink-0">
-              <Phone className="w-6 h-6 animate-pulse" />
-            </div>
-            <div>
-              <h3 className="font-display font-bold text-lg text-brand-blue-dark">Suporte Integral</h3>
-              <p className="text-sm text-slate-600 mt-1">Conversas e mentorias diretas com suporte de quem já trilhou o caminho de sucesso profissional.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* 3. COURSES CORE DIRECTORY */}
       <section className="py-20 bg-slate-50/80" id="available-courses">
@@ -612,6 +601,39 @@ export default function App() {
             ))}
           </div>
 
+        </div>
+      </section>
+
+      {/* TRUST SECTIONS (Pilares de Segurança e Amparo) */}
+      <section className="bg-white py-14 border-y border-slate-100" id="trust-factors">
+        <div className="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex items-start gap-4 p-4 hover:bg-slate-50 rounded-2xl transition border border-transparent hover:border-slate-100">
+            <div className="p-3 bg-brand-cream text-brand-gold rounded-xl shrink-0">
+              <ShieldCheck className="w-6 h-6" />
+            </div>
+            <div>
+              <h3 className="font-display font-bold text-lg text-brand-blue-dark">Metodologia Aprovada</h3>
+              <p className="text-sm text-slate-600 mt-1">Nossos cursos são validados e estruturados para você começar a atuar imediatamente.</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-4 p-4 hover:bg-slate-50 rounded-2xl transition border border-transparent hover:border-slate-100">
+            <div className="p-3 bg-brand-cream text-brand-gold rounded-xl shrink-0">
+              <TrendingUp className="w-6 h-6" />
+            </div>
+            <div>
+              <h3 className="font-display font-bold text-lg text-brand-blue-dark">Alta Demanda</h3>
+              <p className="text-sm text-slate-600 mt-1">O mercado de saúde mental e psicanálise cresce a cada ano com excelentes retornos financeiros.</p>
+            </div>
+          </div>
+          <div className="flex items-start gap-4 p-4 hover:bg-slate-50 rounded-2xl transition border border-transparent hover:border-slate-100">
+            <div className="p-3 bg-brand-cream text-brand-gold rounded-xl shrink-0">
+              <Phone className="w-6 h-6 animate-pulse" />
+            </div>
+            <div>
+              <h3 className="font-display font-bold text-lg text-brand-blue-dark">Suporte Integral</h3>
+              <p className="text-sm text-slate-600 mt-1">Conversas e mentorias diretas com suporte de quem já trilhou o caminho de sucesso profissional.</p>
+            </div>
+          </div>
         </div>
       </section>
 
