@@ -578,7 +578,7 @@ export default function App() {
                   <h4 className="font-display font-extrabold text-sm text-brand-gold group-hover:text-amber-300 transition-colors">
                     {testimonial.author}
                   </h4>
-                  <p className="text-[10px] text-slate-400 mt-1 uppercase tracking-wider">Aluno(a) Graduado(a)</p>
+                  <p className="text-[10px] text-slate-400 mt-1 uppercase tracking-wider">Aluno(a) Formado(a)</p>
                 </div>
               </div>
             ))}
