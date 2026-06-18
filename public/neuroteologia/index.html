@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Curso de Formação em Neuroteologia — FATEB</title>
+  <meta name="description" content="Una as descobertas da Neurociência com a Teologia. Uma formação de 520 horas reconhecida pelo MEC. Seja um Neuroteólogo!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Curso de Formação em Neuroteologia — FATEB">
+  <meta property="og:description" content="Deus no cérebro: ciência e espiritualidade caminhando juntas. Formação completa reconhecida pelo MEC.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/neuroteologia.jpeg">
+
+  <!-- Inter and Playfair Display Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            deepnavy: {
+              DEFAULT: '#0d1627',
+              light: '#17233c',
+              dark: '#060a12',
+            },
+            tealscience: {
+              DEFAULT: '#0d9488',
+              hover: '#0f766e',
+            },
+            gold: {
+              DEFAULT: '#d4af37',
+              hover: '#f3cd42',
+              dark: '#aa8412',
+              cream: '#faf6e5'
+            },
+            creme: {
+              DEFAULT: '#f7f5f0',
+              light: '#fdfdfb',
+              dark: '#ebdccb',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .custom-shadow {
+      box-shadow: 0 10px 30px -10px rgba(13, 22, 39, 0.08);
+    }
+    .gold-shadow {
+      box-shadow: 0 8px 24px -6px rgba(212, 175, 55, 0.3);
+    }
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px -15px rgba(13, 22, 39, 0.15);
+    }
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); opacity: 0.5; }
+      50% { transform: scale(1.05); opacity: 0.8; }
+      100% { transform: scale(0.95); opacity: 0.5; }
+    }
+    .badge-pulse {
+      animation: pulse-ring 2s infinite ease-in-out;
+    }
+    details[open] summary svg {
+      transform: rotate(180deg);
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-[#faf9f6] leading-relaxed">
+
+  <!-- Top Announcement Bar -->
+  <div id="announcement-bar" class="bg-deepnavy-dark text-creme text-xs font-bold uppercase tracking-wider py-3 px-4 text-center border-b border-gold/10 relative z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
+      <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+      <span>⚡ PROMOÇÃO DE LANÇAMENTO EXCLUSIVA — VAGAS LIMITADAS PARA JUNHO DE 2026</span>
+    </div>
+  </div>
+
+  <!-- Sticky Minimal Header -->
+  <header class="bg-deepnavy pt-5 pb-5 sticky top-0 z-40 shadow-md border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <a href="/" class="text-creme/90 hover:text-gold text-xs font-semibold tracking-wide border border-creme/20 hover:border-gold/40 px-3.5 py-1.5 rounded-full transition-all bg-creme/5 inline-flex items-center gap-1.5 shrink-0">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+          Voltar ao Portal
+        </a>
+      </div>
+      <div>
+        <a href="#investimento" class="bg-gold hover:bg-gold-hover text-deepnavy font-extrabold text-xs tracking-wider uppercase px-5 py-2.5 rounded-full transition-all duration-300 shadow-md gold-shadow">
+          Matricular-se
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO SECTION -->
+  <section id="hero" class="bg-deepnavy text-creme py-16 md:py-24 relative overflow-hidden border-b border-gold/10">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-tealscience/5 rounded-full blur-3xl -ml-16 -mb-16 pointer-events-none"></div>
+    
+    <div class="max-w-5xl mx-auto px-6 relative z-10 text-center">
+      <!-- FATEB Logo -->
+      <img src="/logofateb.webp" alt="FATEB Logo" class="max-h-24 md:max-h-28 w-auto mx-auto mb-8 object-contain transition-transform hover:scale-105 duration-300" referrerPolicy="no-referrer">
+      
+      <span class="text-gold font-bold uppercase text-xs md:text-sm tracking-widest bg-gold/10 px-4 py-1.5 rounded-full border border-gold/20 inline-block mb-4">
+        Formação Avançada Inédita
+      </span>
+      
+      <h1 class="text-4xl md:text-6xl font-serif font-black text-white leading-tight mb-4">
+        Curso de Formação em <br>
+        <span class="text-gold">Neuroteologia</span>
+      </h1>
+      
+      <p class="text-lg md:text-2xl font-serif text-slate-300 italic mb-8 max-w-3xl mx-auto">
+        "Deus no cérebro: ciência e espiritualidade caminhando juntas"
+      </p>
+
+      <p class="text-base md:text-lg text-slate-350 max-w-3xl mx-auto mb-10 leading-relaxed font-normal text-slate-300">
+        Um curso inovador e inédito no Brasil, projetado de forma pioneira pela FATEB para integrar com excelência as descobertas recentes da <strong>neurociência, psicologia e teologia</strong>. Descubra como a graça de Deus, a prática meditativa e o conhecimento científico atuam como bases indissociáveis para a resiliência humana, superação de traumas e bem-estar integral.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
+        <a href="#investimento" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-deepnavy font-black uppercase text-sm px-8 py-4.5 rounded-full shadow-lg gold-shadow transition-all hover:scale-105 active:scale-95 duration-300">
+          <i data-lucide="graduation-cap" class="w-5 h-5 text-deepnavy"></i>
+          <span>SEJA UM NEUROTEÓLOGO AGORA</span>
+        </a>
+        <a href="https://wa.me/5512991847661?text=Olá! Gostaria de mais informações sobre o Curso de Neuroteologia da FATEB" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-[#25d366] hover:bg-[#20b855] text-white font-black uppercase text-sm px-8 py-4.5 rounded-full shadow-lg transition-all hover:scale-105 active:scale-95 duration-300">
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          <span>Conversar no WhatsApp</span>
+        </a>
+      </div>
+
+      <!-- General Badges -->
+      <div class="grid grid-cols-2 md:grid-cols-4 max-w-3xl mx-auto gap-4 pt-8 border-t border-white/10 text-xs tracking-wider uppercase font-semibold text-slate-300">
+        <div class="flex items-center justify-center gap-2">
+          <i data-lucide="check-circle" class="w-4 h-4 text-gold shrink-0"></i>
+          <span>MEC Reconhecido</span>
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <i data-lucide="clock" class="w-4 h-4 text-gold shrink-0"></i>
+          <span>520 Horas</span>
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <i data-lucide="award" class="w-4 h-4 text-gold shrink-0"></i>
+          <span>Conselho CONATEB</span>
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <i data-lucide="shield-check" class="w-4 h-4 text-gold shrink-0"></i>
+          <span>Sem Matrícula</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. APRESENTAÇÃO / CONCEITO -->
+  <section class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Text details -->
+        <div class="lg:col-span-7">
+          <span class="text-gold font-bold uppercase text-xs tracking-widest block mb-1">Ciência + Fé</span>
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-deepnavy mb-6">
+            O Encontro entre a Mente e o Espírito
+          </h2>
+          <div class="space-y-4 text-slate-600 text-sm md:text-base leading-relaxed">
+            <p>
+              Ao contrário do que o ceticismo tradicional prega, a verdadeira ciência e a fé genuína não são opostas. Elas caminham de braços dados na promoção do bem-estar e da integridade emocional humana.
+            </p>
+            <p>
+              A <strong>Neuroteologia</strong> estuda mapeamentos precisos de como nosso cérebro responde à adoração, como a espiritualidade e a oração modificam estruturas neurais promovendo resiliência fisiológica e como aplicar estas ciências de forma ética e amparada na terapêutica.
+            </p>
+            <p>
+              Esta formação prepara você para o <strong>aconselhamento terapêutico, pastoral e a mentoria de desenvolvimento humano</strong> dentro da sua instituição religiosa de forma altamente qualificada e respeitando a conduta eclesiástica.
+            </p>
+          </div>
+          
+          <div class="mt-8 p-5 bg-gold/10 border-l-4 border-gold rounded-r-xl max-w-2xl">
+            <p class="font-serif italic text-gold-dark text-sm md:text-base">
+              "A fé dá sentido à existência; a ciência nos desvela os caminhos milagrosos através dos quais esse sentido se reflete na fisiologia e na paz mental."
+            </p>
+          </div>
+        </div>
+
+        <!-- Visual / Bullet key highlights -->
+        <div class="lg:col-span-5 bg-deepnavy text-creme p-8 rounded-3xl relative border border-gold/20 shadow-xl overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-gold/10 rounded-full blur-2xl pointer-events-none"></div>
+          
+          <h3 class="font-serif font-bold text-xl text-white mb-6 border-b border-white/10 pb-3 flex items-center gap-2">
+            🧠 <span class="text-gold">O que você aprenderá:</span>
+          </h3>
+          <ul class="space-y-4 text-xs md:text-sm text-slate-300">
+            <li class="flex gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-gold shrink-0 mt-0.5 animate-pulse"></i>
+              <span>A neurofisiologia e neurociência da oração constante e meditação profunda.</span>
+            </li>
+            <li class="flex gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
+              <span>Como mapear traumas e conflitos psicológicos de origem espiritual.</span>
+            </li>
+            <li class="flex gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
+              <span>Aconselhamento terapêutico estruturado sem ferir dogmas e convicções.</span>
+            </li>
+            <li class="flex gap-2.5">
+              <i data-lucide="check" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
+              <span>Relação profunda entre espiritualidade saudável e longevidade física.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. BIBLICAL QUOTE BANNER -->
+  <section class="py-12 bg-deepnavy text-center relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-6 relative z-10">
+      <i data-lucide="bookmark" class="w-10 h-10 text-gold/30 mx-auto mb-4"></i>
+      <p class="font-serif italic text-xl md:text-3xl text-gold/95 font-medium leading-relaxed max-w-2xl mx-auto mb-4">
+        “Porque Deus não nos deu espírito de covardia, mas de poder, de amor e de equilíbrio.”
+      </p>
+      <span class="text-xs tracking-widest font-black uppercase text-gold/65 block">
+        — 2 Timóteo 1:7
+      </span>
+    </div>
+  </section>
+
+  <!-- 4. VIDEO METHODOLOGY SECTION -->
+  <section id="video" class="py-16 bg-creme-light border-y border-slate-200/40 text-center">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-4xl font-serif text-deepnavy font-bold mb-3 tracking-tight">
+        Conheça a Metodologia FATEB
+      </h2>
+      <p class="text-sm md:text-base text-slate-600 max-w-xl mx-auto mb-10">
+        Assista à apresentação da diretoria acadêmica e entenda a chancela e a jornada que espera por você.
+      </p>
+      
+      <!-- Video Player with gold border -->
+      <div class="relative max-w-3xl mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-gold/60 bg-deepnavy mb-10">
+        <div class="aspect-video w-full">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/6_WgFl49lcA?rel=0&modestbranding=1&playsinline=1" title="Metodologia FATEB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-deepnavy font-black tracking-wide uppercase text-xs md:text-sm px-10 py-5 rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all duration-300">
+        <span>🎓 QUERO GARANTIR MINHA MATRÍCULA</span>
+        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- 5. CONTEÚDO PROGRAMÁTICO (CURRICULUM) -->
+  <section id="conteudo" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest">Aprofundamento Máximo</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-deepnavy mt-1 mb-3">
+          Conteúdo Programático Completo
+        </h2>
+        <p class="text-slate-500 text-sm md:text-base">
+          12 disciplinas curriculares abrangendo as bases científicas e eclesiásticas para a formação de excelência de 520 horas aula.
+        </p>
+        <div class="h-1 w-16 bg-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        
+        <!-- Module 1 -->
+        <div class="bg-[#faf9f6] p-6 rounded-2xl border border-slate-200/50 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300 flex gap-4">
+          <div class="w-10 h-8 bg-deepnavy text-gold font-serif font-bold flex items-center justify-center rounded">01</div>
+          <div>
+            <h4 class="font-serif font-bold text-deepnavy text-sm md:text-base mb-1">Introdução à Neuroteologia</h4>
+            <p class="text-slate-500 text-xs leading-relaxed">Estudo neuropsicológico fundamental da alma e sua manifestação no plano biológico.</p>
+          </div>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="bg-[#faf9f6] p-6 rounded-2xl border border-slate-200/50 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300 flex gap-4">
+          <div class="w-10 h-8 bg-deepnavy text-gold font-serif font-bold flex items-center justify-center rounded">02</div>
+          <div>
+            <h4 class="font-serif font-bold text-deepnavy text-sm md:text-base mb-1">Fnd. Neurociência e Psicologia</h4>
+            <p class="text-slate-500 text-xs leading-relaxed">Mecanismos gerais do cérebro aplicados ao acolhimento e escuta eclesiástica ativa.</p>
+          </div>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="bg-[#faf9f6] p-6 rounded-2xl border border-slate-200/50 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300 flex gap-4">
+          <div class="w-10 h-8 bg-deepnavy text-gold font-serif font-bold flex items-center justify-center rounded">03</div>
+          <div>
+            <h4 class="font-serif font-bold text-deepnavy text-sm md:text-base mb-1">Neurociência, Religião e Espiritualidade</h4>
+            <p class="text-slate-500 text-xs leading-relaxed">Perspectivas científicas sobre rituais de fé e os desafios pós-modernos da igreja atual.</p>
+          </div>
+        </div>
+
+        <!-- Module 4 -->
+        <div class="bg-[#faf9f6] p-6 rounded-2xl border border-slate-200/50 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300 flex gap-4">
+          <div class="w-10 h-8 bg-deepnavy text-gold font-serif font-bold flex items-center justify-center rounded">04</div>
+          <div>
+            <h4 class="font-serif font-bold text-deepnavy text-sm md:text-base mb-1">Teologia e Espiritualidade</h4>
+            <p class="text-slate-500 text-xs leading-relaxed">Estudo do comportamento pessoal e gestão humanizada de pessoas e líderes na igreja.</p>
+          </div>
+        </div>
+
+        <!-- Module 5 -->
+        <div class="bg-[#faf9f6] p-6 rounded-2xl border border-slate-200/50 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300 flex gap-4">
+          <div class="w-10 h-8 bg-deepnavy text-gold font-serif font-bold flex items-center justify-center rounded">05</div>
+          <div>
+            <h4 class="font-serif font-bold text-deepnavy text-sm md:text-base mb-1">Mindfulness e Contemplação</h4>
+            <p class="text-slate-500 text-xs leading-relaxed">Práticas de oração contemplativa, comunicação não-violenta e empatia terapêutica.</p>
+          </div>
+        </div>
+
+        <!-- Module 6 -->
+        <div class="bg-[#faf9f6] p-6 rounded-2xl border border-slate-200/50 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300 flex gap-4">
+          <div class="w-10 h-8 bg-deepnavy text-gold font-serif font-bold flex items-center justify-center rounded">06</div>
+          <div>
+            <h4 class="font-serif font-bold text-deepnavy text-sm md:text-base mb-1">Fé Abalada x Fanatismo</h4>
+            <p class="text-slate-500 text-xs leading-relaxed">Como diferenciar dinâmicas sadias de fé de obsessões patológicas e extremismo.</p>
+          </div>
+        </div>
+
+        <!-- Module 7 -->
+        <div class="bg-[#faf9f6] p-6 rounded-2xl border border-slate-200/50 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300 flex gap-4">
+          <div class="w-10 h-8 bg-deepnavy text-gold font-serif font-bold flex items-center justify-center rounded">07</div>
+          <div>
+            <h4 class="font-serif font-bold text-deepnavy text-sm md:text-base mb-1">Terapia e Aconselhamento</h4>
+            <p class="text-slate-500 text-xs leading-relaxed">Teorias estruturadas de personalidade aplicada ao desenvolvimento integral do indivíduo.</p>
+          </div>
+        </div>
+
+        <!-- Module 8 -->
+        <div class="bg-[#faf9f6] p-6 rounded-2xl border border-slate-200/50 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300 flex gap-4">
+          <div class="w-10 h-8 bg-deepnavy text-gold font-serif font-bold flex items-center justify-center rounded">08</div>
+          <div>
+            <h4 class="font-serif font-bold text-deepnavy text-sm md:text-base mb-1">Resiliência e Superação</h4>
+            <p class="text-slate-500 text-xs leading-relaxed">Liderança, gestão ética de conflitos e superação de dores sob as lentes cristãs.</p>
+          </div>
+        </div>
+
+        <!-- Module 9 -->
+        <div class="bg-[#faf9f6] p-6 rounded-2xl border border-slate-200/50 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300 flex gap-4">
+          <div class="w-10 h-8 bg-deepnavy text-gold font-serif font-bold flex items-center justify-center rounded">09</div>
+          <div>
+            <h4 class="font-serif font-bold text-deepnavy text-sm md:text-base mb-1">Ciência, Fé e Saúde Mental</h4>
+            <p class="text-slate-500 text-xs leading-relaxed">Teologia aplicada à prática terapêutica clínica diária e seus principais modelos.</p>
+          </div>
+        </div>
+
+        <!-- Module 10 -->
+        <div class="bg-[#faf9f6] p-6 rounded-2xl border border-slate-200/50 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300 flex gap-4">
+          <div class="w-10 h-8 bg-deepnavy text-gold font-serif font-bold flex items-center justify-center rounded">10</div>
+          <div>
+            <h4 class="font-serif font-bold text-deepnavy text-sm md:text-base mb-1">Espiritualidade e Bem-Estar Físico</h4>
+            <p class="text-slate-500 text-xs leading-relaxed">A influência do louvor, oração e comunhão na regulação hormonal e fortalecimento imunológico.</p>
+          </div>
+        </div>
+
+        <!-- Module 11 -->
+        <div class="bg-[#faf9f6] p-6 rounded-2xl border border-slate-200/50 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300 flex gap-4">
+          <div class="w-10 h-8 bg-deepnavy text-gold font-serif font-bold flex items-center justify-center rounded">11</div>
+          <div>
+            <h4 class="font-serif font-bold text-deepnavy text-sm md:text-base mb-1">Traumas Religiosos</h4>
+            <p class="text-slate-500 text-xs leading-relaxed">Estruturação profunda de traumas históricos e como caminhar rumo à restauração amorosa do ser.</p>
+          </div>
+        </div>
+
+        <!-- Module 12 -->
+        <div class="bg-[#faf9f6] p-6 rounded-2xl border border-slate-200/50 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300 flex gap-4">
+          <div class="w-10 h-8 bg-deepnavy text-gold font-serif font-bold flex items-center justify-center rounded">12</div>
+          <div>
+            <h4 class="font-serif font-bold text-deepnavy text-sm md:text-base mb-1">Psicologia Pastoral</h4>
+            <p class="text-slate-500 text-xs leading-relaxed">Diretrizes de acolhimento e preparo mental de ovelhas, pastores e líderes ministeriais.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. PÓS-CONCLUSÃO / CERTIFICADOS -->
+  <section id="certificacao" class="py-20 bg-deepnavy text-creme relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-tr from-deepnavy-dark via-deepnavy to-deepnavy-light opacity-55"></div>
+    <div class="max-w-5xl mx-auto px-6 relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <i data-lucide="award" class="w-16 h-16 text-gold mx-auto mb-4 filter drop-shadow"></i>
+        <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mb-4">
+          Diferenciais e <span class="text-gold">Chancela Acadêmica</span>
+        </h2>
+        <p class="text-slate-350 text-sm md:text-base text-slate-300">
+          Chancelas oficiais e parcerias nacionais robustas para assegurar a sua autoridade após concluir.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- MEC Certificate -->
+        <div class="p-8 rounded-3xl border border-gold/20 bg-deepnavy-light/60 backdrop-blur flex flex-col justify-between hover-lift">
+          <div>
+            <span class="text-4xl block mb-4">📜</span>
+            <h4 class="font-serif font-bold text-white text-lg mb-2">Dupla Modalidade MEC</h4>
+            <p class="text-slate-300 text-xs leading-relaxed">
+              * Para alunos com <strong>Ensino Médio</strong>: Conclusão emitida em nível de <strong>Extensão Universitária Profissionalizante</strong>.<br>
+              * Para graduados ou **portadores de diploma superior**: Certificação oficial de **Pós-Graduação Lato Sensu** reconhecida nacionalmente de acordo com a lei civil.
+            </p>
+          </div>
+          <div class="mt-6">
+            <span class="inline-block bg-gold/10 text-gold text-[10px] font-bold px-3 py-1 rounded border border-gold/20 uppercase tracking-widest">
+              Garantia MEC
+            </span>
+          </div>
+        </div>
+
+        <!-- Professional Credential -->
+        <div class="p-8 rounded-3xl border border-gold/20 bg-deepnavy-light/60 backdrop-blur flex flex-col justify-between hover-lift">
+          <div>
+            <span class="text-4xl block mb-4">🪪</span>
+            <h4 class="font-serif font-bold text-white text-lg mb-2">Credencial de Neuroteólogo</h4>
+            <p class="text-slate-300 text-xs leading-relaxed">
+              Você tem direito à solicitação e emissão da sua <strong>Identidade e Credencial Profissional de Neuroteólogo FATEB</strong> com numeração de controle nacional unificado.
+            </p>
+          </div>
+          <div class="mt-6">
+            <span class="inline-block bg-emerald-500/10 text-emerald-400 text-[10px] font-bold px-3 py-1 rounded border border-emerald-500/20 uppercase tracking-widest">
+              Afiliação Inclusa
+            </span>
+          </div>
+        </div>
+
+        <!-- CONATEB Registro -->
+        <div class="p-8 rounded-3xl border border-gold/20 bg-deepnavy-light/60 backdrop-blur flex flex-col justify-between hover-lift">
+          <div>
+            <span class="text-4xl block mb-4">⛪</span>
+            <h4 class="font-serif font-bold text-white text-lg mb-2">Inclusão no CONATEB</h4>
+            <p class="text-slate-300 text-xs leading-relaxed">
+              Registro associado e devidamente validado junto ao <strong>Conselho Nacional dos Teólogos do Brasil</strong>, provendo de forma pioneira prestígio nacional legal de atuação teológica eclesiástica.
+            </p>
+          </div>
+          <div class="mt-6">
+            <span class="inline-block bg-[#00bcd4]/10 text-[#00bcd4] text-[10px] font-bold px-3 py-1 rounded border border-[#00bcd4]/20 uppercase tracking-widest">
+              CONATEB Oficial
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. INVESTIMENTO / PAYMENTS -->
+  <section id="investimento" class="py-20 bg-[#f1ede5] relative overflow-hidden">
+    <div class="absolute bottom-[-10%] right-[-5%] w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+    
+    <div class="max-w-5xl mx-auto px-6 relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest block mb-1">Preparo de Lançamento</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-deepnavy leading-tight">
+          Sua Nova Formação por uma Mensalidade Mínima
+        </h2>
+        <div class="h-1 w-16 bg-gold mx-auto rounded-full mt-3"></div>
+      </div>
+
+      <div class="max-w-xl mx-auto">
+        <!-- Promo Price Box -->
+        <div class="bg-white rounded-3xl p-8 md:p-10 border-4 border-gold shadow-2xl relative text-center">
+          
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-600 text-white font-extrabold text-xs uppercase px-5 py-2 rounded-full shadow-lg tracking-widest badge-pulse">
+            🚨 ISENTO DE MATRÍCULA
+          </div>
+
+          <div class="text-center mt-3">
+            <p class="text-slate-400 text-sm font-semibold line-through">Preço Regular: R$ 199,00/mês</p>
+            
+            <span class="mt-2 inline-block bg-red-500/10 text-red-600 text-xs font-black tracking-wider px-3 py-1 rounded">
+              HOJE PROPAGADO POR:
+            </span>
+
+            <!-- Big Price tag -->
+            <div class="my-5">
+              <span class="text-xs uppercase font-extrabold tracking-wide text-slate-400 bg-slate-100 rounded px-2.5 py-1">6 parcelas mensais de</span>
+              <p class="text-5xl md:text-6xl font-serif font-black text-deepnavy mt-2">
+                6x R$ <span class="text-gold">100</span><span class="text-xl font-sans text-slate-400">,00</span>
+              </p>
+              <p class="text-xs text-slate-400 mt-2">ou R$ 600,00 à vista / Pix sem juros adicionais</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-2 mb-6">
+              <span class="bg-slate-100 text-slate-650 text-[10px] font-black uppercase px-3.5 py-1.5 rounded-full flex items-center gap-1">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-tealscience"></i> Pix
+              </span>
+              <span class="bg-slate-100 text-slate-650 text-[10px] font-black uppercase px-3.5 py-1.5 rounded-full flex items-center gap-1">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-tealscience"></i> Cartão em até 12x
+              </span>
+              <span class="bg-slate-100 text-slate-650 text-[10px] font-black uppercase px-3.5 py-1.5 rounded-full flex items-center gap-1">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-tealscience"></i> Boleto Bancário
+              </span>
+            </div>
+
+            <!-- Countdown Timer Block -->
+            <div class="bg-deepnavy p-4 rounded-2xl text-creme mb-8 border border-gold/15">
+              <h6 class="text-[10px] font-black tracking-widest text-gold uppercase mb-2">Tempo Restante de Valor Congelado:</h6>
+              <div class="grid grid-cols-4 gap-2 bg-deepnavy-dark p-3 rounded-xl border border-gold/10">
+                <div class="text-center">
+                  <span id="days" class="block font-serif font-bold text-xl text-gold">00</span>
+                  <span class="text-[8px] font-bold text-slate-400 uppercase">Dias</span>
+                </div>
+                <div class="text-center">
+                  <span id="hours" class="block font-serif font-bold text-xl text-gold">00</span>
+                  <span class="text-[8px] font-bold text-slate-400 uppercase">Horas</span>
+                </div>
+                <div class="text-center">
+                  <span id="minutes" class="block font-serif font-bold text-xl text-gold">00</span>
+                  <span class="text-[8px] font-bold text-slate-400 uppercase">Minutos</span>
+                </div>
+                <div class="text-center">
+                  <span id="seconds" class="block font-serif font-bold text-xl text-gold">00</span>
+                  <span class="text-[8px] font-bold text-slate-400 uppercase">Segundos</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Inscription button -->
+            <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-deepnavy font-black text-sm py-4 md:py-4.5 rounded-2xl shadow-lg transition-all hover:scale-103 uppercase duration-300">
+              <i data-lucide="shield" class="w-4 h-4 text-deepnavy"></i>
+              <span>INICIAR MINHA MATRÍCULA AGORA</span>
+            </a>
+
+            <div class="mt-4 flex items-center justify-center gap-2 text-slate-450 text-[11px] font-semibold">
+              <i data-lucide="lock" class="w-3.5 h-3.5 text-emerald-500"></i>
+              <span>Conexão Segura Direct SSL FATEB</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FAQ / ACCORDION -->
+  <section id="faq" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest block">Dúvidas Frequentes</span>
+        <h2 class="text-3xl font-serif font-bold text-deepnavy mt-1">Perguntas Respondidas</h2>
+        <div class="h-1 w-16 bg-gold mx-auto rounded-full mt-3"></div>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <details class="group bg-creme/40 border border-slate-200/60 rounded-2xl p-5 hover:border-gold/35 cursor-pointer transition-all duration-300">
+          <summary class="flex justify-between items-center font-serif font-bold text-deepnavy text-sm md:text-base selection:bg-transparent list-none">
+            <span>Qual a duração e formato das aulas do curso?</span>
+            <span class="text-gold transition-transform group-open:rotate-180">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <p class="mt-3 text-slate-600 text-xs md:text-sm leading-relaxed cursor-auto">
+            A duração recomendada do curso é de <strong>6 meses</strong>, correspondendo a uma carga de 520 horas. Todo o conteúdo é 100% online (EAD), permitindo ao aluno assistir às gravações de acordo com sua conveniência e conciliar com vidas cotidianas atarefadas de reuniões ministeriais.
+          </p>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="group bg-creme/40 border border-slate-200/60 rounded-2xl p-5 hover:border-gold/35 cursor-pointer transition-all duration-300">
+          <summary class="flex justify-between items-center font-serif font-bold text-deepnavy text-sm md:text-base selection:bg-transparent list-none">
+            <span>Preciso possuir graduação universitária para participar?</span>
+            <span class="text-gold transition-transform group-open:rotate-180">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <p class="mt-3 text-slate-600 text-xs md:text-sm leading-relaxed cursor-auto">
+            Não é obrigatório! O curso atende às duas possibilidades certificatórias amparadas pela Lei Federal:<br>
+            * Alunos com **Ensino Médio completo** recebem sua titulação na modalidade de **Extensão Universitária Profissionalizante em Neuroteologia**.<br>
+            * Alunos que **já possuam graduação superior anterior** recebem na modalidade de **Pós-Graduação Lato Sensu de Especialista**. Ambos concedem direito à credencial profissional e ao CONATEB.
+          </p>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="group bg-creme/40 border border-slate-200/60 rounded-2xl p-5 hover:border-gold/35 cursor-pointer transition-all duration-300">
+          <summary class="flex justify-between items-center font-serif font-bold text-deepnavy text-sm md:text-base selection:bg-transparent list-none">
+            <span>Como funciona a filiação e inscrição no Conselho CONATEB?</span>
+            <span class="text-gold transition-transform group-open:rotate-180">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <p class="mt-3 text-slate-600 text-xs md:text-sm leading-relaxed cursor-auto">
+            Ao concluir todas as disciplinas com as devidas notas, a equipe acadêmica da FATEB encaminhará o registro do formando ao **Conselho Nacional dos Teólogos do Brasil** (CONATEB), consolidando a filiação formal do aluno com sua carteira funcional exclusiva brasileira.
+          </p>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="group bg-creme/40 border border-slate-200/60 rounded-2xl p-5 hover:border-gold/35 cursor-pointer transition-all duration-300">
+          <summary class="flex justify-between items-center font-serif font-bold text-deepnavy text-sm md:text-base selection:bg-transparent list-none">
+            <span>Quais as formas e garantias associadas a pagamentos?</span>
+            <span class="text-gold transition-transform group-open:rotate-180">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <p class="mt-3 text-slate-600 text-xs md:text-sm leading-relaxed cursor-auto">
+            A FATEB simplifica a sua qualificação: você é totalmente isento de taxas de matrícula. O pagamento pode ser parcelado em até 6 parcelas de R$ 100,00 mensais via Pix, Boleto ou Cartão de Crédito de forma totalmente amparada e segura.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-deepnavy-dark text-creme/65 py-16 border-t border-gold/10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10 text-left">
+      <!-- Col 1 -->
+      <div>
+        <span class="text-gold text-2xl font-serif font-extrabold tracking-widest uppercase block mb-4">FATEB</span>
+        <p class="text-xs leading-relaxed max-w-sm mb-4">
+          FATEB Instituto de Formação Acadêmica — Dedicado ao cuidado íntegro intelectual, promovendo formações de excelência e especializações profissionais baseadas em rigor acadêmico, amparo legal e alta aplicabilidade prática.
+        </p>
+        <p class="text-[10px] text-creme/45">
+          📍 FATEB Educacional — CNPJ: 07.828.118/0001-38
+        </p>
+      </div>
+
+      <!-- Col 2 -->
+      <div>
+        <h6 class="text-white font-serif font-bold tracking-wide mb-4 text-sm uppercase">Fale Conosco</h6>
+        <ul class="space-y-3 text-xs">
+          <li class="flex items-center gap-2">
+            <i data-lucide="phone" class="w-3.5 h-3.5 text-gold shrink-0"></i>
+            <span>(12) 99184-7661</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i data-lucide="mail" class="w-3.5 h-3.5 text-gold shrink-0"></i>
+            <span>suporte@fatebeducacional.com.br</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-gold shrink-0"></i>
+            <span>Atendimento síncrono online nacional</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div>
+        <h6 class="text-white font-serif font-bold tracking-wide mb-4 text-sm uppercase">Secretaria Acadêmica</h6>
+        <p class="text-xs leading-relaxed max-w-sm mb-4">
+          Faça sua matrícula diretamente no terminal unificado de admissões de forma criptografada e segura:
+        </p>
+        <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-gold hover:text-white font-bold text-xs tracking-wider transition uppercase">
+          <span>Acessar portal admissional</span>
+          <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-creme/10 text-center text-[10px] tracking-wide">
+      <p>© 2026 FATEB — Todos os direitos reservados. CNPJ: 07.828.118/0001-38</p>
+    </div>
+  </footer>
+
+  <!-- FLOAT WHATSAPP BUTTON -->
+  <a href="https://wa.me/5512991847661?text=Olá! Quero tirar algumas dúvidas sobre o Curso de Neuroteologia da FATEB" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-[#25d366] hover:bg-[#20b855] text-white p-4.5 rounded-full shadow-2xl z-50 flex items-center justify-center transition-all hover:scale-110 active:scale-95 float-wp" style="width: 58px; height: 58px;">
+    <i data-lucide="message-circle" class="w-8 h-8 text-white"></i>
+  </a>
+
+  <!-- Script initialization for Lucide Icons -->
+  <script>
+    lucide.createIcons();
+    
+    // JS Countdown Timer
+    function initCountdown() {
+      // 3 days target from now
+      let targetDate = new Date();
+      targetDate.setDate(targetDate.getDate() + 3);
+      
+      function updateTimer() {
+        const now = new Date();
+        const difference = targetDate - now;
+        
+        if (difference <= 0) {
+          // Restart countdown
+          targetDate = new Date();
+          targetDate.setDate(targetDate.getDate() + 3);
+          return;
+        }
+        
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+        
+        document.getElementById('days').textContent = String(days).padStart(2, '0');
+        document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+        document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+      }
+      
+      setInterval(updateTimer, 1000);
+      updateTimer();
+    }
+    
+    initCountdown();
+  </script>
+</body>
+</html>

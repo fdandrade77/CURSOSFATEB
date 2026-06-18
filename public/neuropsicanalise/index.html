@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Curso de Formação em Neuropsicanálise Clínica — FATEB</title>
+  <meta name="description" content="A mais moderna integração interdisciplinar entre as neurociências do cérebro e a clínica clássica de psicanálise. Formação completa reconhecida pelo MEC.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Formação em Neuropsicanálise Clínica — FATEB">
+  <meta property="og:description" content="Curso de Extensão Universitária / Pós-Graduação Lato Sensu reconhecido pelo MEC. Vagas limitadas para início em Março de 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/neuropsi.jpeg">
+
+  <!-- Inter and Playfair Display Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              DEFAULT: '#1a2744',
+              light: '#24355a',
+              dark: '#111a2e',
+            },
+            gold: {
+              DEFAULT: '#c9a84c',
+              hover: '#e2c06a',
+              dark: '#a88835',
+            },
+            creme: {
+              DEFAULT: '#f5f0e8',
+              light: '#fcfbfa',
+              dark: '#e9e1d3',
+            },
+            accent: {
+              light: '#f8f7f4',
+              dark: '#f1ede5',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .custom-shadow {
+      box-shadow: 0 10px 30px -10px rgba(26, 39, 68, 0.12);
+    }
+    .gold-shadow {
+      box-shadow: 0 8px 24px -6px rgba(201, 168, 76, 0.35);
+    }
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px -15px rgba(26, 39, 68, 0.18);
+    }
+    /* Bounce Animation for Floating WhatsApp */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .float-wp {
+      animation: float 3.5s ease-in-out infinite;
+    }
+    /* Custom Accordion rotating icon */
+    details[open] summary svg {
+      transform: rotate(180deg);
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-accent-light leading-relaxed">
+
+  <!-- 1. BARRA DE ANÚNCIO (topo) -->
+  <div class="bg-gradient-to-r from-navy-dark via-navy to-navy-dark text-creme text-center py-2 px-4 border-b border-gold/20 text-[11px] font-bold tracking-widest uppercase">
+    ✨ MATRÍCULAS ABERTAS • 1.400 APRENDIZADO COMPLETO • SUPORTE EXCLUSIVO • INÍCIO MARÇO 2026
+  </div>
+
+  <!-- 2. STICKY HEADER MINIMAL -->
+  <header class="bg-navy pt-5 pb-5 sticky top-0 z-40 shadow-md border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <a href="/" class="text-creme/90 hover:text-gold text-xs font-semibold tracking-wide border border-creme/20 hover:border-gold/40 px-3.5 py-1.5 rounded-full transition-all bg-creme/5 inline-flex items-center gap-1.5 shrink-0">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+          Voltar ao Portal
+        </a>
+      </div>
+      <div>
+        <a href="#precos" class="bg-gold hover:bg-gold-hover text-navy font-extrabold text-xs tracking-wider uppercase px-5 py-2.5 rounded-full transition-all duration-300 shadow-md gold-shadow">
+          Matricular-se
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. HERO SECTION (fundo navy escuro luxo) -->
+  <section class="relative bg-navy overflow-hidden pt-12 pb-20 border-b border-gold/10">
+    <!-- Círculos de luz decorativos -->
+    <div class="absolute top-1/4 right-0 w-[500px] h-[500px] bg-gold/5 rounded-full blur-3xl -mr-64 pointer-events-none"></div>
+    <div class="absolute bottom-12 left-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl -ml-40 pointer-events-none text-left"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Logo topo (FATEB) -->
+        <img src="/logofateb.webp" alt="FATEB Logo" class="max-h-24 md:max-h-32 w-auto mx-auto mb-8 object-contain transition-transform hover:scale-105 duration-300" referrerPolicy="no-referrer">
+
+        <div class="inline-flex items-center gap-2 bg-gold/10 border border-gold/30 px-3 py-1 rounded-full text-gold font-extrabold text-[10px] tracking-widest uppercase mb-6">
+          <span>🧬 Formação de Elite</span>
+          <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
+          <span>MEC Regulamentada</span>
+        </div>
+
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight leading-tight mb-6">
+          Formação em <span class="text-gold italic block sm:inline">Neuropsicanálise Clínica</span>
+        </h1>
+
+        <!-- Subtítulo em itálico -->
+        <p class="text-lg md:text-xl font-serif italic text-gold/90 mb-6 font-medium">
+          🧠 Conecte mente, cérebro e psique numa única e formidável abordagem integradora!
+        </p>
+
+        <!-- Parágrafo descritivo -->
+        <p class="text-base md:text-lg text-creme/85 max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
+          Descubra como a Neurociência se alia à Psicanálise para aprofundar de forma definitiva a compreensão dos processos mentais, emocionais e do inconsciente humano.
+        </p>
+
+        <!-- 2 Botões Lado a Lado -->
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
+          <a href="#precos" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-navy font-extrabold uppercase text-sm px-8 py-4.5 rounded-full shadow-lg gold-shadow transition-all group cursor-pointer duration-300">
+            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+            <span>QUERO ME INSCREVER AGORA</span>
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=5512991847661&text=Ol%C3%A1%21+Gostaria+de+falar+com+a+Diretora+Arleana+sobre+as+matr%C3%ADculas+para+o+curso+de+Neuropsican%C3%A1lise+Cl%C3%ADnica+da+FATEB." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#25d366] to-[#128c7e] hover:brightness-110 text-white font-extrabold uppercase text-sm px-8 py-4.5 rounded-full shadow-lg transition-all cursor-pointer duration-300">
+            <i class="w-5 h-5" style="background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;white&quot;><path d=&quot;M12.012 3c-4.96 0-9 4.004-9 8.96 0 1.568.413 3.117 1.2 4.48L3 21l4.704-1.215c1.315.713 2.808 1.127 4.308 1.127 4.96 0 9-4.004 9-8.96C21.012 7.004 17.012 3 12.012 3zm4.51 12.872c-.22.617-1.12 1.155-1.576 1.258-.458.102-.916.143-2.909-.646-2.545-1.008-4.173-3.574-4.298-3.738-.125-.164-1.014-1.327-1.014-2.531 0-1.204.621-1.796.843-2.039.223-.243.486-.305.648-.305.162 0 .324.004.466.012.146.008.344-.055.539.407.203.489.696 1.677.756 1.798.06.12.1.262.02.423-.08.162-.12.262-.24.403-.12.14-.251.314-.359.423-.122.12-.249.251-.107.491.142.24.631 1.026 1.353 1.66.932.818 1.716 1.072 1.959 1.192.243.12.384.102.527-.06.143-.162.612-.705.776-.948.164-.243.328-.201.551-.12.223.082 1.413.658 1.656.78.243.12.404.18.465.285.061.106.061.613-.159 1.23z&quot;/></svg>'); background-size: contain; background-repeat: no-repeat; display: inline-block;"></i>
+            <span>Conversar no WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Badges de credenciais -->
+        <div class="grid grid-cols-2 md:grid-cols-3 max-w-2xl mx-auto gap-4 pt-6 border-t border-creme/10 text-xs tracking-wider uppercase font-semibold text-creme-dark">
+          <div class="flex items-center justify-center gap-2 col-span-2 md:col-span-1">
+            <i data-lucide="shield-check" class="w-5 h-5 text-gold shrink-0"></i>
+            <span>🛡️ Certificação MEC</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <i data-lucide="clock" class="w-5 h-5 text-gold shrink-0"></i>
+            <span>⏱️ 1.400h Carga Horária</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <i data-lucide="award" class="w-5 h-5 text-gold shrink-0"></i>
+            <span>📜 Tripé Psicanalítico</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3.5. SEÇÃO DE VÍDEO -->
+  <section id="video-secao" class="py-16 bg-gradient-to-b from-navy to-navy-dark text-creme text-center relative z-15 border-b border-gold/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-2xl md:text-4xl font-serif text-white font-bold mb-4 tracking-tight">
+        Conheça a Metodologia FATEB
+      </h2>
+      <p class="text-sm md:text-base text-creme/70 max-w-xl mx-auto mb-10">
+        Assista ao vídeo explicativo detalhado sobre a metodologia e conheça um pouco mais sobre nosso plano pedagógico.
+      </p>
+      
+      <!-- Player YouTube embutido com borda dourada decorativa -->
+      <div class="relative max-w-3xl mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-gold/70 bg-navy">
+        <div class="aspect-video w-full">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/6_WgFl49lcA?rel=0&modestbranding=1&playsinline=1" title="Formação FATEB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      
+      <!-- Botão CTA dourado abaixo do vídeo -->
+      <div class="mt-12">
+        <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-navy font-black tracking-wide uppercase text-sm md:text-base px-10 py-5 rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all duration-300">
+          <span>🎓 QUERO FAZER MINHA MATRÍCULA AGORA</span>
+          <i data-lucide="chevron-right" class="w-5 h-5"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. REFLECTION SECTION (Provocativo, com fundo creme sutil) -->
+  <section class="py-20 bg-creme-light">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+      <div class="inline-block bg-[#dfab22]/15 text-amber-800 border border-amber-300 font-bold text-center text-[10px] tracking-widest uppercase py-1.5 px-4 rounded-full">
+        UMA NOVA PERSPECTIVA CLÍNICA
+      </div>
+
+      <h2 class="text-3xl sm:text-4xl font-serif font-black text-slate-950 leading-tight">
+        Você já pensou em aprofundar seu autoconhecimento, entender seus dilemas emocionais e, ao mesmo tempo, se tornar capaz de ajudar outras pessoas de forma integral?
+      </h2>
+
+      <p class="text-slate-600 text-lg leading-relaxed max-w-2xl mx-auto font-normal">
+        Se torne um <strong>Neuropsicanalista Clínico</strong> e amplie radicalmente as suas possibilidades na clínica prática, alcançando os recônditos cerebrais e mentais com excelência.
+      </p>
+
+      <p class="text-slate-600 text-lg leading-relaxed max-w-2xl mx-auto">
+        O Instituto FATEB está com inscrições abertas para a nova turma do curso de <strong>Neuropsicanálise Clínica</strong>, com certificação oficial de Extensão Universitária e/ou Pós-Graduação plenamente reconhecida pelo MEC!
+      </p>
+
+      <div class="p-6 bg-white rounded-3xl border border-slate-100 shadow-md max-w-xl mx-auto">
+        <p class="text-navy font-extrabold mb-3">✅ Desenvolvimento pessoal e profissional em uma só formação!</p>
+        <div class="flex items-center justify-center gap-2 text-slate-700 text-sm">
+          <i data-lucide="shield-check" class="w-4 h-4 text-gold shrink-0"></i>
+          <span>Metodologia estruturada focada no tripé formativo de excelência.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. TRIPÉ FORMATIVO (Diferenciais) -->
+  <section class="py-20 bg-[#fbf8f3] border-t border-b border-amber-100">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+        <span class="text-gold uppercase font-extrabold text-[10px] tracking-widest block">Diferencial Exclusivo</span>
+        <h2 class="text-3xl font-serif font-bold text-slate-900">O Tripé Psicanalítico</h2>
+        <p class="text-slate-600 text-xs sm:text-sm">Fidelidade teórica e rigor científico formam a base indispensável para a sua formação segura no campo de atuação clínica.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+        
+        <!-- CARD TEORIA -->
+        <div class="bg-white rounded-3xl p-8 border border-amber-200/50 shadow-md relative hover-lift">
+          <div class="absolute -top-5 left-8 w-10 h-10 bg-navy text-white rounded-xl flex items-center justify-center font-extrabold text-sm border border-gold/30">
+            01
+          </div>
+          <h4 class="text-lg font-serif font-bold text-slate-900 mt-2 mb-4">Módulo de Teoria</h4>
+          <ul class="space-y-3.5 text-xs text-slate-600">
+            <li class="flex items-start gap-2">
+              <span class="text-gold mt-1 font-bold">✓</span>
+              <span><strong>24 disciplinas</strong> integradas e multidisciplinares.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-gold mt-1 font-bold">✓</span>
+              <span><strong>48 aulas ao vivo</strong> com tutorias e mentorias personalizadas.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-gold mt-1 font-bold">✓</span>
+              <span><strong>Sala Psicanalítica:</strong> 12 temas práticos em 24 encontros mentoriais extras.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CARD ANÁLISE PESSOAL -->
+        <div class="bg-white rounded-3xl p-8 border border-amber-200/50 shadow-md relative hover-lift">
+          <div class="absolute -top-5 left-8 w-10 h-10 bg-navy text-white rounded-xl flex items-center justify-center font-extrabold text-sm border border-gold/30">
+            02
+          </div>
+          <h4 class="text-lg font-serif font-bold text-slate-900 mt-2 mb-4">Análise Pessoal</h4>
+          <ul class="space-y-3.5 text-xs text-slate-600">
+            <li class="flex items-start gap-2">
+              <span class="text-gold mt-1 font-bold">✓</span>
+              <span><strong>12 sessões de análise individual</strong> inclusas.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-gold mt-1 font-bold">✓</span>
+              <span>Realizadas com psicanalistas credenciados da instituição.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-gold mt-1 font-bold">✓</span>
+              <span>Desenvolva a estabilidade emocional e autoconhecimento exigidos.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- CARD SUPERVISÃO CLÍNICA -->
+        <div class="bg-white rounded-3xl p-8 border border-amber-200/50 shadow-md relative hover-lift">
+          <div class="absolute -top-5 left-8 w-10 h-10 bg-navy text-white rounded-xl flex items-center justify-center font-extrabold text-sm border border-gold/30">
+            03
+          </div>
+          <h4 class="text-lg font-serif font-bold text-slate-900 mt-2 mb-4">Supervisão Clínica</h4>
+          <ul class="space-y-3.5 text-xs text-slate-600">
+            <li class="flex items-start gap-2">
+              <span class="text-gold mt-1 font-bold">✓</span>
+              <span><strong>12 encontros ao vivo em grupo</strong> para condução técnica.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-gold mt-1 font-bold">✓</span>
+              <span>Mentores didatas analisando casos concretos de atendimento.</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-gold mt-1 font-bold">✓</span>
+              <span><strong>Pós-formação:</strong> Supervisão didata mensal contínua pós-conclusão.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CONTEÚDO PROGRAMÁTICO (Visualização de Disciplinas estilo Sanfona Estética) -->
+  <section class="py-20 bg-creme-light">
+    <div class="max-w-4xl mx-auto px-6">
+      
+      <div class="text-center max-w-xl mx-auto mb-12 space-y-3">
+        <span class="text-gold uppercase font-extrabold text-[10px] tracking-widest block">Estrutura Pedagógica</span>
+        <h2 class="text-3xl font-serif font-bold text-slate-900">Conteúdo Programático Completo</h2>
+        <p class="text-slate-600 text-xs sm:text-sm">Clique nos módulos para abrir e revelar os tópicos avançados de estudo fundamentados para a sua formação profissional.</p>
+      </div>
+
+      <!-- Módulos Estilizados via details -->
+      <div class="space-y-4">
+        
+        <!-- MÓDULO 1 -->
+        <details class="group bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden" open>
+          <summary class="flex justify-between items-center p-6 text-slate-950 font-serif font-bold text-sm sm:text-base cursor-pointer list-none select-none">
+            <span class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center font-sans text-xs shrink-0">I</span>
+              <span>Fundamentação e Clínica na Psicanálise</span>
+            </span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-gold transition-transform duration-300"></i>
+          </summary>
+          <div class="p-6 pt-0 border-t border-slate-50 text-slate-600 text-xs sm:text-sm space-y-3 bg-slate-50/50">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>01 – Conceitos Fundamentais na Psicanálise I e II</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>02 - Psicanálise Clínica contemporânea e a Neuropsicanálise</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>03 - História do momento Psicanalítico</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>04 - Ética na Psicanálise</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>05 - Teoria e Técnica Psicanalítica</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>06 - Diferenças entre Psicanálise, Psicologia e Psiquiatria</span>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- MÓDULO 2 -->
+        <details class="group bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+          <summary class="flex justify-between items-center p-6 text-slate-950 font-serif font-bold text-sm sm:text-base cursor-pointer list-none select-none">
+            <span class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center font-sans text-xs shrink-0">II</span>
+              <span>Anatomia Pedagógica e Intervenção de Apoio</span>
+            </span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-gold transition-transform duration-300"></i>
+          </summary>
+          <div class="p-6 pt-0 border-t border-slate-50 text-slate-600 text-xs sm:text-sm space-y-3 bg-slate-50/50">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>07 - Psicopatologias Psicanalíticas</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>08 - Tópicos avançados na Clínica Psicanalítica</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>09 - Intervenções Clínicas</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>10 - Finalização do Tratamento</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>11 - Psicanálise e as Neurociências</span>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- MÓDULO 3 -->
+        <details class="group bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+          <summary class="flex justify-between items-center p-6 text-slate-950 font-serif font-bold text-sm sm:text-base cursor-pointer list-none select-none">
+            <span class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center font-sans text-xs shrink-0">III</span>
+              <span>Especialização Integrativa em Neurociências</span>
+            </span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-gold transition-transform duration-300"></i>
+          </summary>
+          <div class="p-6 pt-0 border-t border-slate-50 text-slate-600 text-xs sm:text-sm space-y-3 bg-slate-50/50">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>12 - Neurobiologia</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>13 - Neurofisiologia e Neuroquímica</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>14 - Patologias Neurológicas</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>15 - Neurociência Somatosensorial</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>16 - Neurociência Comportamental</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>17 - Neurociência da cognição e da emoção</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>18 - Neurociência e desenvolvimento humano</span>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- MÓDULO 4 -->
+        <details class="group bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+          <summary class="flex justify-between items-center p-6 text-slate-950 font-serif font-bold text-sm sm:text-base cursor-pointer list-none select-none">
+            <span class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-full bg-gold/10 text-gold flex items-center justify-center font-sans text-xs shrink-0">IV</span>
+              <span>Clínica Aplicada, Escolas e Reabilitação</span>
+            </span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-gold transition-transform duration-300"></i>
+          </summary>
+          <div class="p-6 pt-0 border-t border-slate-50 text-slate-600 text-xs sm:text-sm space-y-3 bg-slate-50/50">
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>19 - Bases Neurológicas da psicose e da neurose: visão psicanalítica</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>20 - Neuropsicanálise da reabilitação</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>21 - Teoria Kleiniana Avançada</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>22 - Sistemas cognitivos: atenção, percepção, linguagem, funções executivas e memória.</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-gold rounded-full shrink-0"></span>
+                <span>23 - As Principais Escolas Psicoterapêuticas mundiais</span>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+      </div>
+
+      <!-- Rodapé das informações pedagógicas -->
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-between p-6 bg-[#fbf8f3] rounded-3xl border border-amber-200/50 gap-4">
+        <div class="flex items-center gap-3 text-left">
+          <div class="w-10 h-10 bg-gold/10 text-gold rounded-full flex items-center justify-center shrink-0">
+            <i data-lucide="info" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <p class="text-xs font-bold text-slate-900 uppercase">Sessões Clínicas Importantes</p>
+            <p class="text-[11px] text-slate-600 leading-relaxed">
+              Durante este período, o aluno inicia sessões de análise pessoal supervisionadas diretamente pela SOBRAPPSI.
+            </p>
+          </div>
+        </div>
+        <div class="px-5 py-2.5 bg-navy text-creme-light font-mono text-xs font-bold rounded-xl tracking-wider uppercase shrink-0 border border-gold/30 shadow">
+          ⏳ Carga horária: 1.400 horas
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. SUPER BÔNUS EXCLUSIVOS (Fundo Escuro para Destaque Nobre) -->
+  <section class="py-20 bg-navy text-white relative overflow-hidden">
+    <!-- Efeitos Visuais de Luminosidade -->
+    <div class="absolute top-1/2 left-0 w-[500px] h-[500px] bg-gold/5 rounded-full blur-3xl -ml-64 pointer-events-none"></div>
+
+    <div class="max-w-6xl mx-auto px-6 relative z-10 text-left">
+      <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+        <span class="text-gold uppercase font-extrabold text-[10px] tracking-widest block">Matrículas Abertas</span>
+        <h2 class="text-3xl font-serif font-bold text-white">Super Bônus Inclusos e Exclusivos</h2>
+        <p class="text-creme/65 text-xs sm:text-sm">Valorize sua inscrição com materiais práticos altamente relevantes de nível de mercado sem custos extras.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        
+        <!-- BÔNUS 1: KIT DE DOCUMENTOS PSICANALÍTICO -->
+        <div class="bg-navy-dark border border-gold/10 hover:border-gold/30 rounded-3xl p-8 hover-lift flex flex-col justify-between">
+          <div>
+            <div class="inline-flex items-center justify-center w-12 h-12 bg-gold/10 text-gold rounded-2xl mb-6">
+              <i data-lucide="folder-kanban" class="w-6 h-6"></i>
+            </div>
+            <h4 class="text-xl font-serif font-bold text-white mb-3">Kit de Documentos Psicanalítico Completo</h4>
+            <p class="text-creme/75 text-xs sm:text-sm leading-relaxed mb-6 font-normal">
+              Contratos de atendimento clínico, fichas de evolução de paciente, manuais de conduta ética profissional de setting, prontuários de acompanhamento, tudo estruturado para que você inicie sua clínica de forma 100% legalizada e profissional em qualquer local do Brasil.
+            </p>
+          </div>
+          <div class="flex items-center gap-1.5 text-gold font-bold text-xs uppercase tracking-wider pt-2">
+            <span>🎁 Bônus Exclusivo Liberado</span>
+          </div>
+        </div>
+
+        <!-- BÔNUS 2 (Curso Extra): MANEJO DA ANSIEDADE -->
+        <div class="bg-navy-dark border border-gold/10 hover:border-gold/30 rounded-3xl p-8 hover-lift flex flex-col justify-between">
+          <div>
+            <div class="inline-flex items-center justify-center w-12 h-12 bg-gold/10 text-gold rounded-2xl mb-6">
+              <i data-lucide="heart" class="w-6 h-6"></i>
+            </div>
+            <h4 class="text-xl font-serif font-bold text-white mb-3">Curso Extra: Manejo Clínico da Ansiedade</h4>
+            <p class="text-creme/75 text-xs sm:text-sm leading-relaxed mb-6 font-normal">
+              Capacitação complementar com foco absoluto nas demandas clínicas de ansiedade contemporâneas sob a abordagem analítica.
+            </p>
+            <div class="space-y-2 border-t border-white/5 pt-4">
+              <p class="text-[10px] uppercase font-bold tracking-wider text-gold">Módulos Inclusos:</p>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] text-creme/65 font-medium leading-relaxed">
+                <li>• 1. Introdução à Ansiedade</li>
+                <li>• 2. Formas Subjetivas da Angústia</li>
+                <li>• 3. Estudo da Obra de Freud (1926)</li>
+                <li>• 4. Abordagens Terapêuticas Clínicas</li>
+                <li>• 5. Setting e Configuração Clínica</li>
+                <li>• 6. Manifestações Contemporâneas</li>
+                <li>• 7. Ansiedade na Neurose</li>
+                <li>• 8. Compulsões, Fobias e Adicções</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex items-center gap-1.5 text-gold font-bold text-xs uppercase tracking-wider pt-4 mt-4 border-t border-white/5">
+            <span>🎁 Bônus Especial Pronto para Início</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ESPECIAL GRADE: TRATAMENTO DA DEPRESSÃO NA PSICANÁLISE -->
+      <div class="mt-10 bg-navy-dark border border-gold/15 rounded-3xl p-8 relative">
+        <div class="absolute -top-3 right-6 bg-gold text-navy text-[9px] font-black tracking-widest uppercase px-3 py-1 rounded-full">
+          Super Destaque da Turma
+        </div>
+        <div class="flex flex-col lg:flex-row items-start gap-8">
+          <div class="w-12 h-12 bg-gold/10 text-gold rounded-2xl flex items-center justify-center shrink-0">
+            <i data-lucide="brain-circuit" class="w-6 h-6"></i>
+          </div>
+          <div class="space-y-4 text-left">
+            <h4 class="text-xl font-serif font-bold text-white">Módulo Especializado: Ênfase em Manejo Clínico na Depressão</h4>
+            <p class="text-creme/75 text-xs sm:text-sm leading-relaxed max-w-4xl">
+              A depressão representa o mal do século. Esta grade exclusiva oferece ao estudante de Neuropsicanálise o preparo profissional para lidar com o transtorno, compreender causas multifatoriais e guiar diagnósticos de forma precisa através do tratamento analítico.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 pt-4 border-t border-white/5 text-xs text-creme/65 leading-relaxed">
+              <div>
+                <p class="font-bold text-gold text-[10px] tracking-wider uppercase mb-2">Parte Teórica Instrumental</p>
+                <ul class="space-y-2">
+                  <li><strong>• 1. Introdução à Psicanálise Geral:</strong> Conceitos baseados no inconsciente, defesas e ego.</li>
+                  <li><strong>• 2. Diagnóstico e Classificação (DSM-5):</strong> Identificação dos transtornos psíquicos depressivos.</li>
+                  <li><strong>• 3. Etiologia Multidimensional da Depressão:</strong> Fatores genéticos, ambientais e psicanalíticos.</li>
+                  <li><strong>• 4. Psicopatologia e Defesas Emocionais:</strong> Manifestação clínica e sintomas profundos do Ego.</li>
+                </ul>
+              </div>
+              <div>
+                <p class="font-bold text-gold text-[10px] tracking-wider uppercase mb-2">Parte Técnica Prática Aplicada</p>
+                <ul class="space-y-2">
+                  <li><strong>• 5. Tratamento Psicoterapêutico Avançado:</strong> Livre associação, interpretação, transferência.</li>
+                  <li><strong>• 6. Técnicas de Intervenção de Suporte:</strong> Análise do narcisismo estrutural e superação de luto.</li>
+                  <li><strong>• 7. Aspectos Éticos e Legais no Manejo:</strong> Tratamento clínico responsável e regulação civil.</li>
+                  <li><strong>• 8. Estudo Concreto de Casos Clínicos:</strong> Desafios reais vivenciados no divã de atendimento.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. COMO FUNCIONA O CURSO (Passo a passo, fundo escuro moderno) -->
+  <section class="py-20 bg-creme-light border-b border-slate-100">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+        <span class="text-gold uppercase font-extrabold text-[10px] tracking-widest block">Metodologia FATEB</span>
+        <h2 class="text-3xl font-serif font-bold text-slate-900">Como Funciona a formação?</h2>
+        <p class="text-slate-600 text-xs sm:text-sm">Todo o suporte e conectividade para que os seus estudos sejam eficientes, fáceis de cursar e de alta retenção.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+        
+        <div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-sm relative space-y-4">
+          <div class="w-10 h-10 bg-[#dfab22]/10 text-amber-800 rounded-full flex items-center justify-center font-extrabold text-sm">
+            1
+          </div>
+          <h5 class="font-serif font-bold text-slate-900 text-sm">Formação Completa Livre</h5>
+          <p class="text-xs text-slate-600 leading-relaxed font-normal">
+            Formação Completa de nível Profissionalizante com opção de certificação de Extensão Universitária e/ou Pós-Graduação vinculada ao MEC.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-sm relative space-y-4">
+          <div class="w-10 h-10 bg-[#dfab22]/10 text-amber-800 rounded-full flex items-center justify-center font-extrabold text-sm">
+            2
+          </div>
+          <h5 class="font-serif font-bold text-slate-900 text-sm">Pronto para Atuar</h5>
+          <p class="text-xs text-slate-600 leading-relaxed font-normal">
+            Após a conclusão oficial da formação pedagógica, você estará plenamente habilitado e apto a clinicar profissionalmente como Neuropsicanalista!
+          </p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-sm relative space-y-4">
+          <div class="w-10 h-10 bg-[#dfab22]/10 text-amber-800 rounded-full flex items-center justify-center font-extrabold text-sm">
+            3
+          </div>
+          <h5 class="font-serif font-bold text-slate-900 text-sm">Aulas ao Vivo Síncronas</h5>
+          <p class="text-xs text-slate-600 leading-relaxed font-normal">
+            <strong>8 Aulas Ao Vivo todos os meses</strong> via Zoom e YouTube privativo, com amplo espaço para esclarecimento de dúvidas e interatividades.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-sm relative space-y-4">
+          <div class="w-10 h-10 bg-[#dfab22]/10 text-amber-800 rounded-full flex items-center justify-center font-extrabold text-sm">
+            4
+          </div>
+          <h5 class="font-serif font-bold text-slate-900 text-sm">Ambiente Virtual</h5>
+          <p class="text-xs text-slate-600 leading-relaxed font-normal">
+            Acesso à plataforma virtual exclusiva de alunos, materiais didáticos de suporte em PDF, tutoriais de apoio diários e grupo de WhatsApp.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. CERTIFICADOS & CREDENCIAIS (Símbolo de Conquista Profissional) -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="space-y-8 text-center">
+        
+        <!-- Bloco de Texto Conquistas -->
+        <div class="space-y-4">
+          <span class="text-gold font-extrabold text-[10px] tracking-widest uppercase block">Início Imediato em Março/2026</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-950 leading-tight">
+            Você receberá credenciais de associado e documentação oficial completa
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed font-normal max-w-2xl mx-auto">
+            Muito além do conhecimento de nível internacional: garanta suporte institucional ativo e chancelado para que você atue com autoridade inabalável perante o mercado e seus futuros pacientes.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto text-left">
+          <div class="p-4 bg-slate-50 border border-slate-100 rounded-2xl flex items-start gap-2.5">
+            <i data-lucide="scroll" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+            <div>
+              <p class="text-xs font-bold text-slate-900 uppercase">2 Certificados FATEB</p>
+              <p class="text-[11px] text-slate-500">Curso Livre Clínico de Altíssimo Nível + Neuropsicanalista Habilitado.</p>
+            </div>
+          </div>
+          <div class="p-4 bg-slate-50 border border-slate-100 rounded-2xl flex items-start gap-2.5">
+            <i data-lucide="shield-check" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+            <div>
+              <p class="text-xs font-bold text-slate-900 uppercase font-serif">Certificação MEC</p>
+              <p class="text-[11px] text-slate-500">Opção de Extensão Universitária e/ou Pós em parceria acadêmica de prestígio.</p>
+            </div>
+          </div>
+          <div class="p-4 bg-slate-50 border border-slate-100 rounded-2xl flex items-start gap-2.5">
+            <i data-lucide="contact" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+            <div>
+              <p class="text-xs font-bold text-slate-900 uppercase">Registro SOBRAPPSI</p>
+              <p class="text-[11px] text-slate-500">Filiação de prestígio inclusa na Sociedade Brasileira de Psicanálise.</p>
+            </div>
+          </div>
+          <div class="p-4 bg-slate-50 border border-slate-100 rounded-2xl flex items-start gap-2.5">
+            <i data-lucide="layout-dashboard" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+            <div>
+              <p class="text-xs font-bold text-slate-900 uppercase">Consultório Virtual</p>
+              <p class="text-[11px] text-slate-500">Plataforma e ficha cadastral facilitada de consultório para atendimento online.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. INVESTIMENTO PROMOCIONAL COM TIMER (URGÊNCIA) -->
+  <section id="precos" class="py-20 bg-navy relative overflow-hidden text-center text-white">
+    <div class="absolute top-1/4 right-0 w-[500px] h-[500px] bg-gold/5 rounded-full blur-3xl -mr-64 pointer-events-none"></div>
+    <div class="absolute bottom-1/4 left-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl -ml-40 pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto px-6 relative z-10 space-y-12">
+      
+      <div class="space-y-4">
+        <div class="inline-block bg-gold/20 text-gold border border-gold/40 font-bold text-[10px] tracking-widest uppercase py-1 px-4 rounded-full">
+          Super Promoção de Lançamento
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white leading-tight">
+          Garanta Sua Vaga Agora com Desconto Exclusivo
+        </h2>
+        <p class="text-creme/65 text-xs sm:text-sm max-w-xl mx-auto">
+          As vagas promocionais com desconto especial na mensalidade são extremamente limitadas e fecharão em breve de forma automática.
+        </p>
+      </div>
+
+      <!-- TIMER DE CONTAGEM REGRESSIVA -->
+      <div class="max-w-xl mx-auto bg-navy-dark border border-gold/20 rounded-3xl p-6 shadow-2xl">
+        <p class="text-amber-400 text-xs font-bold tracking-widest uppercase mb-4">⌛ O cronômetro promocional está rodando:</p>
+        <div class="grid grid-cols-4 gap-3">
+          <div class="bg-navy rounded-2xl p-3 border border-white/5">
+            <span id="days" class="block text-2xl sm:text-3xl font-extrabold text-white">00</span>
+            <span class="text-[9px] uppercase tracking-wider text-creme/50">Dias</span>
+          </div>
+          <div class="bg-navy rounded-2xl p-3 border border-white/5">
+            <span id="hours" class="block text-2xl sm:text-3xl font-extrabold text-white">00</span>
+            <span class="text-[9px] uppercase tracking-wider text-creme/50">Horas</span>
+          </div>
+          <div class="bg-navy rounded-2xl p-3 border border-white/5">
+            <span id="minutes" class="block text-2xl sm:text-3xl font-extrabold text-white">00</span>
+            <span class="text-[9px] uppercase tracking-wider text-creme/50">Minutos</span>
+          </div>
+          <div class="bg-navy rounded-2xl p-3 border border-white/5">
+            <span id="seconds" class="block text-2xl sm:text-3xl font-extrabold text-white">00</span>
+            <span class="text-[9px] uppercase tracking-wider text-creme/50">Segundos</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARTÃO DE PREÇO NOBRE -->
+      <div class="max-w-lg mx-auto bg-creme rounded-3xl p-8 text-slate-900 border-2 border-gold relative shadow-2xl hover-lift">
+        
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold text-navy font-black text-[10px] tracking-widest uppercase py-1 px-5 rounded-full shadow-md">
+          RECONHECIDO E CHANCELADO
+        </div>
+
+        <div class="space-y-2 mt-4 text-center">
+          <h5 class="text-[#111a2e] font-serif font-black text-xl mb-1">Formação em Neuropsicanálise Clínica</h5>
+          <p class="text-slate-500 text-xs">Inclui suporte individualizado, análise pessoal e kits de bônus exclusivos.</p>
+        </div>
+
+        <!-- Preços -->
+        <div class="my-8 text-center space-y-2 bg-[#f4ebd9]/30 border border-[#e2d5bd] rounded-2xl py-6 px-4">
+          <p class="text-[#111a2e]/50 line-through text-xs font-bold">De 12x de R$ 299,90</p>
+          <p class="text-xs uppercase text-slate-500 font-extrabold tracking-widest">Apenas Hoje e Exclusivo</p>
+          <div class="flex items-center justify-center gap-1">
+            <span class="text-[#111a2e] font-bold text-sm">12x de</span>
+            <span class="text-[#111a2e] font-black text-4xl leading-none">R$ 160,00</span>
+          </div>
+          <p class="text-[10px] uppercase text-green-700 tracking-wider font-extrabold">Sem juros no cartão de crédito</p>
+        </div>
+
+        <!-- Botão Principal Checkout -->
+        <div class="space-y-4">
+          <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="w-full bg-gold hover:bg-gold-hover text-navy font-black text-sm tracking-widest uppercase py-4.5 px-6 rounded-2xl shadow-lg transition-all duration-300 transform inline-flex items-center justify-center gap-1.5 border border-gold-dark/20 gold-shadow">
+            <span>Iniciar Matrícula Criptografada</span>
+            <i data-lucide="shield-check" class="w-4.5 h-4.5 text-navy"></i>
+          </a>
+          
+          <div class="flex items-center justify-center gap-4 text-slate-500 text-[10px] tracking-wide font-medium">
+            <span class="flex items-center gap-1">
+              <i data-lucide="lock" class="w-3.5 h-3.5 text-green-600"></i>
+              Portal 100% Seguro
+            </span>
+            <span class="flex items-center gap-1">
+              <i data-lucide="check-circle" class="w-3.5 h-3.5 text-green-600"></i>
+              Acesso Imediato
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="text-[11px] text-creme/45">
+        ⚠️ Vagas limitadas para controle acadêmico prioritário. Seus dados estão plenamente protegidos pela LGPD.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- 11. FAQ SECTION (Perguntas Frequentes) -->
+  <section class="py-20 bg-accent-light">
+    <div class="max-w-4xl mx-auto px-6">
+      
+      <div class="text-center max-w-xl mx-auto mb-16 space-y-3">
+        <span class="text-gold uppercase font-extrabold text-[10px] tracking-widest block">Dúvidas Clínicas</span>
+        <h2 class="text-3xl font-serif font-bold text-slate-900">Perguntas Frequentes</h2>
+        <p class="text-slate-600 text-xs sm:text-sm">Confira as principais dúvidas levantadas por novos alunos de Neuropsicanálise de todo o Brasil.</p>
+      </div>
+
+      <div class="space-y-4 text-left">
+        
+        <details class="group bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+          <summary class="flex justify-between items-center p-6 text-slate-950 font-serif font-bold text-sm sm:text-base cursor-pointer list-none select-none">
+            <span>O curso possui reconhecimento legal no Brasil?</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-gold transition-transform duration-300"></i>
+          </summary>
+          <div class="p-6 pt-0 border-t border-slate-50 text-slate-600 text-xs sm:text-sm bg-slate-50/50">
+            Sim! O curso de Neuropsicanálise Clínica do Instituto FATEB possui opção de duplo certificado, atuando no modelo de Curso Livre de qualificação profissional avançada e chancelado em conformidade com as diretrizes de Extensão Universitária ou Especialização Pós-Graduação reconhecida pelo MEC.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+          <summary class="flex justify-between items-center p-6 text-slate-950 font-serif font-bold text-sm sm:text-base cursor-pointer list-none select-none">
+            <span>Quem pode se matricular na formação?</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-gold transition-transform duration-300"></i>
+          </summary>
+          <div class="p-6 pt-0 border-t border-slate-50 text-slate-600 text-xs sm:text-sm bg-slate-50/50">
+            A formação está aberta a graduados de qualquer área de atuação (psicólogos, médicos, teólogos, líderes, assistentes sociais, gestores) e também pessoas interessadas no profundo autoconhecimento psíquico e reestruturação de carreira de acolhimento.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+          <summary class="flex justify-between items-center p-6 text-slate-950 font-serif font-bold text-sm sm:text-base cursor-pointer list-none select-none">
+            <span>Como ocorrem as aulas práticas e o tripé?</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-gold transition-transform duration-300"></i>
+          </summary>
+          <div class="p-6 pt-0 border-t border-slate-50 text-slate-600 text-xs sm:text-sm bg-slate-50/50">
+            A Teoria é transmitida de forma síncrona com encontros online ao vivo (que ficam gravados para revisão posterior na plataforma). A Análise pessoal e a Supervisão começam após a metade teórica do curso conduzidas de forma estruturada e em horários flexíveis juntamente à SOBRAPPSI.
+          </div>
+        </details>
+
+        <details class="group bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+          <summary class="flex justify-between items-center p-6 text-slate-950 font-serif font-bold text-sm sm:text-base cursor-pointer list-none select-none">
+            <span>Quais certificados recebo ao finalizar?</span>
+            <i data-lucide="chevron-down" class="w-4 h-4 text-gold transition-transform duration-300"></i>
+          </summary>
+          <div class="p-6 pt-0 border-t border-slate-50 text-slate-600 text-xs sm:text-sm bg-slate-50/50">
+            Você receberá o Certificado de Formação em Neuropsicanálise Clínica de 1.400 horas, o Registro Profissional de Associado Técnico Creditado emitido pela SOBRAPPSI, e o diploma acadêmico de Pós ou Extensão emitido por entidade universitária parceira devidamente reconhecida perante o MEC.
+          </div>
+        </details>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 12. RODAPÉ (Padrão Unificado) -->
+  <footer class="bg-navy-dark text-creme/65 py-16 border-t border-gold/10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10 text-left">
+      <!-- Col 1 -->
+      <div>
+        <span class="text-gold text-2xl font-serif font-extrabold tracking-widest uppercase block mb-4">FATEB</span>
+        <p class="text-xs leading-relaxed max-w-sm mb-4">
+          FATEB Instituto de Formação Acadêmica — Dedicado ao cuidado íntegro intelectual, promovendo formações de excelência e especializações profissionais baseadas em rigor acadêmico, amparo legal e alta aplicabilidade prática.
+        </p>
+        <p class="text-[10px] text-creme/45">
+          📍 FATEB Educacional — CNPJ: 07.828.118/0001-38
+        </p>
+      </div>
+
+      <!-- Col 2 -->
+      <div>
+        <h6 class="text-white font-serif font-bold tracking-wide mb-4 text-sm uppercase">Fale Conosco</h6>
+        <ul class="space-y-3 text-xs">
+          <li class="flex items-center gap-2">
+            <i data-lucide="phone" class="w-3.5 h-3.5 text-gold shrink-0"></i>
+            <span>(12) 99184-7661</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i data-lucide="mail" class="w-3.5 h-3.5 text-gold shrink-0"></i>
+            <span>suporte@fatebeducacional.com.br</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-gold shrink-0"></i>
+            <span>Atendimento síncrono online nacional</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div>
+        <h6 class="text-white font-serif font-bold tracking-wide mb-4 text-sm uppercase">Secretaria Acadêmica</h6>
+        <p class="text-xs leading-relaxed max-w-sm mb-4">
+          Faça sua matrícula diretamente no terminal unificado de admissões de forma criptografada e segura:
+        </p>
+        <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-gold hover:text-white font-bold text-xs tracking-wider transition uppercase">
+          <span>Acessar portal admissional</span>
+          <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-creme/10 text-center text-[10px] tracking-wide">
+      <p>© 2026 FATEB — Todos os direitos reservados. CNPJ: 07.828.118/0001-38</p>
+    </div>
+  </footer>
+
+  <!-- 13. BOTÃO FLUTUANTE WHATSAPP (Acelera atração e matrículas) -->
+  <a href="https://api.whatsapp.com/send/?phone=5512991847661&text=Ol%C3%A1%21+Gostaria+de+falar+com+a+Diretora+Arleana+sobre+as+matr%C3%ADculas+para+o+curso+de+Neuropsican%C3%A1lise+Cl%C3%ADnica+da+FATEB." target="_blank" rel="noopener noreferrer" class="float-wp fixed bottom-6 right-6 bg-[#25d366] hover:bg-[#20ba5a] text-white p-4 rounded-full shadow-2xl z-50 transition-transform duration-300 hover:scale-110 flex items-center justify-center border-2 border-white/20" title="Falar Conosco">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+  </a>
+
+  <!-- 14. SCRIPTS GERAIS (Inicia Lucide e Timer Regressivo) -->
+  <script>
+    // Inicializar Ícones
+    lucide.createIcons();
+
+    // Cronômetro Regressivo Único com Urgência Inteligente
+    function startCountdown() {
+      let targetDate = localStorage.getItem('fateb_countdown_target_neuropsicanalise');
+      if (!targetDate) {
+        // config 7 dias a partir do carregamento
+        targetDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000);
+        localStorage.setItem('fateb_countdown_target_neuropsicanalise', targetDate);
+      } else {
+        targetDate = parseInt(targetDate);
+      }
+
+      function updateTimer() {
+        const now = new Date().getTime();
+        let difference = targetDate - now;
+
+        // Se o contador expirou, reinicia a contagem (outros 7 dias) por razões de marketing
+        if (difference < 0) {
+          const sevenDaysFromNow = now + (7 * 24 * 60 * 60 * 1000);
+          localStorage.setItem('fateb_countdown_target_neuropsicanalise', sevenDaysFromNow);
+          difference = sevenDaysFromNow - now;
+        }
+
+        const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((difference % (1000 * 60)) / 1000);
+
+        document.getElementById('days').innerText = String(d).padStart(2, '0');
+        document.getElementById('hours').innerText = String(h).padStart(2, '0');
+        document.getElementById('minutes').innerText = String(m).padStart(2, '0');
+        document.getElementById('seconds').innerText = String(s).padStart(2, '0');
+      }
+
+      updateTimer();
+      setInterval(updateTimer, 1000);
+    }
+
+    startCountdown();
+  </script>
+</body>
+</html>

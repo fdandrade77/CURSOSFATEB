@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Psicanálise na Abordagem Cristã — FATEB</title>
+  <meta name="description" content="Aperfeiçoe sua vocação e torne-se um Psicanalista Cristão qualificado. Grade abrangente, dupla certificação e reconhecimento MEC.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Psicanálise na Abordagem Cristã — FATEB">
+  <meta property="og:description" content="Curso de Extensão Universitária ou Pós-Graduação reconhecido pelo MEC. Formação de Psicanalista Cristão + Bônus de Teologia.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/psicrista.jpeg">
+
+  <!-- Inter and Playfair Display Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              DEFAULT: '#1a2744',
+              light: '#24355a',
+              dark: '#111a2e',
+            },
+            gold: {
+              DEFAULT: '#c9a84c',
+              hover: '#e2c06a',
+              dark: '#a88835',
+            },
+            creme: {
+              DEFAULT: '#f5f0e8',
+              light: '#fcfbfa',
+              dark: '#e9e1d3',
+            },
+            accent: {
+              light: '#f8f7f4',
+              dark: '#f1ede5',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .custom-shadow {
+      box-shadow: 0 10px 30px -10px rgba(26, 39, 68, 0.12);
+    }
+    .gold-shadow {
+      box-shadow: 0 8px 24px -6px rgba(201, 168, 76, 0.35);
+    }
+    /* Animação Float para o WhatsApp */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    .float-wp {
+      animation: float 4s ease-in-out infinite;
+    }
+    /* Custom Accordion rotating icon */
+    details[open] summary svg {
+      transform: rotate(180deg);
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-accent-light leading-relaxed">
+
+  <!-- 1. BARRA DE ANÚNCIO (topo) -->
+  <div id="announcement-bar" class="bg-navy-dark text-creme-dark text-xs font-bold uppercase tracking-wider py-2.5 px-4 text-center border-b border-gold/10">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+      <span>⚡ MATRÍCULAS ABERTAS — Vagas limitadas para a nova turma de Fevereiro/2026</span>
+    </div>
+  </div>
+
+  <!-- Sticky Minimal Header -->
+  <header class="bg-navy pt-5 pb-5 sticky top-0 z-40 shadow-md border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center flex-wrap gap-4">
+      <div class="flex items-center gap-3">
+        <a href="/" class="text-creme/90 hover:text-gold text-xs font-semibold tracking-wide border border-creme/20 hover:border-gold/40 px-3.5 py-1.5 rounded-full transition-all bg-creme/5 inline-flex items-center gap-1.5 shrink-0">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+          Voltar ao Portal
+        </a>
+      </div>
+      <div>
+        <a href="#precos" class="bg-gold hover:bg-gold-hover text-navy font-extrabold text-xs tracking-wider uppercase px-5 py-2.5 rounded-full transition-all duration-300 shadow-md gold-shadow">
+          Matricular-se
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. HERO SECTION (fundo navy escuro luxo) -->
+  <section class="relative bg-navy overflow-hidden pt-12 pb-20 border-b border-gold/10 text-center text-white">
+    <!-- Círculos de luz decorativos -->
+    <div class="absolute top-1/4 right-0 w-[500px] h-[500px] bg-gold/5 rounded-full blur-3xl -mr-64 pointer-events-none"></div>
+    <div class="absolute bottom-12 left-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl -ml-40 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Logo topo (FATEB) -->
+        <img src="/logofateb.webp" alt="FATEB Logo" class="max-h-24 md:max-h-32 w-auto mx-auto mb-8 object-contain transition-transform hover:scale-105 duration-300" referrerPolicy="no-referrer">
+
+        <div class="inline-flex items-center gap-2 bg-gold/10 border border-gold/30 px-3 py-1 rounded-full text-gold font-extrabold text-[10px] tracking-widest uppercase mb-6">
+          <span>✝️ Formação de Propósito</span>
+          <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
+          <span>Amparo Teológico e Clínico</span>
+        </div>
+
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight leading-tight mb-6">
+          Psicanálise na <span class="text-gold italic block sm:inline">Abordagem Cristã</span>
+        </h1>
+
+        <!-- Subtítulo em itálico -->
+        <p class="text-lg md:text-xl font-serif italic text-gold/90 mb-6 font-medium">
+          2026 já chegou trazendo uma promoção incrível! Aproveite nossa nova turma e se torne um Psicanalista Cristão.
+        </p>
+
+        <!-- Parágrafo descritivo -->
+        <p class="text-base md:text-lg text-creme/85 max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
+          Uma formação completa para quem deseja atuar com propósito, fé e excelência no cuidado emocional e espiritual de pessoas, integrando a Psicanálise clássica com a fundamentação bíblica cristã.
+        </p>
+
+        <!-- 2 Botões Lado a Lado -->
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
+          <a href="#precos" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-navy font-extrabold uppercase text-sm px-8 py-4.5 rounded-full shadow-lg gold-shadow transition-all group cursor-pointer duration-300">
+            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+            <span>QUERO ME INSCREVER AGORA</span>
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=5512991847661&text=Ol%C3%A1%21+Gostaria+de+falar+com+a+Diretora+Arleana+sobre+as+matr%C3%ADculas+para+o+curso+de+Psican%C3%A1lise+na+Abordagem+Crist%C3%A3+da+FATEB." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#25d366] to-[#128c7e] hover:brightness-110 text-white font-extrabold uppercase text-sm px-8 py-4.5 rounded-full shadow-lg transition-all cursor-pointer duration-300">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.012 3c-4.96 0-9 4.004-9 8.96 0 1.568.413 3.117 1.2 4.48L3 21l4.704-1.215c1.315.713 2.808 1.127 4.308 1.127 4.96 0 9-4.004 9-8.96C21.012 7.004 17.012 3 12.012 3zm4.51 12.872c-.22.617-1.12 1.155-1.576 1.258-.458.102-.916.143-2.909-.646-2.545-1.008-4.173-3.574-4.298-3.738-.125-.164-1.014-1.327-1.014-2.531 0-1.204.621-1.796.843-2.039.223-.243.486-.305.648-.305.162 0 .324.004.466.012.146.008.344-.055.539.407.203.489.696 1.677.756 1.798.06.12.1.262.02.423-.08.162-.12.262-.24.403-.12.14-.251.314-.359.423-.122.12-.249.251-.107.491.142.24.631 1.026 1.353 1.66.932.818 1.716 1.072 1.959 1.192.243.12.384.102.527-.06.143-.162.612-.705.776-.948.164-.243.328-.201.551-.12.223.082 1.413.658 1.656.78.243.12.404.18.465.285.061.106.061.613-.159 1.23z"/></svg>
+            <span>Conversar no WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Badges de credenciais -->
+        <div class="grid grid-cols-2 md:grid-cols-3 max-w-2xl mx-auto gap-4 pt-6 border-t border-creme/10 text-xs tracking-wider uppercase font-semibold text-creme-dark">
+          <div class="flex items-center justify-center gap-2 col-span-2 md:col-span-1">
+            <i data-lucide="shield-check" class="w-5 h-5 text-gold shrink-0"></i>
+            <span>📜 MEC & Internacional</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <i data-lucide="clock" class="w-5 h-5 text-gold shrink-0"></i>
+            <span>⏱️ 1.440h de Carga Total</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <i data-lucide="award" class="w-5 h-5 text-gold shrink-0"></i>
+            <span>📚 Teologia + Clínica</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3.5. SEÇÃO DE VÍDEO -->
+  <section id="video-secao" class="py-16 bg-gradient-to-b from-navy to-navy-dark text-creme text-center relative z-15 border-b border-gold/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-serif text-white font-bold mb-4 tracking-tight">
+        Conheça a Metodologia FATEB
+      </h2>
+      <p class="text-sm md:text-base text-creme/70 max-w-xl mx-auto mb-10">
+        Assista ao vídeo explicativo detalhado sobre a metodologia e conheça um pouco mais sobre nosso plano pedagógico.
+      </p>
+      
+      <!-- Player YouTube embutido com borda dourada decorativa -->
+      <div class="relative max-w-3xl mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-gold/70 bg-navy">
+        <div class="aspect-video w-full">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/6_WgFl49lcA?rel=0&modestbranding=1&playsinline=1" title="Formação FATEB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      
+      <!-- Botão CTA dourado abaixo do vídeo -->
+      <div class="mt-12">
+        <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-navy font-black tracking-wide uppercase text-sm md:text-base px-10 py-5 rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all duration-300">
+          <span>🎓 QUERO FAZER MINHA MATRÍCULA AGORA</span>
+          <i data-lucide="chevron-right" class="w-5 h-5"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. REFLECTION SECTION (Provocativo, com fundo creme sutil) -->
+  <section class="py-16 bg-creme border-b border-amber-100">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="bg-white border border-amber-200/60 rounded-3xl p-8 md:p-12 text-center shadow-xl relative overflow-hidden">
+        <div class="absolute -top-12 -left-12 w-24 h-24 bg-gold/5 rounded-full pointer-events-none"></div>
+        <div class="absolute -bottom-12 -right-12 w-24 h-24 bg-gold/5 rounded-full pointer-events-none"></div>
+        
+        <span class="text-[10px] tracking-[0.2em] font-extrabold text-gold uppercase block mb-4">OBJETIVO DA FORMAÇÃO</span>
+        <h3 class="text-xl md:text-3xl font-serif text-navy font-extrabold mb-6 leading-tight">
+          Capacitar psicanalistas, líderes e conselheiros cristãos com excelência clínica
+        </h3>
+        <p class="text-slate-700 text-sm md:text-base leading-relaxed max-w-3xl mx-auto mb-8 font-normal">
+          Desejamos preparar você para atuar com responsabilidade, sensibilidade espiritual e técnica na prevenção, acolhimento e tratamento de transtornos emocionais e dores existenciais — tanto no ambiente da igreja local quanto de forma profissional em clínicas especializadas.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-3 text-xs font-semibold text-navy">
+          <span class="bg-accent-light border border-amber-100 px-4 py-2.5 rounded-full shadow-sm flex items-center gap-1.5">
+            <i data-lucide="laptop" class="w-4 h-4 text-gold"></i>
+            100% Online
+          </span>
+          <span class="bg-accent-light border border-amber-100 px-4 py-2.5 rounded-full shadow-sm flex items-center gap-1.5">
+            <i data-lucide="video" class="w-4 h-4 text-gold"></i>
+            Aulas Semanais Ao Vivo
+          </span>
+          <span class="bg-accent-light border border-amber-100 px-4 py-2.5 rounded-full shadow-sm flex items-center gap-1.5">
+            <i data-lucide="globe-2" class="w-4 h-4 text-gold"></i>
+            Certificação Nacional e Internacional
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CURSO DA MODALIDADE -->
+  <section class="py-20 bg-accent-light">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest block">Nível de Certificação</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy mt-2 mb-4 leading-tight">
+          Estrutura Acadêmica para todos os Níveis
+        </h2>
+        <p class="text-slate-600 max-w-xl mx-auto text-sm md:text-base">
+          Oferecemos caminhos transparentes e regulamentados pelo MEC para adequar à sua formação prévia.
+        </p>
+        <div class="h-1 w-20 bg-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Extensão -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-100 custom-shadow flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-navy/5 text-navy-dark rounded-full flex items-center justify-center text-xl mb-6">🎓</div>
+            <h3 class="font-serif font-bold text-navy text-xl mb-3">Extensão Universitária</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6 font-normal">
+              Destinada a pessoas que possuem o <strong>Ensino Médio completo</strong>. Ao finalizar, confere o amparado certificado de extensão em nível universitário reconhecido legalmente para o exercício livre profissional da atividade de Psicanalista Cristão.
+            </p>
+          </div>
+          <span class="text-[10px] uppercase font-bold tracking-wider text-gold flex items-center gap-1 border-t border-slate-100 pt-4">
+            <i data-lucide="check-circle-2" class="w-4 h-4"></i> Certificação Universitária Secundária
+          </span>
+        </div>
+
+        <!-- Pós-graduação -->
+        <div class="bg-white rounded-3xl p-8 border border-slate-100 custom-shadow flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-navy/5 text-navy-dark rounded-full flex items-center justify-center text-xl mb-6">📜</div>
+            <h3 class="font-serif font-bold text-navy text-xl mb-3">Pós-Graduação Lato Sensu</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6 font-normal">
+              Direcionada a graduados que possuem **qualquer diploma de Curso Superior completo** (inclusive tecnólogos e bacharelados de outras áreas). Ao finalizar, confere o diploma e certidão oficial e legalizado de Especialista registrada pelo MEC.
+            </p>
+          </div>
+          <span class="text-[10px] uppercase font-bold tracking-wider text-gold flex items-center gap-1 border-t border-slate-100 pt-4">
+            <i data-lucide="check-circle-2" class="w-4 h-4"></i> Título de Especialista Reconhecido Pelo MEC
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. PROGRAMA COMPLETO DOS MÓDULOS -->
+  <section id="programa" class="py-20 bg-creme-light border-y border-amber-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest block">Sólida Grade Pedagógica</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy mt-2 mb-4 leading-tight">
+          Estrutura Pedagógica Completa
+        </h2>
+        <p class="text-slate-600 max-w-2xl mx-auto text-sm md:text-base">
+          Uma grade completa, densa e transformadora dividida em dois núcleos temáticos principais e a parte de aplicação prática ativa.
+        </p>
+        <div class="h-1 w-20 bg-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <!-- MÓDULO 1 -->
+      <div class="mb-16">
+        <div class="flex items-center gap-3 mb-8 border-b border-navy/10 pb-4">
+          <span class="text-2xl">📋</span>
+          <div class="text-left">
+            <span class="text-gold text-[10px] uppercase tracking-widest font-black block">Primeiro Núcleo Teórico</span>
+            <h3 class="font-serif font-bold text-navy text-xl md:text-2xl">MÓDULO 1 – PSICANALISE NA ABORDAGEM CRISTÃ (720h)</h3>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Disciplinas -->
+          <div class="bg-white p-5 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+            <div class="w-10 h-8 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded text-xs shrink-0">01</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy text-sm leading-snug mb-1">Demandas Eclesiásticas</h4>
+              <p class="text-slate-500 text-[11px]">As dores profundas da alma espiritualizadas e seus claros reflexos psicossomáticos no corpo físico.</p>
+            </div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+            <div class="w-10 h-8 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded text-xs shrink-0">02</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy text-sm leading-snug mb-1">Psicoteologia</h4>
+              <p class="text-slate-500 text-[11px]">O fecundo e respeitoso diálogo de integração mútua entre Teologia Bíblica e teorias de Psicologia.</p>
+            </div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+            <div class="w-10 h-8 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded text-xs shrink-0">03</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy text-sm leading-snug mb-1">Aconselhamento Cristão e Terapêutico</h4>
+              <p class="text-slate-500 text-[11px]">Metodologia direcionada de escuta, amparo compassivo e orientação terapêutica clínica cristã.</p>
+            </div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+            <div class="w-10 h-8 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded text-xs shrink-0">04</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy text-sm leading-snug mb-1">Psicologia Pastoral e Ministerial</h4>
+              <p class="text-slate-500 text-[11px]">Análise e amparo psicológico aplicados aos desafios e dinâmicas do líder eclesiástico.</p>
+            </div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+            <div class="w-10 h-8 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded text-xs shrink-0">05</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy text-sm leading-snug mb-1">Manejo Bíblico na Terapia</h4>
+              <p class="text-slate-500 text-[11px]">Uso ético, sensível, oportuno e fortalecedor de passagens bíblicas nas sessões clínicas.</p>
+            </div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+            <div class="w-10 h-8 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded text-xs shrink-0">06</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy text-sm leading-snug mb-1">Neurociência do Sono</h4>
+              <p class="text-slate-500 text-[11px]">Mapeamento neurobiológico do repouso e técnicas avançadas para contenção de insônias severas.</p>
+            </div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+            <div class="w-10 h-8 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded text-xs shrink-0">07</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy text-sm leading-snug mb-1">Terapia Clínica do Luto e Melancolia</h4>
+              <p class="text-slate-500 text-[11px]">Amparo qualificado na dor da perda, luto patológico, melancolia crônica e tanatologia.</p>
+            </div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+            <div class="w-10 h-8 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded text-xs shrink-0">08</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy text-sm leading-snug mb-1">Ansiedade, Estresse e Depressão</h4>
+              <p class="text-slate-500 text-[11px]">Abordagem científica e clínica no diagnóstico e tratamento dos transtornos mais recorrentes.</p>
+            </div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+            <div class="w-10 h-8 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded text-xs shrink-0">09</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy text-sm leading-snug mb-1">Prevenção e Tratamento do Suicídio</h4>
+              <p class="text-slate-500 text-[11px]">Protocolos rápidos de mitigação de crises, triagem e intervenção imediatas na ideação suicida.</p>
+            </div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+            <div class="w-10 h-8 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded text-xs shrink-0">10</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy text-sm leading-snug mb-1">Terapia da Dependência Química</h4>
+              <p class="text-slate-500 text-[11px]">Tratamentos terapêuticos e estruturas de apoio comunitário para a libertação viciosa de fumo, álcool e drogas.</p>
+            </div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+            <div class="w-10 h-8 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded text-xs shrink-0">11</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy text-sm leading-snug mb-1">Traumas, Fobias, Medos e Complexos</h4>
+              <p class="text-slate-500 text-[11px]">Aprofundamento na quebra de complexos de inferioridade, fobias crônicas de rotina e reprogramação.</p>
+            </div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+            <div class="w-10 h-8 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded text-xs shrink-0">12</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy text-sm leading-snug mb-1">Terapia com Casais e Família</h4>
+              <p class="text-slate-500 text-[11px]">Reconciliação e alinhamento familiar com base na paciência, harmonia e perdão espiritual.</p>
+            </div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+            <div class="w-10 h-8 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded text-xs shrink-0">13</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy text-sm leading-snug mb-1">Terapia com Crianças e Adolescentes</h4>
+              <p class="text-slate-500 text-[11px]">Aplicação sutil de metodologia lúdica de apoio na infância sob proteção moral bíblica.</p>
+            </div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+            <div class="w-10 h-8 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded text-xs shrink-0">14</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy text-sm leading-snug mb-1">Terapia com Adultos e Idosos</h4>
+              <p class="text-slate-500 text-[11px]">Acompanhamento da senilidade, solidão de faixas etárias avançadas e integridades físicas.</p>
+            </div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+            <div class="w-10 h-8 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded text-xs shrink-0">15</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy text-sm leading-snug mb-1">Ética Eclesiástica e Terapêutica</h4>
+              <p class="text-slate-500 text-[11px]">Limites éticos profissionais de sigilo de confissão de consultório aplicados à liderança.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUPER BÔNUS EXCLUSIVO DE TEOLOGIA -->
+      <div class="mb-16">
+        <div class="flex items-center gap-3 mb-8 border-b border-gold/40 pb-4">
+          <span class="text-2xl">✝️</span>
+          <div class="text-left">
+            <span class="text-gold text-[10px] uppercase tracking-widest font-black block">Super Bônus Adicional Gratuito</span>
+            <h3 class="font-serif font-bold text-navy text-xl md:text-2xl">FORMAÇÃO TEOLÓGICA NÍVEL BÁSICO (720h)</h3>
+          </div>
+        </div>
+
+        <div class="bg-white border-2 border-gold/20 rounded-3xl p-6 md:p-10 shadow-lg mb-8">
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-3.5 mb-8 text-xs font-medium text-slate-700">
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 1. Introdução à Teologia</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 2. Bibliologia</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 3. Doutrina de Deus</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 4. Doutrina de Cristo</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 5. Doutrina do Espírito Santo</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 6. Doutrina dos Anjos</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 7. Doutrina da Salvação</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 8. Doutrina do Pecado</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 9. Escatologia</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 10. Novo Testamento</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 11. Antigo Testamento</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 12. Livros Históricos</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 13. Pentateuco</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 14. Antropologia Bíblica</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 15. Geografia Bíblica</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 16. Hermenêutica Bíblica</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 17. Homilética</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 18. História da Igreja</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 19. Português Instrumental</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 20. Administração Eclesiástica</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 21. Missões e Evangelismo</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 22. Eclesiologia</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 23. Seitas e Heresias</div>
+            <div class="flex items-center gap-2"><div class="w-2 h-2 rounded-full bg-gold"></div> 24. Aconselhamento Cristão</div>
+          </div>
+
+          <div class="bg-accent-light rounded-2xl p-6 border border-gold/10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div class="space-y-1 text-left">
+              <p class="font-serif font-black text-navy text-sm md:text-base">Módulo Teológico Totalmente Incluso</p>
+              <p class="text-xs text-slate-500">Aulas e conteúdos prontos para fundamentar a bagagem eclesiástica dogmática.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4 text-xs font-bold text-navy text-left shrink-0">
+              <div class="flex items-center gap-1.5">✓ Certificado Oficial Impresso</div>
+              <div class="flex items-center gap-1.5">✓ 48 Vídeo-aulas Gravadas</div>
+              <div class="flex items-center gap-1.5">✓ 36 Slides Completos PDF</div>
+              <div class="flex items-center gap-1.5 text-gold-dark">✓ Carga adicional de 720h</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MÓDULO 3 -->
+      <div class="mb-8">
+        <div class="flex items-center gap-3 mb-8 border-b border-navy/10 pb-4">
+          <span class="text-2xl">✨</span>
+          <div class="text-left">
+            <span class="text-gold text-[10px] uppercase tracking-widest font-black block">Núcleo Dinâmico Prático</span>
+            <h3 class="font-serif font-bold text-navy text-xl md:text-2xl">MÓDULO 3 – PRÁTICA PSICANALÍTICA CRISTÃ (Aulas Gravadas)</h3>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-tr from-navy to-navy-dark text-white rounded-3xl p-6 md:p-10 shadow-xl border border-gold/20">
+          <p class="text-creme/80 text-xs md:text-sm mb-6 leading-relaxed max-w-3xl text-left">
+            Assista a uma série de aulas intensivas aplicadas com simulações reais de atendimento prático e clínico em diversas ramificações do cotidiano terapêutico.
+          </p>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs font-semibold text-creme-dark text-left">
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Prática Terapêutica e Aconselhamento Cristão</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Intervenções contra o Suicídio</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Terapia para Traumas, Fobias e Medos</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Terapia da Ansiedade</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Terapia da Insônia</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Terapia do Luto</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Terapia para Depressão</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Elaboração de Fichas de Atendimento e Planejamento</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Práticas de Acolhimento e suas reflexões</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Anamnese, Testes de Alinhamento e Acompanhamento</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Entrevista de Ajuda</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Manejo prático com Crianças e Adolescentes</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Prática focada com Casais e Famílias</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Intervenções Terapêuticas Eclesiásticas</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Terapia de Atendimento Breve</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Terapia com Jovens e Adultos</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Ferramentas de Realinhamento Emocional</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Tratamento da Dependência Química</div>
+            <div class="flex items-center gap-2"><span class="text-gold">✔</span> Atendimento Terapêutico Presencial e Online</div>
+          </div>
+
+          <div class="mt-8 pt-6 border-t border-white/10 text-center md:text-left flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2.5">
+              <span class="text-2xl">🎁</span>
+              <div class="text-left">
+                <p class="text-xs font-black text-gold uppercase tracking-widest">SUPER BÔNUS SURPRESA</p>
+                <p class="text-[11px] text-creme/70">Ferramentas Terapêuticas Exclusivas prontas para aplicar em sua clínica.</p>
+              </div>
+            </div>
+            <span class="bg-gold text-navy font-bold uppercase text-[10px] tracking-widest py-1.5 px-3 rounded shrink-0">Totalmente Grátis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. CERTIFICADOS & CREDENCIAIS (Símbolo de Conquista Profissional) -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="space-y-8 text-center">
+        
+        <!-- Bloco de Texto Conquistas -->
+        <div class="space-y-4">
+          <span class="text-gold font-extrabold text-[10px] tracking-widest uppercase block">Matrículas Especiais Março/2026</span>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-slate-950 leading-tight">
+            Você receberá um passaporte de credenciamento oficial completo para o mercado
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed font-normal max-w-2xl mx-auto">
+            Atue com absoluta legitimidade e autoridade espiritual e legal. Ao concluir o curso, garantimos a você o suporte acadêmico e institucional completo da FATEB e o kit de associado.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto text-left">
+          <div class="p-4 bg-slate-50 border border-slate-100 rounded-2xl flex items-start gap-2.5">
+            <i data-lucide="scroll" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+            <div>
+              <p class="text-xs font-bold text-slate-900 uppercase">Certificado Reconhecido pelo MEC (520h)</p>
+              <p class="text-[11px] text-slate-500">Validade acadêmica oficial universitária amparada nacionalmente.</p>
+            </div>
+          </div>
+          <div class="p-4 bg-slate-50 border border-slate-100 rounded-2xl flex items-start gap-2.5">
+            <i data-lucide="badge-check" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+            <div>
+              <p class="text-xs font-bold text-slate-900 uppercase">Certificado de Terapeuta Cristão (720h)</p>
+              <p class="text-[11px] text-slate-500">Titulação formal e chancelada para o exercício das terapias e aconselhamento.</p>
+            </div>
+          </div>
+          <div class="p-4 bg-slate-50 border border-slate-100 rounded-2xl flex items-start gap-2.5">
+            <i data-lucide="award" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+            <div>
+              <p class="text-xs font-bold text-slate-900 uppercase">Certificação Teológica (720h)</p>
+              <p class="text-[11px] text-slate-500">Certificado teológico básico amparado para atividades eclesiásticas.</p>
+            </div>
+          </div>
+          <div class="p-4 bg-slate-50 border border-slate-100 rounded-2xl flex items-start gap-2.5">
+            <i data-lucide="contact" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+            <div>
+              <p class="text-xs font-bold text-slate-900 uppercase">Credencial Profissional em PVC</p>
+              <p class="text-[11px] text-slate-500">Sua identidade clínica física com foto, número de inscrição e registro nacional.</p>
+            </div>
+          </div>
+          <div class="p-4 bg-slate-50 border border-slate-100 rounded-2xl flex items-start gap-2.5 col-span-1 sm:col-span-2">
+            <i data-lucide="shield-check" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+            <div>
+              <p class="text-xs font-bold text-slate-900 uppercase">Registro Geral SOBRAPPSI & Consultório Virtual</p>
+              <p class="text-[11px] text-slate-500">Registro oficial no portal da Sociedade Terapêutica de prestígio, liberação ao Consultório Virtual, material didático digital unificado e portal exclusivo do aluno com suporte pedagógico diário.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. CRONOGRAMA, DURAÇÃO E HORÁRIOS -->
+  <section class="py-20 bg-accent-light border-y border-amber-100">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="bg-navy rounded-3xl p-8 md:p-12 text-center text-white relative overflow-hidden ring-4 ring-gold/15 shadow-2xl">
+        <span class="text-gold font-bold uppercase text-[10px] tracking-widest block mb-3">Estude Ao Vivo Sem Barreiras</span>
+        <h2 class="text-2xl md:text-4xl font-serif font-bold text-white mb-6">DURAÇÃO E HORÁRIOS DAS AULAS</h2>
+        <p class="text-creme/75 text-sm md:text-base leading-relaxed max-w-2xl mx-auto mb-10">
+          Formação flexível com duração otimizada de <strong>8 meses</strong>. Aulas semanais ao vivo transmitidas de forma síncrona pelo Zoom com total apoio de professores.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-lg mx-auto text-left text-sm">
+          <div class="p-5 bg-navy-light/40 border border-white/10 rounded-2xl flex items-center gap-3">
+            <i data-lucide="clock" class="w-6 h-6 text-gold shrink-0"></i>
+            <div>
+              <p class="text-[10px] text-gold uppercase tracking-wider font-extrabold leading-none mb-1">HORÁRIO DE SESSÃO 1</p>
+              <p class="font-bold text-white uppercase text-xs">Quarta-feira às 19h30</p>
+            </div>
+          </div>
+          <div class="p-5 bg-navy-light/40 border border-white/10 rounded-2xl flex items-center gap-3">
+            <i data-lucide="calendar" class="w-6 h-6 text-gold shrink-0"></i>
+            <div>
+              <p class="text-[10px] text-gold uppercase tracking-wider font-extrabold leading-none mb-1">HORÁRIO DE SESSÃO 2</p>
+              <p class="font-bold text-white uppercase text-xs">Sábado às 14h30</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-xs text-creme/50 mt-8 italic">
+          * Escolha o período que melhor se encaixa em sua rotina ministerial ou profissional.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. PREÇO / INVESTIMENTO -->
+  <section id="precos" class="py-20 bg-navy relative overflow-hidden">
+    <!-- Efeitos de cor sutil atrás -->
+    <div class="absolute inset-0 bg-gradient-to-b from-navy-dark via-navy to-navy pointer-events-none"></div>
+    <div class="absolute bottom-[-10%] right-[-5%] w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-16 text-creme">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest block mb-2">Matrículas Abertas de Fevereiro</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-white leading-tight">
+          Investimento Promocional de Lançamento
+        </h2>
+        <div class="h-1 w-16 bg-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="max-w-xl mx-auto">
+        <!-- Card Principal com borda de Destaque -->
+        <div class="bg-white rounded-3xl p-8 md:p-10 border-4 border-gold shadow-2xl relative text-center text-slate-850">
+          
+          <!-- Badge no topo -->
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-600 text-white font-extrabold text-[10px] md:text-xs uppercase px-5 py-2.5 rounded-full shadow-lg tracking-widest flex items-center gap-1.5 animate-bounce">
+            <span class="inline-block w-2.5 h-2.5 rounded-full bg-white animate-ping"></span>
+            🚨 ÚLTIMAS VAGAS COM DESCONTO
+          </div>
+
+          <div class="text-center mt-4">
+            <!-- Riscado -->
+            <p class="text-slate-400 text-sm font-semibold line-through">De 8x R$ 220,00</p>
+            
+            <!-- Label pulse -->
+            <span class="mt-2 inline-block bg-red-500/10 text-red-600 text-xs font-black tracking-wider px-3.5 py-1.5 rounded-md">
+              🔥 VALOR SOCIAL DE APOIO MINISTERIAL:
+            </span>
+
+            <!-- Preço principal -->
+            <div class="my-4">
+              <span class="text-xs uppercase font-extrabold tracking-wide text-slate-400 bg-slate-100 rounded px-2.5 py-1">Em apenas</span>
+              <p class="text-5xl md:text-6xl font-serif font-black text-navy mt-1.5">
+                8x de <span class="text-gold">R$ 90</span><span class="text-xl font-sans text-slate-400">,00</span>
+              </p>
+              <p class="text-xs text-slate-400 mt-2">Valor promocional unificado de apoio de Fevereiro</p>
+            </div>
+
+            <!-- Chips de pagamento -->
+            <div class="flex flex-wrap justify-center gap-2 mb-6">
+              <span class="bg-slate-100 text-slate-600 text-[10px] font-black uppercase px-3 py-1.5 rounded-full">⚡ PIX</span>
+              <span class="bg-slate-100 text-slate-600 text-[10px] font-black uppercase px-3 py-1.5 rounded-full">💳 Cartão de Crédito</span>
+              <span class="bg-slate-100 text-slate-600 text-[10px] font-black uppercase px-3 py-1.5 rounded-full">📄 Boleto</span>
+            </div>
+
+            <p class="text-xs font-semibold text-slate-500 flex items-center justify-center gap-1 mb-8">
+              <i data-lucide="clock" class="w-4 h-4 text-gold shrink-0"></i>
+              <span>📅 Turma de Fevereiro/2026 — Vagas Limitadas</span>
+            </p>
+
+            <!-- Contador Regressivo funcional Javascript -->
+            <div class="bg-navy p-5 rounded-2xl text-creme mb-8">
+              <h6 class="text-[10px] font-black tracking-widest text-gold uppercase mb-3">A oferta expira em:</h6>
+              <div class="grid grid-cols-4 gap-3 bg-navy-dark p-3.5 rounded-xl border border-gold/20">
+                <div class="text-center">
+                  <span id="days" class="block font-serif font-bold text-xl md:text-2xl text-gold">00</span>
+                  <span class="text-[8px] font-bold text-creme/50 uppercase">Dias</span>
+                </div>
+                <div class="text-center">
+                  <span id="hours" class="block font-serif font-bold text-xl md:text-2xl text-gold">00</span>
+                  <span class="text-[8px] font-bold text-creme/50 uppercase">Horas</span>
+                </div>
+                <div class="text-center">
+                  <span id="minutes" class="block font-serif font-bold text-xl md:text-2xl text-gold">00</span>
+                  <span class="text-[8px] font-bold text-creme/50 uppercase">Min</span>
+                </div>
+                <div class="text-center">
+                  <span id="seconds" class="block font-serif font-bold text-xl md:text-2xl text-gold">00</span>
+                  <span class="text-[8px] font-bold text-creme/50 uppercase">Seg</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botão de Inscrição Oficial -->
+            <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-navy font-black tracking-widest uppercase text-sm md:text-base px-8 py-5 rounded-full shadow-lg gold-shadow transition-all group duration-300 transform active:scale-95 hover:brightness-110">
+              <span>QUERO GARANTIR MINHA INSCRIÇÃO</span>
+              <i data-lucide="chevron-right" class="w-5 h-5 shrink-0 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+
+            <p class="text-[10px] text-slate-400 mt-4 italic">
+              * Ingressos síncronos via Zoom monitorados e de supervisão integral do aluno.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. CTA FINAL -->
+  <section id="cta-final" class="bg-navy-dark text-creme py-20 text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-tr from-navy-dark/90 to-navy/40 opacity-70"></div>
+    <div class="max-w-5xl mx-auto px-6 relative z-10">
+      <h3 class="text-2xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight">
+        Aperfeiçoe sua união de <span class="text-gold font-extrabold">fé e ciência</span><br> no cuidado das almas.
+      </h3>
+      <p class="text-sm md:text-base text-creme/70 max-w-xl mx-auto mb-10">
+        Garanta o seu credenciamento e habilitação atuante como um Psicanalista Cristão. Fale com a nossa diretoria hoje para esclarecer dúvidas.
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md mx-auto">
+        <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-navy font-black tracking-wider uppercase text-xs md:text-sm px-6 py-4.5 rounded-full shadow-lg text-center transition group duration-300">
+          <span>🎯 COMPRAR AGORA</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 shrink-0 transition group-hover:translate-x-1"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=5512991847661&text=Ol%C3%A1%21+Gostaria+de+falar+com+a+Diretora+Arleana+sobre+as+matr%C3%ADculas+para+o+curso+de+Terapeuta+Crist%C3%A3o+da+FATEB." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#25d366] to-[#128c7e] hover:brightness-110 text-white font-extrabold uppercase text-xs md:text-sm px-6 py-4.5 rounded-full shadow-lg transition">
+          <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12.012 3c-4.96 0-9 4.004-9 8.96 0 1.568.413 3.117 1.2 4.48L3 21l4.704-1.215c1.315.713 2.808 1.127 4.308 1.127 4.96 0 9-4.004 9-8.96C21.012 7.004 17.012 3 12.012 3zm4.51 12.872c-.22.617-1.12 1.155-1.576 1.258-.458.102-.916.143-2.909-.646-2.545-1.008-4.173-3.574-4.298-3.738-.125-.164-1.014-1.327-1.014-2.531 0-1.204.621-1.796.843-2.039.223-.243.486-.305.648-.305.162 0 .324.004.466.012.146.008.344-.055.539.407.203.489.696 1.677.756 1.798.06.12.1.262.02.423-.08.162-.12.262-.24.403-.12.14-.251.314-.359.423-.122.12-.249.251-.107.491.142.24.631 1.026 1.353 1.66.932.818 1.716 1.072 1.959 1.192.243.12.384.102.527-.06.143-.162.612-.705.776-.948.164-.243.328-.201.551-.12.223.082 1.413.658 1.656.78.243.12.404.18.465.285.061.106.061.613-.159 1.23z"/></svg>
+          <span>Falar com Diretora</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. FAQ -->
+  <section id="faq" class="py-20 bg-accent-light">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest block mb-2">Perguntas Frequentes</span>
+        <h2 class="text-3xl font-serif font-bold text-navy leading-tight">
+          Principais Dúvidas Resolvidas
+        </h2>
+        <div class="h-1 w-16 bg-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Q1 -->
+        <details class="group bg-white rounded-2xl border border-slate-200/50 custom-shadow overflow-hidden transition-all duration-300">
+          <summary class="flex justify-between items-center p-6 text-navy font-bold font-serif text-sm md:text-base cursor-pointer select-none list-none uppercase tracking-wide">
+            <span>Como funciona a dupla certificação com o MEC?</span>
+            <span class="text-gold shrink-0 transition-transform duration-300">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-600 text-xs md:text-sm leading-relaxed border-t border-slate-100 pt-4">
+            A FATEB oferece caminhos totalmente regulamentados. Quem possuir graduação superior concluída (em qualquer área) recebe o diploma registrado de **Pós-Graduação Lato Sensu de Especialista reconhecido pelo MEC**. Quem possui apenas o Ensino Médio completo receberá o certificado universitário na modalidade de **Extensão Universitária profissionalizante**, amparada para atuação livre profissional em clínicas, consultórios e igrejas.
+          </div>
+        </details>
+
+        <!-- Q2 -->
+        <details class="group bg-white rounded-2xl border border-slate-200/50 custom-shadow overflow-hidden transition-all duration-300">
+          <summary class="flex justify-between items-center p-6 text-navy font-bold font-serif text-sm md:text-base cursor-pointer select-none list-none uppercase tracking-wide">
+            <span>Quem pode se inscrever no curso?</span>
+            <span class="text-gold shrink-0 transition-transform duration-300">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-600 text-xs md:text-sm leading-relaxed border-t border-slate-100 pt-4">
+            O curso é voltado a pastores, obreiros, líderes eclesiásticos, conselheiros ministeriais, educadores, profissionais da saúde mental e assistentes em geral que desejam se capacitar na terapia de abordagem cristã unindo ciência e teologia de forma responsável.
+          </div>
+        </details>
+
+        <!-- Q3 -->
+        <details class="group bg-white rounded-2xl border border-slate-200/50 custom-shadow overflow-hidden transition-all duration-300">
+          <summary class="flex justify-between items-center p-6 text-navy font-bold font-serif text-sm md:text-base cursor-pointer select-none list-none uppercase tracking-wide">
+            <span>Quais são os dias e horários das aulas?</span>
+            <span class="text-gold shrink-0 transition-transform duration-300">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-600 text-xs md:text-sm leading-relaxed border-t border-slate-100 pt-4">
+            As aulas são semanais e síncronas via Zoom (24 encontros ao total ao longo dos 8 meses). Você pode escolher o melhor período para atuar: as <strong>Quartas-feiras às 19h30</strong> ou aos <strong>Sábados às 14h30</strong>.
+          </div>
+        </details>
+
+        <!-- Q4 -->
+        <details class="group bg-white rounded-2xl border border-slate-200/50 custom-shadow overflow-hidden transition-all duration-300">
+          <summary class="flex justify-between items-center p-6 text-navy font-bold font-serif text-sm md:text-base cursor-pointer select-none list-none uppercase tracking-wide">
+            <span>Qual o respaldo e legitimidade para atuar?</span>
+            <span class="text-gold shrink-0 transition-transform duration-300">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-600 text-xs md:text-sm leading-relaxed border-t border-slate-100 pt-4">
+            O exercício das terapias de acolhimento é legalizado, amparado pela Constituição Federal e pelo Ministério do Trabalho (atividades de livre atuação comercial livre cbo). Adicionalmente, seu registro profissional no portal da Sociedade Terapêutica garantem retaguarda legal e ética total para clinicar e atender com legitimidade no país.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-navy-dark text-creme/65 py-16 border-t border-gold/10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10 text-left">
+      <!-- Col 1 -->
+      <div>
+        <span class="text-gold text-2xl font-serif font-extrabold tracking-widest uppercase block mb-4">FATEB</span>
+        <p class="text-xs leading-relaxed max-w-sm mb-4">
+          FATEB Instituto de Formação Acadêmica — Dedicado ao cuidado íntegro intelectual, promovendo formações de excelência e especializações profissionais baseadas em rigor acadêmico, amparo legal e alta aplicabilidade prática.
+        </p>
+        <p class="text-[10px] text-creme/45">
+          📍 FATEB Educacional — CNPJ: 07.828.118/0001-38
+        </p>
+      </div>
+
+      <!-- Col 2 -->
+      <div>
+        <h6 class="text-white font-serif font-bold tracking-wide mb-4 text-sm uppercase">Fale Conosco</h6>
+        <ul class="space-y-3 text-xs">
+          <li class="flex items-center gap-2">
+            <i data-lucide="phone" class="w-3.5 h-3.5 text-gold shrink-0"></i>
+            <span>(12) 99184-7661</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i data-lucide="mail" class="w-3.5 h-3.5 text-gold shrink-0"></i>
+            <span>suporte@fatebeducacional.com.br</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-gold shrink-0"></i>
+            <span>Atendimento síncrono online nacional</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div>
+        <h6 class="text-white font-serif font-bold tracking-wide mb-4 text-sm uppercase">Secretaria Acadêmica</h6>
+        <p class="text-xs leading-relaxed max-w-sm mb-4">
+          Faça sua matrícula diretamente no terminal unificado de admissões de forma criptografada e segura:
+        </p>
+        <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-gold hover:text-white font-bold text-xs tracking-wider transition uppercase">
+          <span>Acessar portal admissional</span>
+          <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-creme/10 text-center text-[10px] tracking-wide">
+      <p>© 2026 FATEB — Todos os direitos reservados. CNPJ: 07.828.118/0001-38</p>
+    </div>
+  </footer>
+
+  <!-- 16. BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://api.whatsapp.com/send/?phone=5512991847661&text=Ol%C3%A1%21+Gostaria+de+falar+com+a+Diretora+Arleana+sobre+as+matr%C3%ADculas+para+o+curso+de+Psican%C3%A1lise+na+Abordagem+Crist%C3%A3+da+FATEB." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 float-wp bg-gradient-to-r from-[#25d366] to-[#128c7e] text-white flex items-center gap-2 px-5 py-3.5 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all text-sm font-extrabold tracking-wider border border-white/20">
+    <span class="relative flex h-3.5 w-3.5 shrink-0">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-red-500 border border-white"></span>
+    </span>
+    <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12.012 3c-4.96 0-9 4.004-9 8.96 0 1.568.413 3.117 1.2 4.48L3 21l4.704-1.215c1.315.713 2.808 1.127 4.308 1.127 4.96 0 9-4.004 9-8.96C21.012 7.004 17.012 3 12.012 3zm4.51 12.872c-.22.617-1.12 1.155-1.576 1.258-.458.102-.916.143-2.909-.646-2.545-1.008-4.173-3.574-4.298-3.738-.125-.164-1.014-1.327-1.014-2.531 0-1.204.621-1.796.843-2.039.223-.243.486-.305.648-.305.162 0 .324.004.466.012.146.008.344-.055.539.407.203.489.696 1.677.756 1.798.06.12.1.262.02.423-.08.162-.12.262-.24.403-.12.14-.251.314-.359.423-.122.12-.249.251-.107.491.142.24.631 1.026 1.353 1.66.932.818 1.716 1.072 1.959 1.192.243.12.384.102.527-.06.143-.162.612-.705.776-.948.164-.243.328-.201.551-.12.223.082 1.413.658 1.656.78.243.12.404.18.465.285.061.106.061.613-.159 1.23z"/></svg>
+    <span class="uppercase">TIRE SUAS DÚVIDAS</span>
+  </a>
+
+  <!-- JavaScript funcional síncrono -->
+  <script>
+    // Inicializar Ícones Lucide
+    lucide.createIcons();
+
+    // Lógica do Contador Regressivo Persistente de 7 dias
+    function startCountdown() {
+      let targetDate = localStorage.getItem('fateb_countdown_target_cristao');
+      if (!targetDate) {
+        // config 7 dias a partir do primeiro carregamento
+        targetDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000);
+        localStorage.setItem('fateb_countdown_target_cristao', targetDate);
+      } else {
+        targetDate = parseInt(targetDate);
+      }
+
+      function updateTimer() {
+        const now = new Date().getTime();
+        let difference = targetDate - now;
+
+        // Se o contador expirou, reinicia a contagem (outros 7 dias) por razões de marketing
+        if (difference < 0) {
+          const sevenDaysFromNow = now + (7 * 24 * 60 * 60 * 1000);
+          localStorage.setItem('fateb_countdown_target_cristao', sevenDaysFromNow);
+          difference = sevenDaysFromNow - now;
+        }
+
+        const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((difference % (1000 * 60)) / 1000);
+
+        document.getElementById('days').innerText = String(d).padStart(2, '0');
+        document.getElementById('hours').innerText = String(h).padStart(2, '0');
+        document.getElementById('minutes').innerText = String(m).padStart(2, '0');
+        document.getElementById('seconds').innerText = String(s).padStart(2, '0');
+      }
+
+      updateTimer();
+      setInterval(updateTimer, 1000);
+    }
+
+    startCountdown();
+  </script>
+</body>
+</html>

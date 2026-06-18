@@ -33,6 +33,72 @@ app.get(["/terapeuta-parental", "/terapeuta-parental/"], (req, res) => {
   res.sendFile(filePath);
 });
 
+app.get(["/psicanalise-crista", "/psicanalise-crista/"], (req, res) => {
+  let filePath = path.join(process.cwd(), "public", "psicanalise-crista", "index.html");
+  if (process.env.NODE_ENV === "production") {
+    const distPath = path.join(process.cwd(), "dist", "psicanalise-crista", "index.html");
+    if (fs.existsSync(distPath)) {
+      filePath = distPath;
+    }
+  }
+  res.sendFile(filePath);
+});
+
+app.get(["/neuropsicanalise", "/neuropsicanalise/"], (req, res) => {
+  let filePath = path.join(process.cwd(), "public", "neuropsicanalise", "index.html");
+  if (process.env.NODE_ENV === "production") {
+    const distPath = path.join(process.cwd(), "dist", "neuropsicanalise", "index.html");
+    if (fs.existsSync(distPath)) {
+      filePath = distPath;
+    }
+  }
+  res.sendFile(filePath);
+});
+
+app.get(["/psifreudiana", "/psifreudiana/"], (req, res) => {
+  let filePath = path.join(process.cwd(), "public", "psifreudiana", "index.html");
+  if (process.env.NODE_ENV === "production") {
+    const distPath = path.join(process.cwd(), "dist", "psifreudiana", "index.html");
+    if (fs.existsSync(distPath)) {
+      filePath = distPath;
+    }
+  }
+  res.sendFile(filePath);
+});
+
+app.get(["/neuroteologia", "/neuroteologia/"], (req, res) => {
+  let filePath = path.join(process.cwd(), "public", "neuroteologia", "index.html");
+  if (process.env.NODE_ENV === "production") {
+    const distPath = path.join(process.cwd(), "dist", "neuroteologia", "index.html");
+    if (fs.existsSync(distPath)) {
+      filePath = distPath;
+    }
+  }
+  res.sendFile(filePath);
+});
+
+app.get(["/terapeuta-cristao", "/terapeuta-cristao/"], (req, res) => {
+  let filePath = path.join(process.cwd(), "public", "terapeuta-cristao", "index.html");
+  if (process.env.NODE_ENV === "production") {
+    const distPath = path.join(process.cwd(), "dist", "terapeuta-cristao", "index.html");
+    if (fs.existsSync(distPath)) {
+      filePath = distPath;
+    }
+  }
+  res.sendFile(filePath);
+});
+
+app.get(["/terapeuta-completo", "/terapeuta-completo/"], (req, res) => {
+  let filePath = path.join(process.cwd(), "public", "terapeuta-completo", "index.html");
+  if (process.env.NODE_ENV === "production") {
+    const distPath = path.join(process.cwd(), "dist", "terapeuta-completo", "index.html");
+    if (fs.existsSync(distPath)) {
+      filePath = distPath;
+    }
+  }
+  res.sendFile(filePath);
+});
+
 async function startServer() {
   // Vite middleware for development
   if (process.env.NODE_ENV !== "production") {

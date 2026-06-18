@@ -185,6 +185,30 @@ export default function App() {
       window.location.href = "/terapeuta-crianca";
       return;
     }
+    if (course.id === "terapeuta-educacao-parental") {
+      window.location.href = "/terapeuta-parental";
+      return;
+    }
+    if (course.id === "psicanalise-abordagem-crista") {
+      window.location.href = "/psicanalise-crista";
+      return;
+    }
+    if (course.id === "neuroteologia") {
+      window.location.href = "/neuroteologia";
+      return;
+    }
+    if (course.id === "neuropsicanalise-clinica") {
+      window.location.href = "/neuropsicanalise";
+      return;
+    }
+    if (course.id === "terapeuta-cristao") {
+      window.location.href = "/terapeuta-cristao";
+      return;
+    }
+    if (course.id === "terapeuta-completo") {
+      window.location.href = "/terapeuta-completo";
+      return;
+    }
     setSelectedCourse(course);
     setTimerCount(600); // Reset timer to 10 mins
   };
@@ -408,10 +432,22 @@ export default function App() {
                       window.location.href = "/terapeuta-crianca";
                     } else if (course.id === "terapeuta-educacao-parental") {
                       window.location.href = "/terapeuta-parental";
+                    } else if (course.id === "psicanalise-abordagem-crista") {
+                      window.location.href = "/psicanalise-crista";
+                    } else if (course.id === "neuroteologia") {
+                      window.location.href = "/neuroteologia";
+                    } else if (course.id === "neuropsicanalise-clinica") {
+                      window.location.href = "/neuropsicanalise";
+                    } else if (course.id === "psicanalise-freudiana") {
+                      window.location.href = "/psifreudiana";
+                    } else if (course.id === "terapeuta-cristao") {
+                      window.location.href = "/terapeuta-cristao";
+                    } else if (course.id === "terapeuta-completo") {
+                      window.location.href = "/terapeuta-completo";
                     }
                   }}
                   className={`bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-md flex flex-col hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group ${
-                    (course.id === "terapeuta-criancas-adolescentes" || course.id === "terapeuta-educacao-parental") ? "cursor-pointer" : ""
+                    (course.id === "terapeuta-criancas-adolescentes" || course.id === "terapeuta-educacao-parental" || course.id === "psicanalise-abordagem-crista" || course.id === "neuroteologia" || course.id === "neuropsicanalise-clinica" || course.id === "psicanalise-freudiana" || course.id === "terapeuta-cristao" || course.id === "terapeuta-completo") ? "cursor-pointer" : ""
                   }`}
                 >
                   {/* Image banner with overlay */}
@@ -477,9 +513,25 @@ export default function App() {
                       </div>
 
                       {/* Complete Course CTA button */}
-                      {course.id === "terapeuta-criancas-adolescentes" || course.id === "terapeuta-educacao-parental" ? (
+                      {course.id === "terapeuta-criancas-adolescentes" || course.id === "terapeuta-educacao-parental" || course.id === "psicanalise-abordagem-crista" || course.id === "neuroteologia" || course.id === "neuropsicanalise-clinica" || course.id === "psicanalise-freudiana" || course.id === "terapeuta-cristao" || course.id === "terapeuta-completo" ? (
                         <a
-                          href={course.id === "terapeuta-criancas-adolescentes" ? "/terapeuta-crianca" : "/terapeuta-parental"}
+                          href={
+                            course.id === "terapeuta-criancas-adolescentes" 
+                              ? "/terapeuta-crianca" 
+                              : course.id === "terapeuta-educacao-parental" 
+                              ? "/terapeuta-parental" 
+                              : course.id === "psicanalise-abordagem-crista"
+                              ? "/psicanalise-crista"
+                              : course.id === "neuroteologia"
+                              ? "/neuroteologia"
+                              : course.id === "neuropsicanalise-clinica"
+                              ? "/neuropsicanalise"
+                              : course.id === "psicanalise-freudiana"
+                              ? "/psifreudiana"
+                              : course.id === "terapeuta-cristao"
+                              ? "/terapeuta-cristao"
+                              : "/terapeuta-completo"
+                          }
                           className="w-full bg-[#dfab22] hover:bg-[#c49419] text-brand-blue-dark font-display font-extrabold text-xs py-3.5 px-4 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 group cursor-pointer uppercase tracking-wider"
                         >
                           {renderCourseIcon(course.iconName, "w-4 h-4 text-brand-blue-dark")}

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formação Terapêutica Completa — FATEB</title>
+  <meta name="description" content="Torne-se um Terapeuta Profissional credenciado. Formação completa teórica e prática com certificação acadêmica reconhecida pelo MEC + Internacional.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Formação Terapêutica Completa — FATEB">
+  <meta property="og:description" content="Certificação Reconhecida pelo MEC e Certificação Internacional. Apenas 6x de R$ 100,00.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/terapeutacompleto.jpeg">
+
+  <!-- Inter and Playfair Display Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0b1626',
+              sage: '#2f5945',   /* Serene therapeutic sage green */
+              sagelight: '#edf4f0',
+              gold: '#dfab22',
+              goldlight: '#fbf5e6',
+              white: '#ffffff',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .custom-shadow {
+      box-shadow: 0 10px 40px -12px rgba(15, 30, 20, 0.12);
+    }
+    .accent-gradient {
+      background: linear-gradient(135deg, #2f5945 0%, #153023 100%);
+    }
+    .gold-shadow {
+      box-shadow: 0 8px 24px -6px rgba(223, 171, 34, 0.35);
+    }
+    /* Animação Float para o WhatsApp */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .float-wp {
+      animation: float 3.5s ease-in-out infinite;
+    }
+    /* Custom Accordion rotating icon */
+    details[open] summary svg {
+      transform: rotate(180deg);
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-[#fbfdfb] leading-relaxed">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-brand-sage text-white text-xs font-bold uppercase tracking-wider py-2.5 px-4 text-center border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
+      <span class="inline-block w-2.5 h-2.5 rounded-full bg-brand-gold animate-ping"></span>
+      <span>⏰ INÍCIO EM MAIO — GARANTA SUA MATRÍCULA NO LOTE PROMOCIONAL (Restam poucas vagas)</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-brand-navy pt-4 pb-4 sticky top-0 z-40 shadow-md border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center gap-4">
+      <div>
+        <a href="/" class="text-white/90 hover:text-brand-gold text-xs font-bold border border-white/10 hover:border-brand-gold/40 px-3.5 py-1.5 rounded-full transition-all bg-white/5 inline-flex items-center gap-1.5 shrink-0">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+          Voltar ao Portal
+        </a>
+      </div>
+      <div>
+        <a href="#matricula" class="bg-[#dfab22] hover:brightness-110 text-[#0b1626] font-extrabold text-xs tracking-wider uppercase px-5 py-2.5 rounded-full transition-all duration-300 shadow-md gold-shadow">
+          Matricular-se
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative accent-gradient text-white pt-20 pb-24 overflow-hidden">
+    <!-- Visual background blobs -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
+    <div class="absolute bottom-0 left-0 w-80 h-80 bg-brand-gold/5 rounded-full blur-3xl -ml-20 -mb-20"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+      <div class="max-w-4xl mx-auto">
+        
+        <!-- FATEB Logo -->
+        <img src="/logofateb.webp" alt="FATEB Logo" class="max-h-24 md:max-h-32 w-auto mx-auto mb-8 object-contain transition-transform hover:scale-105" referrerPolicy="no-referrer">
+
+        <span class="inline-block bg-white/10 border border-white/20 text-brand-gold text-[10px] font-black tracking-[0.2em] uppercase px-4 py-1.5 rounded-full mb-6">
+          🌿 CURSO DE FORMAÇÃO TERAPÊUTICA COMPLETA
+        </span>
+
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight leading-tight mb-6">
+          Torne-se um Terapeuta Profissional de <br><span class="text-brand-gold italic">Elite e Excelência</span>
+        </h1>
+
+        <p class="text-lg md:text-xl font-serif text-slate-100 max-w-2xl mx-auto mb-8 italic">
+          Ajude pessoas a superar a ansiedade, traumas, depressão e conflitos emocionais utilizando técnicas terapêuticas modernas de alto impacto.
+        </p>
+
+        <p class="text-base text-[#b8dfca] max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
+          Se você sente o chamado para cuidar de pessoas, transformar realidades e construir uma profissão autônoma de prestígio acadêmico, esta jornada estruturada foi feita para você.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
+          <a href="#matricula" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-gold hover:bg-yellow-500 text-brand-navy font-black uppercase text-sm px-8 py-4.5 rounded-full shadow-lg transition-all transform hover:scale-105">
+            <i data-lucide="shield-check" class="w-5 h-5"></i>
+            <span>FAZER MATRÍCULA PROMOCIONAL</span>
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=5512991847661&text=Ol%C3%A1%21+Gostaria+de+falar+com+a+Diretora+Arleana+sobre+as+matr%C3%ADculas+para+a+Forma%C3%A7%C3%A3o+Terap%C3%AAutica+Completa+da+FATEB." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25d366] hover:bg-[#128c7e] text-white font-black uppercase text-sm px-8 py-4.5 rounded-full shadow-lg transition-all transform hover:scale-105">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.012 3c-4.96 0-9 4.004-9 8.96 0 1.568.413 3.117 1.2 4.48L3 21l4.704-1.215c1.315.713 2.808 1.127 4.308 1.127 4.96 0 9-4.004 9-8.96C21.012 7.004 17.012 3 12.012 3zm4.51 12.872c-.22.617-1.12 1.155-1.576 1.258-.458.102-.916.143-2.909-.646-2.545-1.008-4.173-3.574-4.298-3.738-.125-.164-1.014-1.327-1.014-2.531 0-1.204.621-1.796.843-2.039.223-.243.486-.305.648-.305.162 0 .324.004.466.012.146.008.344-.055.539.407.203.489.696 1.677.756 1.798.06.12.1.262.02.423-.08.162-.12.262-.24.403-.12.14-.251.314-.359.423-.122.12-.249.251-.107.491.142.24.631 1.026 1.353 1.66.932.818 1.716 1.072 1.959 1.192.243.12.384.102.527-.06.143-.162.612-.705.776-.948.164-.243.328-.201.551-.12.223.082 1.413.658 1.656.78.243.12.404.18.465.285.061.106.061.613-.159 1.23z"/></svg>
+            <span>FALAR COM A DIRETORA</span>
+          </a>
+        </div>
+
+        <!-- Badges Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 border-t border-white/10 uppercase tracking-widest text-[10px] font-bold text-[#c7ebd5]">
+          <div class="flex items-center justify-center gap-2">
+            <i data-lucide="check-circle" class="w-4 h-4 text-brand-gold shrink-0"></i>
+            <span>🎓 MEC Reconhecido</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <i data-lucide="globe" class="w-4 h-4 text-brand-gold shrink-0"></i>
+            <span>🌍 Selo Internacional</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <i data-lucide="clock" class="w-4 h-4 text-brand-gold shrink-0"></i>
+            <span>⏳ 520 Horas Práticas</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <i data-lucide="contact" class="w-4 h-4 text-brand-gold shrink-0"></i>
+            <span>💳 Credencial Incluída</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS DA FORMAÇÃO -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-sage font-extrabold uppercase text-xs tracking-widest block">VANTAGENS EXCLUSIVAS</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-navy mt-2 mb-4 leading-tight">
+          Diferenciais Exclusivos FATEB
+        </h2>
+        <div class="h-1 w-20 bg-brand-sage mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-brand-sagelight/40 border border-brand-sage/10 rounded-2xl p-6 flex gap-4 hover:bg-brand-sagelight/70 transition duration-300">
+          <div class="w-10 h-10 bg-brand-sage text-white rounded-full flex items-center justify-center shrink-0 shadow-sm">
+            <i data-lucide="book-open-check" class="w-5 h-5 text-brand-gold"></i>
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-base mb-1">Formação Estruturada</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">Currículo planejado passo a passo desde o absoluto zero para dar segurança máxima de atendimento.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-brand-sagelight/40 border border-brand-sage/10 rounded-2xl p-6 flex gap-4 hover:bg-brand-sagelight/70 transition duration-300">
+          <div class="w-10 h-10 bg-brand-sage text-white rounded-full flex items-center justify-center shrink-0 shadow-sm">
+            <i data-lucide="sparkles" class="w-5 h-5 text-brand-gold"></i>
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-base mb-1">Técnicas Modernas</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">Você aprenderá métodos validados contemporâneos fundamentados e atualizados.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-brand-sagelight/40 border border-brand-sage/10 rounded-2xl p-6 flex gap-4 hover:bg-brand-sagelight/70 transition duration-300">
+          <div class="w-10 h-10 bg-brand-sage text-white rounded-full flex items-center justify-center shrink-0 shadow-sm">
+            <i data-lucide="award" class="w-5 h-5 text-brand-gold"></i>
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-base mb-1">Dupla Certificação</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">Diploma reconhecido pelo Ministério da Educação (MEC) e de validade internacional.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-brand-sagelight/40 border border-brand-sage/10 rounded-2xl p-6 flex gap-4 hover:bg-brand-sagelight/70 transition duration-300">
+          <div class="w-10 h-10 bg-brand-sage text-white rounded-full flex items-center justify-center shrink-0 shadow-sm">
+            <i data-lucide="smile" class="w-5 h-5 text-brand-gold"></i>
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-base mb-1">Preparação Amparada</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">Ideal tanto para iniciar uma nova e rendosa profissão quanto para ampliar seus conhecimentos.</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-brand-sagelight/40 border border-brand-sage/10 rounded-2xl p-6 flex gap-4 hover:bg-brand-sagelight/70 transition duration-300">
+          <div class="w-10 h-10 bg-brand-sage text-white rounded-full flex items-center justify-center shrink-0 shadow-sm">
+            <i data-lucide="laptop" class="w-5 h-5 text-brand-gold"></i>
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-base mb-1">Consultório Associado</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">Ganhe acesso exclusivo ao Consultório Virtual de suporte prático para iniciar seus atendimentos online.</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-brand-sagelight/40 border border-brand-sage/10 rounded-2xl p-6 flex gap-4 hover:bg-brand-sagelight/70 transition duration-300">
+          <div class="w-10 h-10 bg-brand-sage text-white rounded-full flex items-center justify-center shrink-0 shadow-sm">
+            <i data-lucide="user-check" class="w-5 h-5 text-brand-gold"></i>
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-base mb-1">Suporte de Professores</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">Mentoria próxima e ativa para esclarecer dúvidas metodológicas e condução clínica.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROGRAMA CURRICULAR -->
+  <section class="py-20 bg-brand-sagelight/30 border-y border-brand-sage/10">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-sage font-bold uppercase text-xs tracking-widest block">ESTUDO DIRECIONADO</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-brand-navy mt-2 mb-4 leading-tight">
+          Conteúdo Programático Exclusivo
+        </h2>
+        <p class="text-slate-600 max-w-xl mx-auto text-sm md:text-base">
+          Confira o que você aprenderá detalhadamente para alcançar o domínio profissional da terapia clínica:
+        </p>
+        <div class="h-1 w-20 bg-brand-sage mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        
+        <!-- Disciplina 1 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-brand-sage/30 transition duration-300 custom-shadow">
+          <span class="text-xl shrink-0">🧑‍💼</span>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-sm mb-1">Função e Atuação do Terapeuta</h4>
+            <p class="text-slate-500 text-[11px]">As diretrizes éticas, posicionamento profissional, enquadre da terapia clínica e responsabilidade do terapeuta.</p>
+          </div>
+        </div>
+
+        <!-- Disciplina 2 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-brand-sage/30 transition duration-300 custom-shadow">
+          <span class="text-xl shrink-0">⏳</span>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-sm mb-1">Psicoterapia Breve</h4>
+            <p class="text-slate-500 text-[11px]">Mecanismos de foco na queixa atual, intervenções rápidas planejadas e remissão controlada de conflitos.</p>
+          </div>
+        </div>
+
+        <!-- Disciplina 3 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-brand-sage/30 transition duration-300 custom-shadow">
+          <span class="text-xl shrink-0">👶</span>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-sm mb-1">Terapia com Crianças e Adolescentes</h4>
+            <p class="text-slate-500 text-[11px]">Terapia lúdica infantil, interpretação de desenhos, limites de idade e condução de diálogos com pais.</p>
+          </div>
+        </div>
+
+        <!-- Disciplina 4 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-brand-sage/30 transition duration-300 custom-shadow">
+          <span class="text-xl shrink-0">🧑</span>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-sm mb-1">Terapia com Jovens e Adultos</h4>
+            <p class="text-slate-500 text-[11px]">Resgate da autoeficácia, cura de ansiedades geracionais, escolhas de carreira e pressões psicossociais.</p>
+          </div>
+        </div>
+
+        <!-- Disciplina 5 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-brand-sage/30 transition duration-300 custom-shadow">
+          <span class="text-xl shrink-0">👵</span>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-sm mb-1">Terapia com Idosos</h4>
+            <p class="text-slate-500 text-[11px]">Manejo terapêutico contra a depressão do envelhecimento, ressignificação histórica e luto existencial.</p>
+          </div>
+        </div>
+
+        <!-- Disciplina 6 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-brand-sage/30 transition duration-300 custom-shadow">
+          <span class="text-xl shrink-0">👩</span>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-sm mb-1">Terapia com Mulheres</h4>
+            <p class="text-slate-500 text-[11px]">Especialidade no atendimento de conflitos de ciclo, maternidade, autocuidado profundo e superação de dores.</p>
+          </div>
+        </div>
+
+        <!-- Disciplina 7 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-brand-sage/30 transition duration-300 custom-shadow">
+          <span class="text-xl shrink-0">👩‍❤️‍👨</span>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-sm mb-1">Terapia de Casais</h4>
+            <p class="text-slate-500 text-[11px]">Comunicação assertiva conjugal, quebra de ressentimentos e reestruturação da intimidade empática.</p>
+          </div>
+        </div>
+
+        <!-- Disciplina 8 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-brand-sage/30 transition duration-300 custom-shadow">
+          <span class="text-xl shrink-0">❤️</span>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-sm mb-1">Terapia Emocional</h4>
+            <p class="text-slate-500 text-[11px]">Aprenda as dinâmicas químicas cerebrais e o reequilíbrio das matrizes das principais emoções básicas.</p>
+          </div>
+        </div>
+
+        <!-- Disciplina 9 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-brand-sage/30 transition duration-300 custom-shadow">
+          <span class="text-xl shrink-0">🌀</span>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-sm mb-1">Terapia da Ansiedade e Depressão</h4>
+            <p class="text-slate-500 text-[11px]">Protocolos passo a passo com eficácia imediata no manejo clínico de pânico crônico e insônia.</p>
+          </div>
+        </div>
+
+        <!-- Disciplina 10 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-brand-sage/30 transition duration-300 custom-shadow">
+          <span class="text-xl shrink-0">🥀</span>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-sm mb-1">Terapia do Luto</h4>
+            <p class="text-slate-500 text-[11px]">Etapas Tanatológicas e acolhimento do vazio agudo e sentimentos decorrentes da despedida definitiva.</p>
+          </div>
+        </div>
+
+        <!-- Disciplina 11 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-brand-sage/30 transition duration-300 custom-shadow">
+          <span class="text-xl shrink-0">💥</span>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-sm mb-1">Terapia do Trauma</h4>
+            <p class="text-slate-500 text-[11px]">Ressignificação das memórias estressoras corporais-mentais, FOBIAS cotidianas incapacitantes.</p>
+          </div>
+        </div>
+
+        <!-- Disciplina 12 -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-100 flex items-start gap-4 hover:border-brand-sage/30 transition duration-300 custom-shadow">
+          <span class="text-xl shrink-0">🛡️</span>
+          <div>
+            <h4 class="font-serif font-bold text-brand-navy text-sm mb-1">Terapia na Dependência Química</h4>
+            <p class="text-slate-500 text-[11px]">Descompressão do paciente de co-dependência, acolhida clínica e planos de rotina reestruturada.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICAÇÃO E REQUISITOS -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-brand-sage font-extrabold uppercase text-xs tracking-widest block">CERTIFICAÇÃO OFICIAL DE 520H</span>
+        <h2 class="text-3xl font-serif font-bold text-brand-navy mt-1">Modalidades Acadêmicas Disponíveis</h2>
+        <p class="text-slate-500 text-sm mt-2">Validade plena e credenciamento imediato nos seguintes formatos:</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Nível Extensão -->
+        <div class="p-8 bg-[#fbfdfb] border border-brand-sage/10 rounded-3xl relative hover:border-brand-sage/30 transition-all custom-shadow">
+          <span class="text-3xl block mb-4">🏫</span>
+          <h4 class="font-serif font-bold text-brand-navy text-lg mb-2">Alunos com Ensino Médio completo:</h4>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Certificação em <strong>Extensão Universitária Profissionalizante</strong> reconhecida, outorgando todas as credenciais legítimas no livre exercício das terapias.
+          </p>
+        </div>
+
+        <!-- Nível Pós -->
+        <div class="p-8 bg-[#fbfdfb] border border-brand-sage/10 rounded-3xl relative hover:border-brand-sage/30 transition-all custom-shadow">
+          <span class="text-3xl block mb-4">🎓</span>
+          <h4 class="font-serif font-bold text-brand-navy text-lg mb-2">Alunos com Graduação completa:</h4>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Certificação internacional e Título acadêmico completo em <strong>Pós-Graduação Lato Sensu</strong> de especialidade, credenciado pelo Ministério da Educação (MEC).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APÓS A CONCLUSÃO -->
+  <section class="py-20 bg-brand-navy text-white relative overflow-hidden">
+    <!-- Blur blob background -->
+    <div class="absolute inset-0 bg-gradient-to-tr from-brand-navy to-slate-900 opacity-90"></div>
+    
+    <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+      <span class="text-brand-gold text-xs font-black uppercase tracking-widest block mb-3">CONQUISTA E SUPORTE</span>
+      <h2 class="text-3xl md:text-4xl font-serif font-bold mb-10 leading-tight">Ao concluir a formação você receberá:</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-4 gap-6 text-center max-w-3xl mx-auto">
+        <div class="p-5 bg-white/5 rounded-2xl border border-white/5 flex flex-col items-center">
+          <i data-lucide="scroll" class="w-8 h-8 text-brand-gold mb-3"></i>
+          <h4 class="text-xs font-black uppercase text-white mb-2">Certificado de Conclusão</h4>
+          <p class="text-slate-400 text-[10px] leading-snug">Diploma físico/digital de prestígio acadêmico nacional.</p>
+        </div>
+
+        <div class="p-5 bg-white/5 rounded-2xl border border-white/5 flex flex-col items-center">
+          <i data-lucide="contact" class="w-8 h-8 text-brand-gold mb-3"></i>
+          <h4 class="text-xs font-black uppercase text-white mb-2">Credencial em PVC</h4>
+          <p class="text-slate-400 text-[10px] leading-snug">Sua carteira de identidade clínica profissional personalizada.</p>
+        </div>
+
+        <div class="p-5 bg-white/5 rounded-2xl border border-white/5 flex flex-col items-center">
+          <i data-lucide="database" class="w-8 h-8 text-brand-gold mb-3"></i>
+          <h4 class="text-xs font-black uppercase text-white mb-2">Registro no Portal</h4>
+          <p class="text-slate-400 text-[10px] leading-snug">Sua publicação de listagem ativa no portal nacional da Sociedade.</p>
+        </div>
+
+        <div class="p-5 bg-white/5 rounded-2xl border border-white/5 flex flex-col items-center">
+          <i data-lucide="laptop" class="w-8 h-8 text-brand-gold mb-3"></i>
+          <h4 class="text-xs font-black uppercase text-white mb-2">Consultório Associado</h4>
+          <p class="text-slate-400 text-[10px] leading-snug">Prontuários e sala virtual online para faturar rapidamente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TURMAS, AULAS E DIAS -->
+  <section class="py-16 bg-[#f2f7f4] border-b border-brand-sage/10 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto text-slate-800">
+        <div class="p-5 bg-white rounded-2xl border border-slate-100 flex flex-col items-center custom-shadow">
+          <i data-lucide="calendar" class="w-6 h-6 text-brand-sage mb-2"></i>
+          <p class="text-[9px] uppercase tracking-wider text-brand-sage font-black mb-1">INÍCIO DAS TURMAS</p>
+          <p class="font-extrabold text-brand-navy text-sm">MAIO / 2026</p>
+        </div>
+        <div class="p-5 bg-white rounded-2xl border border-slate-100 flex flex-col items-center custom-shadow">
+          <i data-lucide="clock" class="w-6 h-6 text-brand-sage mb-2"></i>
+          <p class="text-[9px] uppercase tracking-wider text-brand-sage font-black mb-1">AULAS AO VIVO</p>
+          <p class="font-extrabold text-brand-navy text-sm">QUINTAS-FEIRAS ÀS 20H</p>
+        </div>
+        <div class="p-5 bg-white rounded-2xl border border-slate-100 flex flex-col items-center custom-shadow">
+          <i data-lucide="hourglass" class="w-6 h-6 text-brand-sage mb-2"></i>
+          <p class="text-[9px] uppercase tracking-wider text-brand-sage font-black mb-1">DURAÇÃO DO CURSO</p>
+          <p class="font-extrabold text-brand-navy text-sm">6 MESES COMPLETOS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE INVESTIMENTO -->
+  <section id="matricula" class="py-20 bg-brand-navy relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16 text-white">
+        <span class="text-brand-gold font-bold uppercase text-xs tracking-widest block mb-2 font-display">Tabela Social Garantida</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-white">
+          Apenas 6 Parcelas de R$ 100,00
+        </h2>
+        <p class="text-slate-400 text-xs mt-2 italic">Aproveite desconto fixo sem cobranças surpresas no final.</p>
+        <div class="h-1 w-16 bg-brand-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="max-w-lg mx-auto">
+        <div class="bg-white rounded-3xl p-8 md:p-10 border-4 border-brand-gold shadow-2xl relative text-center text-slate-800">
+          
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-600 text-white font-extrabold text-[10px] md:text-xs uppercase px-5 py-2.5 rounded-full shadow-lg tracking-widest flex items-center gap-1.5">
+            <span class="inline-block w-2.5 h-2.5 rounded-full bg-white animate-ping"></span>
+            ⏳ ÚLTIMAS VAGAS COM DESCONTO FIXO
+          </div>
+
+          <div class="text-center mt-4">
+            <p class="text-slate-400 text-sm font-semibold line-through">Por de R$ 199,00/mês</p>
+            
+            <span class="mt-2 inline-block bg-brand-sage/10 text-brand-sage text-xs font-black tracking-wider px-3.5 py-1.5 rounded-md">
+              🎯 EXCLUSIVO FATEB SOCIAL:
+            </span>
+
+            <div class="my-5">
+              <span class="text-[10px] uppercase font-extrabold tracking-wide text-slate-400 bg-slate-100 rounded px-2.5 py-1">APENAS</span>
+              <p class="text-5xl md:text-6xl font-serif font-black text-brand-navy mt-1.5">
+                6x de R$ 100<span class="text-xl font-sans text-slate-400">,00</span>
+              </p>
+              <p class="text-xs text-slate-400 mt-2">Taxa única total sem juros de suporte ou material.</p>
+            </div>
+
+            <!-- Formas de pagamento -->
+            <div class="flex flex-wrap justify-center gap-2 mb-6 text-slate-600 font-bold text-xs">
+              <span class="bg-[#f0f4f2] text-brand-sage px-3 py-1 rounded-full">✓ PIX</span>
+              <span class="bg-[#f0f4f2] text-brand-sage px-3 py-1 rounded-full">✓ CARTÃO</span>
+              <span class="bg-[#f0f4f2] text-brand-sage px-3 py-1 rounded-full">✓ BOLETO</span>
+            </div>
+
+            <!-- Timer countdown -->
+            <div class="bg-[#f1f6f3] text-slate-700 p-4 rounded-xl mb-8 border border-brand-sage/15">
+              <h4 class="text-[9px] font-black tracking-widest text-brand-sage uppercase mb-2">Sua reserva de vaga expira em:</h4>
+              <p id="countdown-timer" class="font-mono font-bold text-lg text-brand-navy">10:00</p>
+            </div>
+
+            <!-- Botão de Inscrição Oficial -->
+            <a href="https://api.whatsapp.com/send/?phone=5512991847661&text=Ol%C3%A1%21+Quero+me+matricular+no+curso+de+Terapeuta+Completo+da+FATEB+pelo+valor+promocional+de+6x+de+100+reais%21" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-gold to-yellow-500 hover:from-yellow-500 hover:to-brand-gold text-brand-navy font-black tracking-widest uppercase text-sm md:text-base px-8 py-5 rounded-full shadow-lg transition-all group duration-300 transform active:scale-95">
+              <span>RESERVAR MINHA VAGA AGORA</span>
+              <i data-lucide="chevron-right" class="w-5 h-5 shrink-0 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+
+            <p class="text-[10px] text-slate-400 mt-4 italic">
+              Seu contato será direcionado à diretora acadêmica pelo WhatsApp Seguro
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 13. CTA FINAL -->
+  <section id="cta-final" class="bg-brand-navy text-white py-20 text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-tr from-brand-navy/90 to-brand-sage/40 opacity-70"></div>
+    <div class="max-w-5xl mx-auto px-6 relative z-10">
+      <h3 class="text-2xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight">
+        Seja o terapeuta de peso que <br>esta geração tanto <span class="text-brand-gold font-extrabold">precisa</span>.
+      </h3>
+      <p class="text-sm md:text-base text-slate-300 max-w-xl mx-auto mb-10">
+        Junte-se à FATEB neste grande propósito. Obtenha respaldo acadêmico, erudição clínica relevante e liberdade profissional para transformar vidas.
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md mx-auto">
+        <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-gold to-yellow-500 hover:from-yellow-500 hover:to-brand-gold text-brand-navy font-black tracking-wider uppercase text-xs md:text-sm px-6 py-4.5 rounded-full shadow-lg text-center transition group duration-300">
+          <span>🎯 FAZER MATRÍCULA AGORA</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 shrink-0 transition group-hover:translate-x-1"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=5512991847661&text=Ol%C3%A1%21+Gostaria+de+falar+com+a+Diretora+Arleana+sobre+as+matr%C3%ADculas+para+a+Forma%C3%A7%C3%A3o+Terap%C3%AAutica+Completa+da+FATEB." target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#25d366] to-[#128c7e] hover:brightness-110 text-white font-extrabold uppercase text-xs md:text-sm px-6 py-4.5 rounded-full shadow-lg transition">
+          <svg class="w-4 h-4 fill-current shrink-0 mr-1" viewBox="0 0 24 24"><path d="M12.012 3c-4.96 0-9 4.004-9 8.96 0 1.568.413 3.117 1.2 4.48L3 21l4.704-1.215c1.315.713 2.808 1.127 4.308 1.127 4.96 0 9-4.004 9-8.96C21.012 7.004 17.012 3 12.012 3zm4.51 12.872c-.22.617-1.12 1.155-1.576 1.258-.458.102-.916.143-2.909-.646-2.545-1.008-4.173-3.574-4.298-3.738-.125-.164-1.014-1.327-1.014-2.531 0-1.204.621-1.796.843-2.039.223-.243.486-.305.648-.305.162 0 .324.004.466.012.146.008.344-.055.539.407.203.489.696 1.677.756 1.798.06.12.1.262.02.423-.08.162-.12.262-.24.403-.12.14-.251.314-.359.423-.122.12-.249.251-.107.491.142.24.631 1.026 1.353 1.66.932.818 1.716 1.072 1.959 1.192.243.12.384.102.527-.06.143-.162.612-.705.776-.948.164-.243.328-.201.551-.12.223.082 1.413.658 1.656.78.243.12.404.18.465.285.061.106.061.613-.159 1.23z"/></svg>
+          <span>FALAR NO WHATSAPP</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. FAQ -->
+  <section id="faq" class="py-20 bg-brand-sagelight">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-brand-gold font-bold uppercase text-xs tracking-widest block mb-2">Suas Dúvidas</span>
+        <h2 class="text-3xl font-serif font-bold text-brand-navy leading-tight">
+          Perguntas Frequentes
+        </h2>
+        <div class="h-1 w-16 bg-brand-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Q1 -->
+        <details class="group bg-white rounded-2xl border border-slate-200/50 custom-shadow overflow-hidden transition-all duration-300">
+          <summary class="flex justify-between items-center p-6 text-brand-navy font-bold font-serif text-sm md:text-base cursor-pointer select-none list-none uppercase tracking-wide">
+            <span>Preciso possuir graduação prévia?</span>
+            <span class="text-brand-gold shrink-0 transition-transform duration-300">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-600 text-xs md:text-sm leading-relaxed border-t border-slate-100 pt-4">
+            Não é um pré-requisito obrigatório. Alunas com Ensino Médio concluído recebem a importante titulação oficial e diploma de Extensão Universitária, emitido pela FATEB e plenamente amparado pela legislação nacional brasileira. Quem já porta graduação superior recebe o diploma e registro acadêmico pós-graduado Lato Sensu formal credenciado pelo MEC.
+          </div>
+        </details>
+
+        <!-- Q2 -->
+        <details class="group bg-white rounded-2xl border border-slate-200/50 custom-shadow overflow-hidden transition-all duration-300">
+          <summary class="flex justify-between items-center p-6 text-brand-navy font-bold font-serif text-sm md:text-base cursor-pointer select-none list-none uppercase tracking-wide">
+            <span>Como ocorrem as videoaulas síncronas?</span>
+            <span class="text-brand-gold shrink-0 transition-transform duration-300">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-600 text-xs md:text-sm leading-relaxed border-t border-slate-100 pt-4">
+            Ocorrem na modalidade de salas síncronas virtuais via Zoom (com 4 encontros síncronos enriquecedores mensais). O material literário e as gravações das aulas passadas podem ser confortavelmente acessados na Área de Membros oficial da FATEB.
+          </div>
+        </details>
+
+        <!-- Q3 -->
+        <details class="group bg-white rounded-2xl border border-slate-200/50 custom-shadow overflow-hidden transition-all duration-300">
+          <summary class="flex justify-between items-center p-6 text-brand-navy font-bold font-serif text-sm md:text-base cursor-pointer select-none list-none uppercase tracking-wide">
+            <span>Quais são as formas para inscrição acadêmica?</span>
+            <span class="text-brand-gold shrink-0 transition-transform duration-300">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-600 text-xs md:text-sm leading-relaxed border-t border-slate-100 pt-4">
+            A sua inscrição é realizada através do nosso portal integrado oficial, permitindo parcelamentos flexíveis através de cartões de crédito em até 6 vezes, além de transferências síncronas rápidas PIX ou faturas de boletos para o vencimento confortável das parcelas.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15. RODAPÉ -->
+  <footer class="bg-brand-navy text-slate-300 py-16 border-t border-brand-gold/10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10 text-left">
+      <!-- Col 1 -->
+      <div>
+        <span class="text-brand-gold text-2xl font-serif font-extrabold tracking-widest uppercase block mb-4">FATEB</span>
+        <p class="text-xs leading-relaxed max-w-sm mb-4 text-slate-300">
+          FATEB Instituto de Formação Acadêmica — Dedicado ao cuidado íntegro intelectual, promovendo formações de excelência e especializações profissionais baseadas em rigor acadêmico, amparo legal e alta aplicabilidade prática.
+        </p>
+        <p class="text-[10px] text-slate-500">
+          📍 FATEB Educacional — CNPJ: 07.828.118/0001-38
+        </p>
+      </div>
+
+      <!-- Col 2 -->
+      <div>
+        <h6 class="text-white font-serif font-bold tracking-wide mb-4 text-sm uppercase">Fale Conosco</h6>
+        <ul class="space-y-3 text-xs">
+          <li class="flex items-center gap-2">
+            <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-gold shrink-0"></i>
+            <span>(12) 99184-7661</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i data-lucide="mail" class="w-3.5 h-3.5 text-brand-gold shrink-0"></i>
+            <span>suporte@fatebeducacional.com.br</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-gold shrink-0"></i>
+            <span>Atendimento síncrono online nacional</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div>
+        <h6 class="text-white font-serif font-bold tracking-wide mb-4 text-sm uppercase">Secretaria Acadêmica</h6>
+        <p class="text-xs leading-relaxed max-w-sm mb-4 text-slate-300">
+          Faça sua matrícula diretamente no terminal unificado de admissões de forma criptografada e segura:
+        </p>
+        <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-brand-gold hover:text-white font-bold text-xs tracking-wider transition uppercase">
+          <span>Acessar portal admissional</span>
+          <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/10 text-center text-[10px] tracking-wide text-slate-500">
+      <p>© 2026 FATEB — Todos os direitos reservados. CNPJ: 07.828.118/0001-38</p>
+    </div>
+  </footer>
+
+  <!-- 16. BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://api.whatsapp.com/send/?phone=5512991847661&text=Ol%C3%A1%21+Gostaria+de+falar+com+a+Diretora+Arleana+sobre+as+matr%C3%ADculas+para+a+Forma%C3%A7%C3%A3o+Terap%C3%AAutica+Completa+da+FATEB." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 float-wp bg-gradient-to-r from-[#25d366] to-[#128c7e] text-white flex items-center gap-2 px-5 py-3.5 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all text-sm font-extrabold tracking-wider border border-white/20">
+    <span class="relative flex h-3.5 w-3.5 shrink-0">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-red-500 border border-white"></span>
+    </span>
+    <i class="w-5 h-5 flex shrink-0" style="background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;white&quot;><path d=&quot;M12.012 3c-4.96 0-9 4.004-9 8.96 0 1.568.413 3.117 1.2 4.48L3 21l4.704-1.215c1.315.713 2.808 1.127 4.308 1.127 4.96 0 9-4.004 9-8.96C21.012 7.004 17.012 3 12.012 3zm4.51 12.872c-.22.617-1.12 1.155-1.576 1.258-.458.102-.916.143-2.909-.646-2.545-1.008-4.173-3.574-4.298-3.738-.125-.164-1.014-1.327-1.014-2.531 0-1.204.621-1.796.843-2.039.223-.243.486-.305.648-.305.162 0 .324.004.466.012.146.008.344-.055.539.407.203.489.696 1.677.756 1.798.06.12.1.262.02.423-.08.162-.12.262-.24.403-.12.14-.251.314-.359.423-.122.12-.249.251-.107.491.142.24.631 1.026 1.353 1.66.932.818 1.716 1.072 1.959 1.192.243.12.384.102.527-.06.143-.162.612-.705.776-.948.164-.243.328-.201.551-.12.223.082 1.413.658 1.656.78.243.12.404.18.465.285.061.106.061.613-.159 1.23z&quot;/></svg>'); background-size: contain; background-repeat: no-repeat; width: 1.25rem; height: 1.25rem;"></i>
+    <span class="uppercase">TIRE SUAS DÚVIDAS</span>
+  </a>
+
+  <!-- JavaScript funcional síncrono -->
+  <script>
+    // Inicializar Ícones Lucide
+    lucide.createIcons();
+
+    // 10 Min Countdown timer local
+    let time = 600; // 10 minutes in seconds
+    const timerElement = document.getElementById('countdown-timer');
+
+    function updateLocalTimer() {
+      if (timerElement) {
+        const minutes = Math.floor(time / 60);
+        const seconds = time % 60;
+        timerElement.innerText = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        if (time > 0) {
+          time--;
+        }
+      }
+    }
+
+    if (timerElement) {
+      setInterval(updateLocalTimer, 1000);
+      updateLocalTimer();
+    }
+
+    // Lógica do Contador Regressivo Persistente de 7 dias
+    function startCountdown() {
+      let targetDate = localStorage.getItem('fateb_countdown_target_completo');
+      if (!targetDate) {
+        // config 7 dias a partir do carregamento
+        targetDate = new Date().getTime() + (7 * 14 * 60 * 60 * 1000); // 7 dias
+        localStorage.setItem('fateb_countdown_target_completo', targetDate);
+      } else {
+        targetDate = parseInt(targetDate);
+      }
+    }
+
+    startCountdown();
+  </script>
+</body>
+</html>
