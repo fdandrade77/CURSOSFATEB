@@ -209,6 +209,14 @@ export default function App() {
       window.location.href = "/terapeuta-completo";
       return;
     }
+    if (course.id === "terapeuta-dimensoes-alma") {
+      window.location.href = "/terapeuta-alma-mente";
+      return;
+    }
+    if (course.id === "terapeuta-mulheres-mentora") {
+      window.location.href = "/terapeuta-mulheres-crista";
+      return;
+    }
     setSelectedCourse(course);
     setTimerCount(600); // Reset timer to 10 mins
   };
@@ -376,39 +384,6 @@ export default function App() {
             </p>
           </div>
 
-          {/* Search, filters, and dynamic layout options */}
-          <div className="bg-white rounded-3xl p-5 shadow-xl border border-slate-100 max-w-4xl mx-auto mb-12 flex flex-col md:flex-row gap-4 items-center justify-between">
-            
-            {/* Search Input */}
-            <div className="relative w-full md:w-80">
-              <Search className="absolute left-3 top-3.5 w-4 h-4 text-slate-400" />
-              <input
-                type="text"
-                placeholder="Qual curso deseja procurar?"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-9 pr-4 py-2.5 rounded-xl bg-slate-100 focus:bg-white focus:ring-2 focus:ring-brand-gold border-0 focus:outline-none text-sm transition-all"
-              />
-            </div>
-
-            {/* Category Filter Chips */}
-            <div className="flex flex-wrap gap-2 w-full md:w-auto justify-center">
-              {["Todos", "Psicanálise", "Cristã", "Infantil/Parental"].map((filter) => (
-                <button
-                  key={filter}
-                  onClick={() => setActiveFilter(filter)}
-                  className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                    activeFilter === filter
-                      ? "bg-brand-blue-dark text-white shadow-md shadow-brand-blue-dark/20"
-                      : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                  }`}
-                >
-                  {filter}
-                </button>
-              ))}
-            </div>
-          </div>
-
           {/* Grid Layout of Course Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 scroll-mt-20">
             {filteredCourses.length > 0 ? (
@@ -433,18 +408,22 @@ export default function App() {
                       window.location.href = "/terapeuta-cristao";
                     } else if (course.id === "terapeuta-completo") {
                       window.location.href = "/terapeuta-completo";
+                    } else if (course.id === "terapeuta-mulheres-mentora") {
+                      window.location.href = "/terapeuta-mulheres-crista";
+                    } else if (course.id === "terapeuta-dimensoes-alma") {
+                      window.location.href = "/terapeuta-alma-mente";
                     }
                   }}
                   className={`bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-md flex flex-col hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group ${
-                    (course.id === "terapeuta-criancas-adolescentes" || course.id === "terapeuta-educacao-parental" || course.id === "psicanalise-abordagem-crista" || course.id === "neuroteologia" || course.id === "neuropsicanalise-clinica" || course.id === "psicanalise-freudiana" || course.id === "terapeuta-cristao" || course.id === "terapeuta-completo") ? "cursor-pointer" : ""
+                    (course.id === "terapeuta-criancas-adolescentes" || course.id === "terapeuta-educacao-parental" || course.id === "psicanalise-abordagem-crista" || course.id === "neuroteologia" || course.id === "neuropsicanalise-clinica" || course.id === "psicanalise-freudiana" || course.id === "terapeuta-cristao" || course.id === "terapeuta-completo" || course.id === "terapeuta-mulheres-mentora" || course.id === "terapeuta-dimensoes-alma") ? "cursor-pointer" : ""
                   }`}
                 >
                   {/* Image banner with overlay */}
-                  <div className="relative h-44 sm:h-48 overflow-hidden bg-slate-50 flex items-center justify-center p-3 border-b border-slate-100">
+                  <div className="relative overflow-hidden bg-slate-50 flex items-center justify-center border-b border-slate-100 h-72 sm:h-80 p-2">
                     <img
                       src={course.imageUrl}
                       alt={course.title}
-                      className="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                       referrerPolicy="no-referrer"
                     />
                     
@@ -502,7 +481,7 @@ export default function App() {
                       </div>
 
                       {/* Complete Course CTA button */}
-                      {course.id === "terapeuta-criancas-adolescentes" || course.id === "terapeuta-educacao-parental" || course.id === "psicanalise-abordagem-crista" || course.id === "neuroteologia" || course.id === "neuropsicanalise-clinica" || course.id === "psicanalise-freudiana" || course.id === "terapeuta-cristao" || course.id === "terapeuta-completo" ? (
+                      {course.id === "terapeuta-criancas-adolescentes" || course.id === "terapeuta-educacao-parental" || course.id === "psicanalise-abordagem-crista" || course.id === "neuroteologia" || course.id === "neuropsicanalise-clinica" || course.id === "psicanalise-freudiana" || course.id === "terapeuta-cristao" || course.id === "terapeuta-completo" || course.id === "terapeuta-mulheres-mentora" || course.id === "terapeuta-dimensoes-alma" ? (
                         <a
                           href={
                             course.id === "terapeuta-criancas-adolescentes" 
@@ -519,6 +498,10 @@ export default function App() {
                               ? "/psifreudiana"
                               : course.id === "terapeuta-cristao"
                               ? "/terapeuta-cristao"
+                              : course.id === "terapeuta-mulheres-mentora"
+                              ? "/terapeuta-mulheres-crista"
+                              : course.id === "terapeuta-dimensoes-alma"
+                              ? "/terapeuta-alma-mente"
                               : "/terapeuta-completo"
                           }
                           className="w-full bg-[#dfab22] hover:bg-[#c49419] text-brand-blue-dark font-display font-extrabold text-xs py-3.5 px-4 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 group cursor-pointer uppercase tracking-wider"

@@ -88,6 +88,28 @@ app.get(["/terapeuta-cristao", "/terapeuta-cristao/"], (req, res) => {
   res.sendFile(filePath);
 });
 
+app.get(["/terapeuta-mulheres-crista", "/terapeuta-mulheres-crista/"], (req, res) => {
+  let filePath = path.join(process.cwd(), "public", "terapeuta-mulheres-crista", "index.html");
+  if (process.env.NODE_ENV === "production") {
+    const distPath = path.join(process.cwd(), "dist", "terapeuta-mulheres-crista", "index.html");
+    if (fs.existsSync(distPath)) {
+      filePath = distPath;
+    }
+  }
+  res.sendFile(filePath);
+});
+
+app.get(["/terapeuta-alma-mente", "/terapeuta-alma-mente/"], (req, res) => {
+  let filePath = path.join(process.cwd(), "public", "terapeuta-alma-mente", "index.html");
+  if (process.env.NODE_ENV === "production") {
+    const distPath = path.join(process.cwd(), "dist", "terapeuta-alma-mente", "index.html");
+    if (fs.existsSync(distPath)) {
+      filePath = distPath;
+    }
+  }
+  res.sendFile(filePath);
+});
+
 app.get(["/terapeuta-completo", "/terapeuta-completo/"], (req, res) => {
   let filePath = path.join(process.cwd(), "public", "terapeuta-completo", "index.html");
   if (process.env.NODE_ENV === "production") {

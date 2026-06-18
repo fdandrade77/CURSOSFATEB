@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formação de Terapeuta Especialista nas Dimensões da Alma e da Mente — FATEB</title>
+  <meta name="description" content="Formação Oficial de 520h Reconhecida pelo MEC e Certificação Internacional. Mapeie dores da psique humana e atue com cura existencial, emocional e sistêmica profunda.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Formação de Terapeuta Especialista nas Dimensões da Alma e da Mente — FATEB">
+  <meta property="og:description" content="Aprofunde-se com fundamentação teórica em Jung, Viktor Frankl, Aaron Beck e guie pessoas à cura interior. Curso com Certificação MEC.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/terapeutadimalma.jpeg">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            midnight: {
+              DEFAULT: '#0f172a',
+              light: '#1e293b',
+              dark: '#020617',
+            },
+            mystic: {
+              DEFAULT: '#3b2f4c',
+              light: '#534568',
+              dark: '#241a31',
+            },
+            gold: {
+              DEFAULT: '#d9b862',
+              hover: '#ecd086',
+              dark: '#b6923b',
+            },
+            satin: {
+              DEFAULT: '#f6f4f2',
+              light: '#fcfbfa',
+              dark: '#e8e4de',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .custom-shadow {
+      box-shadow: 0 10px 30px -10px rgba(36, 26, 49, 0.12);
+    }
+    .gold-shadow {
+      box-shadow: 0 8px 24px -6px rgba(217, 184, 98, 0.35);
+    }
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px -15px rgba(36, 26, 49, 0.18);
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .float-wp {
+      animation: float 3.5s ease-in-out infinite;
+    }
+    details[open] summary svg {
+      transform: rotate(180deg);
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-satin-light leading-relaxed">
+
+  <!-- 1. BARRA DE ANÚNCIO (topo) -->
+  <div id="announcement-bar" class="bg-midnight-dark text-satin-dark text-xs font-bold uppercase tracking-wider py-2.5 px-4 text-center border-b border-gold/10">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+      <span>⚡ MATRÍCULAS ABERTAS — Vagas promocionais com certificação MEC. Início em Maio/2026</span>
+    </div>
+  </div>
+
+  <!-- Sticky Header -->
+  <header class="bg-midnight pt-5 pb-5 sticky top-0 z-40 shadow-md border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <a href="/" class="text-satin/90 hover:text-gold text-xs font-semibold tracking-wide border border-satin/20 hover:border-gold/40 px-3.5 py-1.5 rounded-full transition-all bg-white/5 inline-flex items-center gap-1.5 shrink-0">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+          Voltar ao Portal
+        </a>
+      </div>
+      <div>
+        <a href="#precos" class="bg-gold hover:bg-gold-hover text-midnight font-extrabold text-xs tracking-wider uppercase px-5 py-2.5 rounded-full transition-all duration-300 shadow-md gold-shadow">
+          Matricular-se
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. HERO (banner principal) -->
+  <section id="hero" class="bg-gradient-to-b from-midnight to-mystic text-satin pt-12 pb-20 relative overflow-hidden">
+    <!-- Background element decoration -->
+    <div class="absolute top-[20%] right-[-10%] w-[500px] h-[500px] bg-mystic-light/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Logo topo (FATEB) -->
+        <img src="/logofateb.webp" alt="FATEB Logo" class="max-h-24 md:max-h-32 w-auto mx-auto mb-8 object-contain transition-transform hover:scale-105 duration-300" referrerPolicy="no-referrer">
+        
+        <!-- Título H1 Grande -->
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight leading-tight mb-6">
+          Formação de Terapeuta Especialista nas <br>
+          <span class="text-gold">Dimensões da Alma e da Mente</span>
+        </h1>
+        
+        <!-- Subtítulo em itálico -->
+        <p class="text-lg md:text-xl font-serif italic text-gold/90 mb-6 font-medium">
+          🧠 “Uma visão profunda, integrada e aplicada da experiência humana: psíquica, existencial, emocional e espiritual.”
+        </p>
+        
+        <!-- Parágrafo descritivo -->
+        <p class="text-base md:text-lg text-satin/85 max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
+          Articule a ciência biológica do cérebro com a reestruturação cognitiva de Aaron Beck, as forças inconscientes de Jung e a busca de sentido de Viktor Frankl. Uma capacitação com ênfase terapêutica integrada e sólida para mapear dores invisíveis e conduzir a mente humana de forma ética e profissional.
+        </p>
+        
+        <!-- 2 Botões Lado a Lado -->
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
+          <a href="#precos" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-midnight-dark font-extrabold uppercase text-sm px-8 py-4.5 rounded-full shadow-lg gold-shadow transition-all group cursor-pointer duration-300">
+            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+            <span>QUERO ME INSCREVER AGORA</span>
+          </a>
+          <a href="https://wa.me/5512991847661" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-midnight-light via-midnight-light to-midnight-dark hover:brightness-110 text-white font-extrabold uppercase text-sm px-8 py-4.5 rounded-full shadow-lg border border-white/10 cursor-pointer duration-300">
+            <i data-lucide="message-circle" class="w-5 h-5 text-emerald-400"></i>
+            <span>Conversar no WhatsApp</span>
+          </a>
+        </div>
+        
+        <!-- Badges de credenciais -->
+        <div class="grid grid-cols-2 md:grid-cols-4 max-w-3xl mx-auto gap-4 pt-6 border-t border-satin/10 text-xs tracking-wider uppercase font-semibold text-satin-dark">
+          <div class="flex items-center justify-center gap-2">
+            <i data-lucide="shield-check" class="w-4 h-4 text-gold shrink-0"></i>
+            <span>🛡️ Certificação MEC</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <i data-lucide="globe" class="w-4 h-4 text-gold shrink-0"></i>
+            <span>🌍 Selo Internacional</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <i data-lucide="clock" class="w-4 h-4 text-gold shrink-0"></i>
+            <span>⏱️ 520h de Carga</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <i data-lucide="calendar" class="w-4 h-4 text-gold shrink-0"></i>
+            <span>📅 Duração 6 Meses</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. SEÇÃO DE VÍDEO -->
+  <section id="video-secao" class="py-16 bg-gradient-to-b from-mystic to-midnight-dark text-satin text-center relative z-15">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-serif text-white font-bold mb-4 tracking-tight">
+        Conheça a Formação FATEB em Prática das Dimensões Humanas
+      </h2>
+      <p class="text-sm md:text-base text-satin/70 max-w-xl mx-auto mb-10">
+        Assista ao vídeo curto abaixo e veja como a nossa metodologia universitária prepara você para atuar no mercado com excelência acadêmica.
+      </p>
+      
+      <!-- Player YouTube embutido com borda dourada decorativa -->
+      <div class="relative max-w-3xl mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-gold/70 bg-midnight">
+        <div class="aspect-video w-full">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/6_WgFl49lcA?rel=0&modestbranding=1&playsinline=1" title="Formação FATEB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      
+      <!-- Botão CTA dourado abaixo do vídeo -->
+      <div class="mt-12">
+        <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-midnight-dark font-black tracking-wide uppercase text-sm md:text-base px-10 py-5 rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all duration-300">
+          <span>🎓 QUERO APROVEITAR MINHA VAGA COM DESCONTO</span>
+          <i data-lucide="chevron-right" class="w-5 h-5"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. VOCÊ VAI APRENDER A / OBJETIVO -->
+  <section id="aprendizado" class="py-20 bg-satin">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest block mb-2">Objetivo da Formação</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-midnight leading-tight">
+          Capacitando para Intervir com Sabedoria e Ciência
+        </h2>
+        <p class="text-slate-600 max-w-xl mx-auto text-sm md:text-base mt-2">
+          Oferecemos ferramentas profundas e práticas de atuação clínica para guiar as pessoas à transformação integral e de sentido.
+        </p>
+        <div class="h-1 w-20 bg-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-6 max-w-6xl mx-auto">
+        <!-- Pilar 1 -->
+        <div class="bg-white p-6 rounded-2xl custom-shadow hover-lift border-t-4 border-gold md:col-span-1">
+          <div class="text-2xl mb-4">🧘‍♀️</div>
+          <h3 class="text-base font-serif font-bold text-midnight mb-2">Autoconhecimento</h3>
+          <p class="text-slate-500 text-xs leading-relaxed">Mapeamento estrutural das inclinações e processos de interiorização íntima.</p>
+        </div>
+
+        <!-- Pilar 2 -->
+        <div class="bg-white p-6 rounded-2xl custom-shadow hover-lift border-t-4 border-gold md:col-span-1">
+          <div class="text-2xl mb-4">❤️‍🩹</div>
+          <h3 class="text-base font-serif font-bold text-midnight mb-2">Ressignificação</h3>
+          <p class="text-slate-500 text-xs leading-relaxed">Condução segura diante de feridas somáticas, traumas e traumas reprimidos.</p>
+        </div>
+
+        <!-- Pilar 3 -->
+        <div class="bg-white p-6 rounded-2xl custom-shadow hover-lift border-t-4 border-gold md:col-span-1">
+          <div class="text-2xl mb-4">🎯</div>
+          <h3 class="text-base font-serif font-bold text-midnight mb-2">Clareza de Propósito</h3>
+          <p class="text-slate-500 text-xs leading-relaxed">Ativação existencial profunda embasada nos pressupostos de Viktor Frankl.</p>
+        </div>
+
+        <!-- Pilar 4 -->
+        <div class="bg-white p-6 rounded-2xl custom-shadow hover-lift border-t-4 border-gold md:col-span-1">
+          <div class="text-2xl mb-4">⚙️</div>
+          <h3 class="text-base font-serif font-bold text-midnight mb-2">Transformação</h3>
+          <p class="text-slate-500 text-xs leading-relaxed">Reestruturação de crenças limitadoras e hábitos comportamentais nocivos.</p>
+        </div>
+
+        <!-- Pilar 5 -->
+        <div class="bg-white p-6 rounded-2xl custom-shadow hover-lift border-t-4 border-gold md:col-span-1">
+          <div class="text-2xl mb-4">💫</div>
+          <h3 class="text-base font-serif font-bold text-midnight mb-2">Integração</h3>
+          <p class="text-slate-500 text-xs leading-relaxed">Conexão equilibrada e saudável entre a mente, o corpo físico e o espírito.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CONTEÚDO PROGRAMÁTICO (GRADE CORRENTE) -->
+  <section id="programa" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest block mb-2">Grade Curricular de Elite</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-midnight leading-tight">
+          Estrutura com 12 Módulos Acadêmicos
+        </h2>
+        <p class="text-slate-600 max-w-xl mx-auto text-sm md:text-base">
+          Módulos sequenciais que articulam psicologia moderna, bases filosóficas, neurociência prática e propósitos existenciais profundos.
+        </p>
+        <div class="h-1 w-20 bg-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <!-- Mod 1 -->
+        <div class="bg-satin-light p-6 rounded-xl border border-slate-200 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-midnight text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            01
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-midnight text-base leading-tight mb-2">Filosofia da Mente e Consciência Humana</h4>
+            <p class="text-slate-500 text-xs">Mente, consciência e subjetividade. Dualismo, fenomenologia e consciência existencial. Bases filosóficas da experiência humana.</p>
+          </div>
+        </div>
+
+        <!-- Mod 2 -->
+        <div class="bg-satin-light p-6 rounded-xl border border-slate-200 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-midnight text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            02
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-midnight text-base leading-tight mb-2">Estrutura da Mente e as Crenças Limitantes</h4>
+            <p class="text-slate-500 text-xs">Crenças conscientes, subconscientes e inconscientes. Pensamento, emoção e comportamento. Reestruturação cognitiva e neuroplasticidade.</p>
+          </div>
+        </div>
+
+        <!-- Mod 3 -->
+        <div class="bg-satin-light p-6 rounded-xl border border-slate-200 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-midnight text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            03
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-midnight text-base leading-tight mb-2">Dimensões entre Alma-Mente: Ciência e Fé</h4>
+            <p class="text-slate-500 text-xs">O ser humano integral: corpo, mente e espírito. Fronteira entre saúde emocional, fé, terapia e limites éticos do aconselhamento.</p>
+          </div>
+        </div>
+
+        <!-- Mod 4 -->
+        <div class="bg-satin-light p-6 rounded-xl border border-slate-200 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-midnight text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            04
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-midnight text-base leading-tight mb-2">A Dimensão da Sombra (Teoria Junguiana)</h4>
+            <p class="text-slate-500 text-xs">Inconsciente pessoal e coletivo. Análise prática da sombra, repressões psíquicas e integração saudável de conteúdos latentes.</p>
+          </div>
+        </div>
+
+        <!-- Mod 5 -->
+        <div class="bg-satin-light p-6 rounded-xl border border-slate-200 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-midnight text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            05
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-midnight text-base leading-tight mb-2">A Dimensão do Sentido e a Logoterapia</h4>
+            <p class="text-slate-500 text-xs">Fundamentos de Viktor Frankl. Busca por significado como motivação humana primária, vazio existencial e elaboração do sofrimento.</p>
+          </div>
+        </div>
+
+        <!-- Mod 6 -->
+        <div class="bg-satin-light p-6 rounded-xl border border-slate-200 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-midnight text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            06
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-midnight text-base leading-tight mb-2">A Dimensão Existencial da Experiência</h4>
+            <p class="text-slate-500 text-xs">Conceitos de liberdade, responsabilidade humana, angústias, finitude e o desenvolvimento de propósitos autênticos na clínica.</p>
+          </div>
+        </div>
+
+        <!-- Mod 7 -->
+        <div class="bg-satin-light p-6 rounded-xl border border-slate-200 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-midnight text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            07
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-midnight text-base leading-tight mb-2">A Dimensão da Linguagem</h4>
+            <p class="text-slate-500 text-xs">A palavra como criadora de realidade e comportamento. Comunicação terapêutica verbal de Milton Erickson e sugestões saudáveis.</p>
+          </div>
+        </div>
+
+        <!-- Mod 8 -->
+        <div class="bg-satin-light p-6 rounded-xl border border-slate-200 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-midnight text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            08
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-midnight text-base leading-tight mb-2">Sistemas Familiares e Dinâmicas Relacionais</h4>
+            <p class="text-slate-500 text-xs">Sistemas de ancestralidade, padrões transgeracionais repetitivos, lealdades invisíveis e seu impacto nas dinâmicas emocionais.</p>
+          </div>
+        </div>
+
+        <!-- Mod 9 -->
+        <div class="bg-satin-light p-6 rounded-xl border border-slate-200 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-midnight text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            09
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-midnight text-base leading-tight mb-2">A Dimensão da Cognição (TCC)</h4>
+            <p class="text-slate-500 text-xs">Pensamentos automáticos, distorções conceituais cotidianas e reestruturação com bases na Terapia Cognitivo-Comportamental.</p>
+          </div>
+        </div>
+
+        <!-- Mod 10 -->
+        <div class="bg-satin-light p-6 rounded-xl border border-slate-200 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-midnight text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            10
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-midnight text-base leading-tight mb-2">Corpo, Trauma e Memória Somática</h4>
+            <p class="text-slate-500 text-xs">Relação direta psicossomática. Traumas reprimidos no corpo, somatizações orgânicas e técnicas de liberação das memórias musculares.</p>
+          </div>
+        </div>
+
+        <!-- Mod 11 -->
+        <div class="bg-satin-light p-6 rounded-xl border border-slate-200 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-midnight text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            11
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-midnight text-base leading-tight mb-2">Presença, Consciência e Experiência</h4>
+            <p class="text-slate-500 text-xs">Atenção plena e autorregulação terapêutica. Técnicas de ancoragem no presente, meditação e centralização para o terapeuta e paciente.</p>
+          </div>
+        </div>
+
+        <!-- Mod 12 -->
+        <div class="bg-satin-light p-6 rounded-xl border border-slate-200 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-midnight text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            12
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-midnight text-base leading-tight mb-2">Neurociência Afetiva e Emoções</h4>
+            <p class="text-slate-500 text-xs">O funcionamento do cérebro emocional (sistema límbico). Neurobiologia afetiva, regulação de neurotransmissores e sinergia mente-comportamento.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. METODOLOGIA DE ENSINO -->
+  <section id="metodologia" class="py-20 bg-satin">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest block mb-2">Foco Educacional Integrado</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-midnight leading-tight">
+          Metodologia de Excelência FATEB
+        </h2>
+        <div class="h-1 w-20 bg-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <!-- Met 1 -->
+        <div class="bg-white p-6 rounded-2xl text-center flex flex-col items-center custom-shadow">
+          <div class="w-12 h-12 rounded-full bg-gold/15 text-gold flex items-center justify-center mb-4 text-xl">
+            💻
+          </div>
+          <h4 class="font-serif font-bold text-midnight mb-1 text-sm md:text-base">100% Online</h4>
+          <p class="text-slate-500 text-xs">Vídeo-aulas gravadas de alto nível pedagógico.</p>
+        </div>
+
+        <!-- Met 2 -->
+        <div class="bg-white p-6 rounded-2xl text-center flex flex-col items-center custom-shadow">
+          <div class="w-12 h-12 rounded-full bg-gold/15 text-gold flex items-center justify-center mb-4 text-xl">
+            🎥
+          </div>
+          <h4 class="font-serif font-bold text-midnight mb-1 text-sm md:text-base">Aulas via Zoom</h4>
+          <p class="text-slate-500 text-xs">Interação direta via bate-papo ao vivo regular.</p>
+        </div>
+
+        <!-- Met 3 -->
+        <div class="bg-white p-6 rounded-2xl text-center flex flex-col items-center custom-shadow">
+          <div class="w-12 h-12 rounded-full bg-gold/15 text-gold flex items-center justify-center mb-4 text-xl">
+            📂
+          </div>
+          <h4 class="font-serif font-bold text-midnight mb-1 text-sm md:text-base">Bases Práticas</h4>
+          <p class="text-slate-500 text-xs">Estudos de caso e supervisão supervisionada.</p>
+        </div>
+
+        <!-- Met 4 -->
+        <div class="bg-white p-6 rounded-2xl text-center flex flex-col items-center custom-shadow">
+          <div class="w-12 h-12 rounded-full bg-gold/15 text-gold flex items-center justify-center mb-4 text-xl">
+            📚
+          </div>
+          <h4 class="font-serif font-bold text-midnight mb-1 text-sm md:text-base">Kit Completo</h4>
+          <p class="text-slate-500 text-xs">Material didático em PDF, slides e guias de leitura.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS DA FORMAÇÃO SEÇÃO -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest block mb-1">Por que escolher esta formação?</span>
+        <h2 class="text-3xl font-serif font-bold text-midnight">Diferenciais que Tecem o Nosso Legado</h2>
+        <div class="h-1 w-20 bg-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-5xl mx-auto text-left">
+        <div class="flex gap-4">
+          <div class="text-amber-500 shrink-0 text-2xl">⚡</div>
+          <div>
+            <h5 class="font-sans font-bold text-midnight text-base mb-1">Total Integração</h5>
+            <p class="text-slate-500 text-xs">A única formação que equilibra múltiplos pilares integrando ciência, filosofia, espiritualidade e psiques de forma respeitosa e refinada.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="text-amber-500 shrink-0 text-2xl">🔍</div>
+          <div>
+            <h5 class="font-sans font-bold text-midnight text-base mb-1">Investigação Profunda</h5>
+            <p class="text-slate-500 text-xs">Fugi do óbvio. Não fornecemos técnicas paliativas de autoajuda rápida. Entregamos metodologias clínicas reais que alcançam a raiz estrutural do sofrimento.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="text-amber-500 shrink-0 text-2xl">🌱</div>
+          <div>
+            <h5 class="font-sans font-bold text-midnight text-base mb-1">Prática Pronta</h5>
+            <p class="text-slate-500 text-xs">Foco extremo na aplicabilidade prática. Você recebe cartilhas prontas de exercícios terapêuticos para aplicar em si mesmo e nos pacientes desde os primeiros módulos.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="text-amber-500 shrink-0 text-2xl">🏛️</div>
+          <div>
+            <h5 class="font-sans font-bold text-midnight text-base mb-1">Forte Base de Propósito</h5>
+            <p class="text-slate-500 text-xs">Valorização do sentido individual, impulsionando a ética humana e guiando almas com ferramentas de resgate humano.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CERTIFICAÇÃO (fundo navy escuro - MEC) -->
+  <section id="certificacao" class="py-20 bg-gradient-to-tr from-midnight-dark via-midnight to-mystic text-satin relative overflow-hidden">
+    <div class="absolute inset-0 bg-midnight/30 pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+      <div class="mb-6 inline-block">
+        <i data-lucide="award" class="w-16 h-16 text-gold mx-auto filter drop-shadow"></i>
+      </div>
+      <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mb-3">
+        Certificação Chancela do <span class="text-gold">MEC</span>
+      </h2>
+      <p class="text-base md:text-lg text-satin/80 max-w-2xl mx-auto mb-12">
+        📜 Diploma oficial de Curso de Extensão Universitária reconhecido nacionalmente pelo MEC, com carga horária registrada de 520 horas aula. Em conformidade com as exigências legais vigentes.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-8">
+        <!-- Caixa 1 -->
+        <div class="p-8 rounded-2xl border-2 border-gold/25 bg-slate-900/40 backdrop-blur-sm text-left">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-2xl">🎓</span>
+            <h4 class="font-serif font-bold text-white text-lg">Estudantes com Ensino Médio</h4>
+          </div>
+          <p class="text-satin/70 text-sm leading-relaxed mb-4">
+            Ao se formar, você receberá a titulação acadêmica de <strong>Extensão Universitária Profissional Capacitadora</strong> registrada e chancelada para sua prática nacional e colocação no mercado terapêutico.
+          </p>
+          <div class="inline-block bg-gold/10 text-gold text-xs font-semibold px-3 py-1 rounded border border-gold/20">
+            Formação de Habilitação Plena
+          </div>
+        </div>
+
+        <!-- Caixa 2 -->
+        <div class="p-8 rounded-2xl border-2 border-gold/25 bg-slate-900/40 backdrop-blur-sm text-left">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-2xl">🏆</span>
+            <h4 class="font-serif font-bold text-white text-lg">Graduados com Curso Superior</h4>
+          </div>
+          <p class="text-satin/70 text-sm leading-relaxed mb-4">
+            Ao se formar, você receberá a autenticidade e o diploma registrado oficial em nível acadêmico superior de <strong>Pós-Graduação Lato Sensu de Especialização</strong> recomendada e autorizada pelo MEC brasileiro.
+          </p>
+          <div class="inline-block bg-gold/10 text-gold text-xs font-semibold px-3 py-1 rounded border border-gold/20">
+            Pós-Graduação Lato Sensu Registrada
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 🎁 BÔNUS EXCLUSIVOS -->
+  <section id="bonus" class="py-20 bg-satin text-center">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest block mb-2">Estudo e Conforto Prático</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-midnight leading-tight">
+          Super Bônus Inclusos Inteiramente Grátis
+        </h2>
+        <div class="h-1 w-20 bg-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-8">
+        <!-- Bonus 1 -->
+        <div class="bg-white rounded-3xl p-8 custom-shadow hover-lift border border-amber-100 flex flex-col justify-between text-left relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-gold text-midnight text-[9px] font-black uppercase px-3.5 py-1.5 rounded-bl tracking-widest">Bônus Exclusivo</div>
+          <div>
+            <span class="text-4xl block mb-4">🔬</span>
+            <h3 class="font-serif font-bold text-midnight text-lg md:text-xl mb-3">Psicanálise Integrativa Contemporânea</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Curso adaptivo para compreender os meandros da análise prática do inconsciente clássico focado nas dores, rotinas e angústias do sujeito moderno.
+            </p>
+          </div>
+          <div class="text-xs text-gold-dark font-extrabold tracking-wider uppercase border-t border-slate-100 pt-4 flex items-center gap-1">
+            <i data-lucide="check-circle" class="w-4 h-4 text-gold"></i>
+            <span>Adicionado 100% Grátis na Inscrição</span>
+          </div>
+        </div>
+
+        <!-- Bonus 2 -->
+        <div class="bg-white rounded-3xl p-8 custom-shadow hover-lift border border-amber-100 flex flex-col justify-between text-left relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-gold text-midnight text-[9px] font-black uppercase px-3.5 py-1.5 rounded-bl tracking-widest">Bônus de Mercado</div>
+          <div>
+            <span class="text-4xl block mb-4">🖥️</span>
+            <h3 class="font-serif font-bold text-midnight text-lg md:text-xl mb-3">Imersão de Atendimento Virtual</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Mapeamento de ferramentas clínicas integradas: prontuários digitais editáveis, técnicas de atração de atendimentos nas redes sociais e modelos prontos de relatórios psicológicos.
+            </p>
+          </div>
+          <div class="text-xs text-gold-dark font-extrabold tracking-wider uppercase border-t border-slate-100 pt-4 flex items-center gap-1">
+            <i data-lucide="check-circle" class="w-4 h-4 text-gold"></i>
+            <span>Liberado Imediatamente no Portal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. CERTIFICAÇÃO GARANTIDA / DOCUMENTOS -->
+  <section id="entregas" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest block mb-1">Kit Completo de Habilitado</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-midnight leading-tight">
+          Suporte Profissional e Materiais Acadêmicos
+        </h2>
+        <div class="h-1 w-20 bg-gold mx-auto rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <!-- Item 1 -->
+        <div class="flex items-start gap-4 p-5 bg-satin rounded-xl hover:shadow transition duration-200">
+          <span class="text-3xl shrink-0">📜</span>
+          <div>
+            <h5 class="font-sans font-bold text-midnight text-sm md:text-base leading-tight mb-1">Certificado Chancelado</h5>
+            <p class="text-slate-500 text-xs">Carga horária registrada de 520 horas válidas para atuação nacional.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="flex items-start gap-4 p-5 bg-satin rounded-xl hover:shadow transition duration-200">
+          <span class="text-3xl shrink-0">🪪</span>
+          <div>
+            <h5 class="font-sans font-bold text-midnight text-sm md:text-base leading-tight mb-1">Credencial em PVC</h5>
+            <p class="text-slate-500 text-xs">Identidade legítima de terapeuta associado enviada fisicamente após formatação.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="flex items-start gap-4 p-5 bg-satin rounded-xl hover:shadow transition duration-200">
+          <span class="text-3xl shrink-0">🏛️</span>
+          <div>
+            <h5 class="font-sans font-bold text-midnight text-sm md:text-base leading-tight mb-1">Registro de Associado</h5>
+            <p class="text-slate-500 text-xs font-normal">Consulta pública de conformidade civil para verificação do seu registro.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="flex items-start gap-4 p-5 bg-satin rounded-xl hover:shadow transition duration-200">
+          <span class="text-3xl shrink-0">🖥️</span>
+          <div>
+            <h5 class="font-sans font-bold text-midnight text-sm md:text-base leading-tight mb-1">Consultório Virtual</h5>
+            <p class="text-slate-500 text-xs">Prontuário eletrônico completo acoplado para gerenciar sessões e pacientes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. PREÇO / INVESTIMENTO -->
+  <section id="precos" class="py-20 bg-midnight relative overflow-hidden">
+    <!-- Efeitos de cor sutil atrás -->
+    <div class="absolute inset-0 bg-gradient-to-b from-midnight-dark via-midnight to-midnight pointer-events-none"></div>
+    <div class="absolute bottom-[-10%] right-[-5%] w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-16 text-satin">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest block mb-2">Valores Promocionais de Lançamento</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-white leading-tight">
+          Invista na sua Transição Profissional e Vocação de Vidas
+        </h2>
+        <div class="h-1 w-16 bg-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="max-w-xl mx-auto">
+        <!-- Card Principal com borda de Destaque -->
+        <div class="bg-white rounded-3xl p-8 md:p-10 border-4 border-gold shadow-2xl relative text-center">
+          
+          <!-- Badge no topo -->
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-600 text-white font-extrabold text-[10px] md:text-xs uppercase px-5 py-2.5 rounded-full shadow-lg tracking-widest flex items-center gap-1.5 animate-bounce">
+            <span class="inline-block w-2 h-2 rounded-full bg-white animate-ping"></span>
+            🚨 VAGAS ACADÊMICAS INTEGRANTES LIMITADAS
+          </div>
+
+          <div class="text-center mt-4">
+            <!-- Riscado -->
+            <p class="text-slate-400 text-sm font-semibold line-through">De 06x R$ 150,00</p>
+            
+            <!-- Label pulse -->
+            <span class="mt-2 inline-block bg-red-500/10 text-red-600 text-xs font-black tracking-wider px-3.5 py-1.5 rounded-md animate-[pulse_1s_infinite]">
+              🏷️ DESCONTO ACADÊMICO DE ATÉ 40%:
+            </span>
+
+            <!-- Preço principal -->
+            <div class="my-4">
+              <span class="text-xs uppercase font-extrabold tracking-wide text-slate-400 bg-slate-100 rounded px-2.5 py-1">Apenas 6 parcelas de</span>
+              <p class="text-5xl md:text-6xl font-serif font-black text-midnight mt-1.5">
+                R$ <span class="text-gold">100</span><span class="text-xl font-sans text-slate-400">,00</span>
+              </p>
+              <p class="text-xs text-slate-400 mt-2">ou R$ 600,00 à vista via PIX, sem juros extras.</p>
+            </div>
+
+            <!-- Chips de pagamento -->
+            <div class="flex flex-wrap justify-center gap-2 mb-6">
+              <span class="bg-slate-100 text-slate-600 text-[10px] font-black uppercase px-3 py-1.5 rounded-full">⚡ PIX</span>
+              <span class="bg-slate-100 text-slate-600 text-[10px] font-black uppercase px-3 py-1.5 rounded-full">💳 Cartão de Crédito</span>
+              <span class="bg-slate-100 text-slate-600 text-[10px] font-black uppercase px-3 py-1.5 rounded-full">📄 Boleto</span>
+            </div>
+
+            <p class="text-xs font-semibold text-slate-500 flex items-center justify-center gap-1 mb-8">
+              <i data-lucide="clock" class="w-4 h-4 text-gold shrink-0"></i>
+              <span>⏰ Início das aulas: MAIO / JUNHO de 2026</span>
+              <br>
+              <span class="text-slate-400 font-normal">Aulas ao vivo: Quintas-feiras às 20h</span>
+            </p>
+
+            <!-- Contador Regressivo funcional Javascript -->
+            <div class="bg-midnight p-5 rounded-2xl text-satin mb-8">
+              <h6 class="text-[10px] font-black tracking-widest text-gold uppercase mb-3">Sua oferta personalizada expira em:</h6>
+              <div class="grid grid-cols-4 gap-3 bg-midnight-dark p-3.5 rounded-xl border border-gold/20">
+                <div class="text-center">
+                  <span id="days" class="block font-serif font-bold text-xl md:text-2xl text-gold">00</span>
+                  <span class="text-[8px] font-bold text-satin/50 uppercase">Dias</span>
+                </div>
+                <div class="text-center">
+                  <span id="hours" class="block font-serif font-bold text-xl md:text-2xl text-gold">00</span>
+                  <span class="text-[8px] font-bold text-satin/50 uppercase">Horas</span>
+                </div>
+                <div class="text-center">
+                  <span id="minutes" class="block font-serif font-bold text-xl md:text-2xl text-gold">00</span>
+                  <span class="text-[8px] font-bold text-satin/50 uppercase">Min</span>
+                </div>
+                <div class="text-center">
+                  <span id="seconds" class="block font-serif font-bold text-xl md:text-2xl text-gold">00</span>
+                  <span class="text-[8px] font-bold text-satin/50 uppercase">Seg</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botão de Inscrição Oficial -->
+            <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-midnight-dark font-black tracking-widest uppercase text-sm md:text-base px-8 py-5 rounded-full shadow-lg gold-shadow transition-all group duration-300 transform active:scale-95 hover:brightness-110">
+              <span>QUERO GARANTIR MINHA MATRÍCULA</span>
+              <i data-lucide="chevron-right" class="w-5 h-5 shrink-0 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+
+            <p class="text-[10px] text-slate-400 mt-4 italic">
+              * Transação protegida e sob os quesitos legais FATEB.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. CTA FINAL -->
+  <section id="cta-final" class="bg-midnight-dark text-satin py-20 text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-tr from-midnight-dark/90 to-mystic/40 opacity-70"></div>
+    <div class="max-w-5xl mx-auto px-6 relative z-10">
+      <h3 class="text-2xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight">
+        Seja o Terapeuta que as pessoas buscam na angústia:<br> <span class="text-gold font-extrabold">aquele que ouve com sabedoria, ciência e alma.</span>
+      </h3>
+      <p class="text-sm md:text-base text-satin/70 max-w-xl mx-auto mb-10">
+        Compreenda a totalidade da existência humana. Adquira ferramentas sólidas estruturadas de Carl Jung, Viktor Frankl e TCC respaldadas legalmente pela FATEB.
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md mx-auto">
+        <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-midnight-dark font-black tracking-wider uppercase text-xs md:text-sm px-6 py-4.5 rounded-full shadow-lg text-center transition group duration-300">
+          <span>🎯 FAZER MATRÍCULA AGORA</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 shrink-0 transition group-hover:translate-x-1"></i>
+        </a>
+        <a href="https://wa.me/5512991847661" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#25d366] to-[#128c7e] hover:brightness-110 text-white font-extrabold uppercase text-xs md:text-sm px-6 py-4.5 rounded-full shadow-lg transition">
+          <i class="w-4 h-4" style="background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;white&quot;><path d=&quot;M12.012 3c-4.96 0-9 4.004-9 8.96 0 1.568.413 3.117 1.2 4.48L3 21l4.704-1.215c1.315.713 2.808 1.127 4.308 1.127 4.96 0 9-4.004 9-8.96C21.012 7.004 17.012 3 12.012 3zm4.51 12.872c-.22.617-1.12 1.155-1.576 1.258-.458.102-.916.143-2.909-.646-2.545-1.008-4.173-3.574-4.298-3.738-.125-.164-1.014-1.327-1.014-2.531 0-1.204.621-1.796.843-2.039.223-.243.486-.305.648-.305.162 0 .324.004.466.012.146.008.344-.055.539.407.203.489.696 1.677.756 1.798.06.12.1.262.02.423-.08.162-.12.262-.24.403-.12.14-.251.314-.359.423-.122.12-.249.251-.107.491.142.24.631 1.026 1.353 1.66.932.818 1.716 1.072 1.959 1.192.243.12.384.102.527-.06.143-.162.612-.705.776-.948.164-.243.328-.201.551-.12.223.082 1.413.658 1.656.78.243.12.404.18.465.285.061.106.061.613-.159 1.23z&quot;/></svg>'); background-size: contain; background-repeat: no-repeat; display: inline-block;"></i>
+          <span>FALAR COM TUTOR</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. FAQ -->
+  <section id="faq" class="py-20 bg-satin">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest block mb-2">Perguntas Frequentes</span>
+        <h2 class="text-3xl font-serif font-bold text-midnight leading-tight">
+          Esclareça Suas Dúvidas
+        </h2>
+        <div class="h-1 w-16 bg-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Q1 -->
+        <details class="group bg-white rounded-2xl border border-slate-200 custom-shadow overflow-hidden transition-all duration-300">
+          <summary class="flex justify-between items-center p-6 text-midnight font-bold font-serif text-sm md:text-base cursor-pointer select-none list-none uppercase tracking-wide">
+            <span>Quem tem apenas Ensino Médio completo pode exercer?</span>
+            <span class="text-gold shrink-0 transition-transform duration-300">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-600 text-xs md:text-sm leading-relaxed border-t border-slate-100 pt-4">
+            Sim! Sob respaldo federal e em conformidade corporativa civil nacional, o estudante com ensino médio completo recebe diploma oficial de Extensão Universitária, habilitando legalmente seu exercício de terapeuta holístico integrativo privado em consultórios, corporações ou atendimentos online. Estudantes graduados anteriormente em qualquer nível de ensino superior recebem diploma registrado de Pós-Graduação Lato Sensu de Especialização autorizada pelo MEC brasileiro.
+          </div>
+        </details>
+
+        <!-- Q2 -->
+        <details class="group bg-white rounded-2xl border border-slate-200 custom-shadow overflow-hidden transition-all duration-300">
+          <summary class="flex justify-between items-center p-6 text-midnight font-bold font-serif text-sm md:text-base cursor-pointer select-none list-none uppercase tracking-wide">
+            <span>Há aulas ao vivo? Se eu perder, elas ficam gravadas?</span>
+            <span class="text-gold shrink-0 transition-transform duration-300">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-600 text-xs md:text-sm leading-relaxed border-t border-slate-100 pt-4">
+            Perfeitamente. Todas as aulas fundamentais são gravadas com alta qualidade de captação de imagem e áudio para você estudar no seu tempo, com flexibilidade total. Além do acervo no portal de membros, ocorrem interações mensais síncronas com o corpo letivo FATEB por meio de reuniões exclusivas na ferramenta Zoom. Se não conseguir assistir ao vivo, o material é integralmente hospedado na sua área de membros para rever quando preferir.
+          </div>
+        </details>
+
+        <!-- Q3 -->
+        <details class="group bg-white rounded-2xl border border-slate-200 custom-shadow overflow-hidden transition-all duration-300">
+          <summary class="flex justify-between items-center p-6 text-midnight font-bold font-serif text-sm md:text-base cursor-pointer select-none list-none uppercase tracking-wide">
+            <span>Quais as formas de pagamento disponíveis?</span>
+            <span class="text-gold shrink-0 transition-transform duration-300">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-600 text-xs md:text-sm leading-relaxed border-t border-slate-100 pt-4">
+            As matrículas unificadas podem ser parceladas em até 6 vezes sem juros por meio de boletos bancários recorrentes mensais, cartões de crédito aceitos nacionalmente ou pagamento direto à vista via PIX instantâneo. Não há cobrança de taxas de matrícula extras ou cobrança adicional por materiais pedagógicos digitais de apoio.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15. RODAPÉ -->
+  <footer class="bg-midnight-dark text-satin/65 py-16 border-t border-gold/10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10 relative z-10 text-left">
+      <!-- Col 1 -->
+      <div>
+        <span class="text-gold text-2xl font-serif font-extrabold tracking-widest uppercase block mb-4">FATEB</span>
+        <p class="text-xs leading-relaxed max-w-sm mb-4">
+          FATEB Instituto de Formação Acadêmica — Há anos dedicando-se à transmissão responsável de conhecimentos estruturados, graduando terapeutas certificados e profissionais qualificados legalmente amparados com rigor ético e clínico.
+        </p>
+        <p class="text-[10px] text-satin/45">
+          📍 FATEB Educacional — CNPJ: 07.828.118/0001-38
+        </p>
+      </div>
+
+      <!-- Col 2 -->
+      <div>
+        <h6 class="text-white font-serif font-bold tracking-wide mb-4 text-sm uppercase">Fale Conosco</h6>
+        <ul class="space-y-3 text-xs">
+          <li class="flex items-center gap-2">
+            <i data-lucide="phone" class="w-3.5 h-3.5 text-gold shrink-0"></i>
+            <span>(12) 99184-7661</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i data-lucide="mail" class="w-3.5 h-3.5 text-gold shrink-0"></i>
+            <span>suporte@fatebeducacional.com.br</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i data-lucide="map-pin" class="w-3.5 h-3.5 text-gold shrink-0"></i>
+            <span>Atendimento virtual central nacional</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div>
+        <h6 class="text-white font-serif font-bold tracking-wide mb-4 text-sm uppercase">Secretaria Acadêmica</h6>
+        <p class="text-xs leading-relaxed max-w-sm mb-4">
+          Garanta sua vaga diretamente em nosso terminal integrado de inscrições criptografado com conexões seguras oficiais de conformidade:
+        </p>
+        <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-gold hover:text-white font-bold text-xs tracking-wider transition uppercase">
+          <span>Acessar portal admissional</span>
+          <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-satin/10 text-center text-[10px] tracking-wide">
+      <p>© 2026 FATEB — Todos os direitos reservados. CNPJ: 07.828.118/0001-38</p>
+    </div>
+  </footer>
+
+  <!-- 16. BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/5512991847661" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 float-wp bg-gradient-to-r from-[#25d366] to-[#128c7e] text-white flex items-center gap-2 px-5 py-3.5 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all text-sm font-extrabold tracking-wider border border-white/20">
+    <span class="relative flex h-3.5 w-3.5 shrink-0">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-red-500 border border-white"></span>
+    </span>
+    <i class="w-5 h-5 flex shrink-0" style="background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;white&quot;><path d=&quot;M12.012 3c-4.96 0-9 4.004-9 8.96 0 1.568.413 3.117 1.2 4.48L3 21l4.704-1.215c1.315.713 2.808 1.127 4.308 1.127 4.96 0 9-4.004 9-8.96C21.012 7.004 17.012 3 12.012 3zm4.51 12.872c-.22.617-1.12 1.155-1.576 1.258-.458.102-.916.143-2.909-.646-2.545-1.008-4.173-3.574-4.298-3.738-.125-.164-1.014-1.327-1.014-2.531 0-1.204.621-1.796.843-2.039.223-.243.486-.305.648-.305.162 0 .324.004.466.012.146.008.344-.055.539.407.203.489.696 1.677.756 1.798.06.12.1.262.02.423-.08.162-.12.262-.24.403-.12.14-.251.314-.359.423-.122.12-.249.251-.107.491.142.24.631 1.026 1.353 1.66.932.818 1.716 1.072 1.959 1.192.243.12.384.102.527-.06.143-.162.612-.705.776-.948.164-.243.328-.201.551-.12.223.082 1.413.658 1.656.78.243.12.404.18.465.285.061.106.061.613-.159 1.23z&quot;/></svg>'); background-size: contain; background-repeat: no-repeat; width: 1.25rem; height: 1.25rem;"></i>
+    <span class="uppercase">TIRE SUAS DÚVIDAS</span>
+  </a>
+
+  <!-- JavaScript funcional síncrono -->
+  <script>
+    // Inicializar Ícones Lucide
+    lucide.createIcons();
+
+    // Lógica do Contador Regressivo Persistente de 7 dias
+    function startCountdown() {
+      let targetDate = localStorage.getItem('fateb_countdown_target_almamente');
+      if (!targetDate) {
+        // config 7 dias a partir do carregamento original
+        targetDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000);
+        localStorage.setItem('fateb_countdown_target_almamente', targetDate);
+      }
+
+      function updateTimer() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        if (distance < 0) {
+          // Reinicia para mais 7 dias para garantir oferta sempre ativa à visita
+          const newTarget = new Date().getTime() + (7 * 24 * 60 * 60 * 1000);
+          localStorage.setItem('fateb_countdown_target_almamente', newTarget);
+          startCountdown();
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = String(days).padStart(2, '0');
+        document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+        document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+        document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+      }
+
+      updateTimer();
+      setInterval(updateTimer, 1000);
+    }
+
+    startCountdown();
+  </script>
+</body>
+</html>
