@@ -181,6 +181,10 @@ export default function App() {
 
   // Card click handler
   const handleCourseClick = (course: Course) => {
+    if (course.id === "terapeuta-criancas-adolescentes") {
+      window.location.href = "/terapeuta-crianca";
+      return;
+    }
     setSelectedCourse(course);
     setTimerCount(600); // Reset timer to 10 mins
   };
@@ -274,12 +278,12 @@ export default function App() {
           
           {/* Logo Brand Frame */}
           <div className="mb-6 inline-flex flex-col items-center">
-            <span className="font-display text-4xl md:text-5xl font-extrabold tracking-widest text-brand-gold flex items-center gap-2">
-              <Award className="w-10 h-10 text-brand-gold animate-pulse" /> FATEB
-            </span>
-            <span className="text-sm uppercase tracking-[0.35em] text-cyan-200/90 font-medium mt-1">
-              Instituto de Formação Acadêmica
-            </span>
+            <img 
+              src="/logofateb.webp" 
+              alt="FATEB Logo" 
+              className="max-h-24 md:max-h-32 w-auto mx-auto mb-2 object-contain transition-transform hover:scale-105 duration-300" 
+              referrerPolicy="no-referrer" 
+            />
           </div>
 
           <p className="text-xl md:text-2xl font-serif text-slate-200 max-w-2xl mx-auto italic mb-8">
@@ -399,7 +403,16 @@ export default function App() {
                 <div
                   key={course.id}
                   id={`course-card-${course.id}`}
-                  className="bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-md flex flex-col hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group"
+                  onClick={() => {
+                    if (course.id === "terapeuta-criancas-adolescentes") {
+                      window.location.href = "/terapeuta-crianca";
+                    } else if (course.id === "terapeuta-educacao-parental") {
+                      window.location.href = "/terapeuta-parental";
+                    }
+                  }}
+                  className={`bg-white rounded-3xl border border-slate-100 overflow-hidden shadow-md flex flex-col hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group ${
+                    (course.id === "terapeuta-criancas-adolescentes" || course.id === "terapeuta-educacao-parental") ? "cursor-pointer" : ""
+                  }`}
                 >
                   {/* Image banner with overlay */}
                   <div className="relative h-44 sm:h-48 overflow-hidden bg-slate-50 flex items-center justify-center p-3 border-b border-slate-100">
@@ -464,14 +477,25 @@ export default function App() {
                       </div>
 
                       {/* Complete Course CTA button */}
-                      <button
-                        onClick={() => handleCourseClick(course)}
-                        className="w-full bg-[#dfab22] hover:bg-[#c49419] text-brand-blue-dark font-display font-extrabold text-xs py-3.5 px-4 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 group cursor-pointer uppercase tracking-wider"
-                      >
-                        {renderCourseIcon(course.iconName, "w-4 h-4 text-brand-blue-dark")}
-                        <span>Acessar Curso</span>
-                        <ChevronRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
-                      </button>
+                      {course.id === "terapeuta-criancas-adolescentes" || course.id === "terapeuta-educacao-parental" ? (
+                        <a
+                          href={course.id === "terapeuta-criancas-adolescentes" ? "/terapeuta-crianca" : "/terapeuta-parental"}
+                          className="w-full bg-[#dfab22] hover:bg-[#c49419] text-brand-blue-dark font-display font-extrabold text-xs py-3.5 px-4 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 group cursor-pointer uppercase tracking-wider"
+                        >
+                          {renderCourseIcon(course.iconName, "w-4 h-4 text-brand-blue-dark")}
+                          <span>Acessar Curso</span>
+                          <ChevronRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
+                        </a>
+                      ) : (
+                        <button
+                          onClick={() => handleCourseClick(course)}
+                          className="w-full bg-[#dfab22] hover:bg-[#c49419] text-brand-blue-dark font-display font-extrabold text-xs py-3.5 px-4 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 group cursor-pointer uppercase tracking-wider"
+                        >
+                          {renderCourseIcon(course.iconName, "w-4 h-4 text-brand-blue-dark")}
+                          <span>Acessar Curso</span>
+                          <ChevronRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
+                        </button>
+                      )}
                     </div>
 
                   </div>

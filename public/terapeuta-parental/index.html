@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formação de Terapeuta Especialista em Educação e Orientação Parental — FATEB</title>
+  <meta name="description" content="Formação Completa de 520h Reconhecida pelo MEC. Capacite-se para transformar famílias, desenvolver crianças emocionalmente saudáveis e orientar pais com segurança e propósito.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Formação de Terapeuta Especialista em Educação e Orientação Parental — FATEB">
+  <meta property="og:description" content="Curso de Extensão Universitária / Pós-Graduação Lato Sensu reconhecido pelo MEC. Vagas limitadas para início em Junho de 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/terapeutaparental.jpeg">
+
+  <!-- Inter and Playfair Display Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              DEFAULT: '#1a2744',
+              light: '#24355a',
+              dark: '#111a2e',
+            },
+            gold: {
+              DEFAULT: '#c9a84c',
+              hover: '#e2c06a',
+              dark: '#a88835',
+            },
+            creme: {
+              DEFAULT: '#f5f0e8',
+              light: '#fcfbfa',
+              dark: '#e9e1d3',
+            },
+            accent: {
+              light: '#f8f7f4',
+              dark: '#f1ede5',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .custom-shadow {
+      box-shadow: 0 10px 30px -10px rgba(26, 39, 68, 0.12);
+    }
+    .gold-shadow {
+      box-shadow: 0 8px 24px -6px rgba(201, 168, 76, 0.35);
+    }
+    .hover-lift {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .hover-lift:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px -15px rgba(26, 39, 68, 0.18);
+    }
+    /* Animação Float para o WhatsApp */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    .float-wp {
+      animation: float 3.5s ease-in-out infinite;
+    }
+    /* Custom Accordion rotating icon */
+    details[open] summary svg {
+      transform: rotate(180deg);
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-accent-light leading-relaxed">
+
+  <!-- 1. BARRA DE ANÚNCIO (topo) -->
+  <div id="announcement-bar" class="bg-navy-dark text-creme-dark text-xs font-bold uppercase tracking-wider py-2.5 px-4 text-center border-b border-gold/10">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+      <span>⚡ MATRÍCULAS ABERTAS — Vagas limitadas. Início Junho/2026</span>
+    </div>
+  </div>
+
+  <!-- Hero Section & Navigation Minimal -->
+  <header class="bg-navy pt-6 pb-2 relative overflow-hidden">
+    <!-- Círculos decorativos de background -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl -ml-20 -mb-20 pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center relative z-10">
+      <div class="flex items-center gap-3">
+        <a href="/" class="text-creme/80 hover:text-gold text-xs font-semibold tracking-wide border border-creme/20 hover:border-gold/40 px-3.5 py-1.5 rounded-full transition-all bg-creme/5 inline-flex items-center gap-1.5 shrink-0">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i>
+          Voltar
+        </a>
+      </div>
+      <div>
+        <a href="#precos" class="text-creme hover:text-gold text-xs font-semibold tracking-wide border border-creme/20 hover:border-gold/40 px-4 py-2 rounded-full transition-all">
+          Ver Investimento
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. HERO (banner principal) -->
+  <section id="hero" class="bg-navy text-creme pt-12 pb-20 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Logo topo (FATEB) -->
+        <img src="/logofateb.webp" alt="FATEB Logo" class="max-h-24 md:max-h-32 w-auto mx-auto mb-8 object-contain transition-transform hover:scale-105 duration-300" referrerPolicy="no-referrer">
+        
+        <!-- Título H1 Grande -->
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-serif font-bold text-white tracking-tight leading-tight mb-6">
+          Formação de Terapeuta Especialista em <br>
+          <span class="text-gold">Educação e Orientação Parental</span>
+        </h1>
+        
+        <!-- Subtítulo em itálico -->
+        <p class="text-lg md:text-xl font-serif italic text-gold/90 mb-6 font-medium">
+          🌟 Curso reconhecido pelo MEC nas modalidades de Extensão Universitária / Pós Graduação
+        </p>
+        
+        <!-- Parágrafo descritivo -->
+        <p class="text-base md:text-lg text-creme/85 max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
+          Capacite-se para transformar famílias, desenvolver crianças emocionalmente saudáveis e orientar pais com segurança e propósito. Conquiste a segurança profissional necessária para atuar de forma marcante.
+        </p>
+        
+        <!-- 2 Botões Lado a Lado -->
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-12">
+          <a href="#precos" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-navy-dark font-extrabold uppercase text-sm px-8 py-4.5 rounded-full shadow-lg gold-shadow transition-all group cursor-pointer duration-300">
+            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+            <span>QUERO ME INSCREVER AGORA</span>
+          </a>
+          <a href="https://wa.me/5512991847661" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#25d366] to-[#128c7e] hover:brightness-110 text-white font-extrabold uppercase text-sm px-8 py-4.5 rounded-full shadow-lg transition-all cursor-pointer duration-300">
+            <i class="w-5 h-5" style="background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;white&quot;><path d=&quot;M12.012 3c-4.96 0-9 4.004-9 8.96 0 1.568.413 3.117 1.2 4.48L3 21l4.704-1.215c1.315.713 2.808 1.127 4.308 1.127 4.96 0 9-4.004 9-8.96C21.012 7.004 17.012 3 12.012 3zm4.51 12.872c-.22.617-1.12 1.155-1.576 1.258-.458.102-.916.143-2.909-.646-2.545-1.008-4.173-3.574-4.298-3.738-.125-.164-1.014-1.327-1.014-2.531 0-1.204.621-1.796.843-2.039.223-.243.486-.305.648-.305.162 0 .324.004.466.012.146.008.344-.055.539.407.203.489.696 1.677.756 1.798.06.12.1.262.02.423-.08.162-.12.262-.24.403-.12.14-.251.314-.359.423-.122.12-.249.251-.107.491.142.24.631 1.026 1.353 1.66.932.818 1.716 1.072 1.959 1.192.243.12.384.102.527-.06.143-.162.612-.705.776-.948.164-.243.328-.201.551-.12.223.082 1.413.658 1.656.78.243.12.404.18.465.285.061.106.061.613-.159 1.23z&quot;/></svg>'); background-size: contain; background-repeat: no-repeat; display: inline-block;"></i>
+            <span>Conversar no WhatsApp</span>
+          </a>
+        </div>
+        
+        <!-- Badges de credenciais -->
+        <div class="grid grid-cols-2 md:grid-cols-3 max-w-2xl mx-auto gap-4 pt-6 border-t border-creme/10 text-xs tracking-wider uppercase font-semibold text-creme-dark">
+          <div class="flex items-center justify-center gap-2 col-span-2 md:col-span-1">
+            <i data-lucide="shield-check" class="w-5 h-5 text-gold shrink-0"></i>
+            <span>🛡️ Certificação MEC</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <i data-lucide="clock" class="w-5 h-5 text-gold shrink-0"></i>
+            <span>⏱️ 520h Carga Horária</span>
+          </div>
+          <div class="flex items-center justify-center gap-2">
+            <i data-lucide="calendar" class="w-5 h-5 text-gold shrink-0"></i>
+            <span>📅 Duração 06 Meses</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. SEÇÃO DE VÍDEO -->
+  <section id="video-secao" class="py-16 bg-gradient-to-b from-navy to-navy-dark text-creme text-center relative z-15">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-2xl md:text-4xl font-serif text-white font-bold mb-4 tracking-tight">
+        Conheça a Formação FATEB em Orientação Parental
+      </h2>
+      <p class="text-sm md:text-base text-creme/70 max-w-xl mx-auto mb-10">
+        Assista ao vídeo explicativo detalhado sobre a metodologia e conheça o portal dos alunos.
+      </p>
+      
+      <!-- Player YouTube embutido com borda dourada decorativa -->
+      <div class="relative max-w-3xl mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-gold/70 bg-navy">
+        <div class="aspect-video w-full">
+          <iframe class="w-full h-full" src="https://www.youtube.com/embed/6_WgFl49lcA?rel=0&modestbranding=1&playsinline=1" title="Formação FATEB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      
+      <!-- Botão CTA dourado abaixo do vídeo -->
+      <div class="mt-12">
+        <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-navy-dark font-black tracking-wide uppercase text-sm md:text-base px-10 py-5 rounded-full shadow-lg hover:scale-105 active:scale-95 transition-all duration-300">
+          <span>🎓 QUERO FAZER MINHA MATRÍCULA AGORA</span>
+          <i data-lucide="chevron-right" class="w-5 h-5"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. VOCÊ VAI APRENDER A -->
+  <section id="aprendizado" class="py-20 bg-accent-light">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest">Habilidades Clínicas</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy mt-2 mb-4 leading-tight">
+          Você vai aprender a:
+        </h2>
+        <div class="h-1 w-20 bg-gold mx-auto rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Card 1 -->
+        <div class="bg-white p-8 rounded-2xl custom-shadow hover-lift">
+          <div class="w-12 h-12 bg-navy/5 rounded-xl flex items-center justify-center text-gold mb-6 text-2xl">
+            🧠
+          </div>
+          <h3 class="text-lg font-serif font-bold text-navy mb-3">Comportamento Infantil</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Entender profundamente o comportamento infantil e adolescente, identificando as fases rítmicas e necessidades cognitivas.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-8 rounded-2xl custom-shadow hover-lift">
+          <div class="w-12 h-12 bg-navy/5 rounded-xl flex items-center justify-center text-gold mb-6 text-2xl">
+            🛡️
+          </div>
+          <h3 class="text-lg font-serif font-bold text-navy mb-3">Orientação Segura</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Orientar pais com extrema segurança, clareza e um método comprovadamente aplicável às maiores angústias modernas.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-8 rounded-2xl custom-shadow hover-lift">
+          <div class="w-12 h-12 bg-navy/5 rounded-xl flex items-center justify-center text-gold mb-6 text-2xl">
+            🤝
+          </div>
+          <h3 class="text-lg font-serif font-bold text-navy mb-3">Mediação de Conflitos</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Intervir em crises familiares e conflitos de forma prática, gerando transformações sustentáveis de dinâmica de convivência.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white p-8 rounded-2xl custom-shadow hover-lift">
+          <div class="w-12 h-12 bg-navy/5 rounded-xl flex items-center justify-center text-gold mb-6 text-2xl">
+            ❤️
+          </div>
+          <h3 class="text-lg font-serif font-bold text-navy mb-3">Equilíbrio Coletivo</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            Desenvolver famílias emocionalmente equilibradas, restabelecendo a autoridade e construindo rotinas de intimidade saudáveis.
+          </p>
+        </div>
+      </div>
+
+      <!-- Caixa Especial de Apoio -->
+      <div class="mt-12 bg-gradient-to-r from-navy to-navy-dark text-creme rounded-2xl p-6 md:p-8 max-w-4xl mx-auto shadow-xl flex flex-col md:flex-row items-center gap-6 border border-gold/20">
+        <div class="text-4xl shrink-0">👉</div>
+        <div>
+          <h4 class="font-serif font-bold text-white text-base md:text-lg mb-1">Não se sente totalmente pronto(a) para atender pais hoje?</h4>
+          <p class="text-creme/75 text-xs md:text-sm leading-relaxed font-normal">
+            Fique tranquila. A nossa formação acadêmica foi perfeitamente desenhada para pegar você pela mão, construindo o seu conhecimento do básico absoluto até as dinâmicas clínicas mais complexas de mediação.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO PÚBLICO ALVO -->
+  <section id="publico-alvo" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest">Para Quem se Destina</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy mt-2 mb-4 leading-tight">
+          Público-Alvo Recomendado
+        </h2>
+        <div class="h-1 w-20 bg-gold mx-auto rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <!-- Item 1 -->
+        <div class="bg-accent-light p-6 rounded-2xl flex items-center gap-4 hover:bg-creme-light hover:shadow-md transition duration-300">
+          <span class="text-3xl">🩺</span>
+          <div>
+            <h4 class="font-bold text-navy text-sm md:text-base">Terapeutas</h4>
+            <p class="text-slate-500 text-xs">Que querem estender a atuação às dinâmicas parentais.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="bg-accent-light p-6 rounded-2xl flex items-center gap-4 hover:bg-creme-light hover:shadow-md transition duration-300">
+          <span class="text-3xl">📜</span>
+          <div>
+            <h4 class="font-bold text-navy text-sm md:text-base">Psicanalistas</h4>
+            <p class="text-slate-500 text-xs">Focados em resolver conflitos geracionais.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="bg-accent-light p-6 rounded-2xl flex items-center gap-4 hover:bg-creme-light hover:shadow-md transition duration-300">
+          <span class="text-3xl">👑</span>
+          <div>
+            <h4 class="font-bold text-navy text-sm md:text-base">Líderes e Mentoras</h4>
+            <p class="text-slate-500 text-xs">Que guiam pais e mães em suas comunidades.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="bg-accent-light p-6 rounded-2xl flex items-center gap-4 hover:bg-creme-light hover:shadow-md transition duration-300">
+          <span class="text-3xl">🏫</span>
+          <div>
+            <h4 class="font-bold text-navy text-sm md:text-base">Educadores</h4>
+            <p class="text-slate-500 text-xs">Profissionais de escolas e apoio psicopedagógico.</p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="bg-accent-light p-6 rounded-2xl flex items-center gap-4 hover:bg-creme-light hover:shadow-md transition duration-300">
+          <span class="text-3xl">👩‍👦</span>
+          <div>
+            <h4 class="font-bold text-navy text-sm md:text-base">Mulheres vocacionadas</h4>
+            <p class="text-slate-500 text-xs">Com grande desejo de atuar ativamente com famílias.</p>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="bg-accent-light p-6 rounded-2xl flex items-center gap-4 hover:bg-creme-light hover:shadow-md transition duration-300">
+          <span class="text-3xl">🌱</span>
+          <div>
+            <h4 class="font-bold text-navy text-sm md:text-base">Chamados de Suporte</h4>
+            <p class="text-slate-500 text-xs">Trabalhadores dedicados ao desenvolvimento emocional.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12 bg-gold/10 text-gold-dark font-bold py-4 px-6 rounded-full max-w-xl mx-auto text-sm border border-gold/20 shadow-sm uppercase tracking-wider">
+        🎯 Foco da formação: ensinar + aplicar + transformar a dinâmica familiar
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CONTEÚDO PROGRAMÁTICO (GRADE CORRENTE) -->
+  <section id="programa" class="py-20 bg-[#f1ede5]">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest">Grade Curricular Completa</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy mt-2 mb-4 leading-tight">
+          Estrutura com 12 Módulos Acadêmicos
+        </h2>
+        <p class="text-slate-600 max-w-xl mx-auto text-sm md:text-base">
+          Módulos sequenciais ricamente estruturados para uma formação sólida e amparada.
+        </p>
+        <div class="h-1 w-20 bg-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Mod 1 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            01
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-navy text-base leading-tight mb-2">Fundamentos da Educação e Orientação Parental</h4>
+            <p class="text-slate-500 text-xs">Princípios cruciais, terminologias teóricas e história social do apoio coletivo aos pais.</p>
+          </div>
+        </div>
+
+        <!-- Mod 2 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            02
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-navy text-base leading-tight mb-2">Desenvolvimento Infantil e Necessidades Emocionais</h4>
+            <p class="text-slate-500 text-xs">Identificação de marcos psicofisiológicos e demandas subjetivas infantojuvenis primordiais.</p>
+          </div>
+        </div>
+
+        <!-- Mod 3 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            03
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-navy text-base leading-tight mb-2">Estilos Parentais e Construção da Autoridade</h4>
+            <p class="text-slate-500 text-xs">Abordagem científica de padrões éticos de criação e superação de extremos negligentes.</p>
+          </div>
+        </div>
+
+        <!-- Mod 4 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            04
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-navy text-base leading-tight mb-2">Comunicação Consciente na Família</h4>
+            <p class="text-slate-500 text-xs">Fomentando a comunicação não-violenta, escuta síncrona e empática entre os membros.</p>
+          </div>
+        </div>
+
+        <!-- Mod 5 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            05
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-navy text-base leading-tight mb-2">Limites, Regras e Disciplina Positiva</h4>
+            <p class="text-slate-500 text-xs">Concessões de rotina estruturada sem traumas, gerando limites claros com amorosidade firme.</p>
+          </div>
+        </div>
+
+        <!-- Mod 6 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            06
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-navy text-base leading-tight mb-2">Educação Emocional dos Filhos</h4>
+            <p class="text-slate-500 text-xs">Capacitação para guiar crianças a expressarem sentimentos profundos com integridade.</p>
+          </div>
+        </div>
+
+        <!-- Mod 7 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            07
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-navy text-base leading-tight mb-2">Manejo de Comportamentos Desafiadores</h4>
+            <p class="text-slate-500 text-xs">Protocolos eficazes diante de birras repetitivas, agressividade latente e oposicionismo.</p>
+          </div>
+        </div>
+
+        <!-- Mod 8 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            08
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-navy text-base leading-tight mb-2">Rotina, Ambiente e Segurança Emocional</h4>
+            <p class="text-slate-500 text-xs">Criação de microclimas calmos, estáveis dentro de casa, fortalecendo a intimidade de apoio.</p>
+          </div>
+        </div>
+
+        <!-- Mod 9 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            09
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-navy text-base leading-tight mb-2">Orientação Parental na Adolescência</h4>
+            <p class="text-slate-500 text-xs">Conexão terapêutica na desafiadora travessia de consolidação da individuação do jovem.</p>
+          </div>
+        </div>
+
+        <!-- Mod 10 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            10
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-navy text-base leading-tight mb-2">Desafios da Parentalidade Moderna</h4>
+            <p class="text-slate-500 text-xs">Impactos cruciais das mídias sociais digitais, isolamento urbano e rotina de dupla jornada.</p>
+          </div>
+        </div>
+
+        <!-- Mod 11 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            11
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-navy text-base leading-tight mb-2">Aplicação da Orientação Parental na Prática</h4>
+            <p class="text-slate-500 text-xs">Atendimento clínico específico, montagem de planos interventores na orientação familiar.</p>
+          </div>
+        </div>
+
+        <!-- Mod 12 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200/50 flex gap-4 hover:border-gold/30 hover:scale-[1.01] transition-all duration-300">
+          <div class="w-12 h-10 bg-navy text-gold font-bold font-serif flex items-center justify-center rounded-lg text-sm shrink-0">
+            12
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-navy text-base leading-tight mb-2">Formação e Atuação Profissional</h4>
+            <p class="text-slate-500 text-xs">Ética, montagem prática do consultório virtual e captação ética de pacientes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. METODOLOGIA DE ENSINO -->
+  <section id="metodologia" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest">Estude no Seu Tempo</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy mt-2 mb-4 leading-tight">
+          Metodologia de Aprendizado Ativo
+        </h2>
+        <div class="h-1 w-20 bg-gold mx-auto rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Met 1 -->
+        <div class="bg-accent-light p-6 rounded-2xl text-center flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-gold/15 text-gold flex items-center justify-center mb-4 text-xl">
+            🎥
+          </div>
+          <h4 class="font-serif font-bold text-navy mb-1 text-sm md:text-base">Encontros ao Vivo</h4>
+          <p class="text-slate-500 text-xs">Grade de aulas transmitidas diretamente via Zoom.</p>
+        </div>
+
+        <!-- Met 2 -->
+        <div class="bg-accent-light p-6 rounded-2xl text-center flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-gold/15 text-gold flex items-center justify-center mb-4 text-xl">
+            📘
+          </div>
+          <h4 class="font-serif font-bold text-navy mb-1 text-sm md:text-base">Material Exclusivo</h4>
+          <p class="text-slate-500 text-xs">Slidotecas, PDFs atualizados de autoridade familiar no portal.</p>
+        </div>
+
+        <!-- Met 3 -->
+        <div class="bg-accent-light p-6 rounded-2xl text-center flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-gold/15 text-gold flex items-center justify-center mb-4 text-xl">
+            ✨
+          </div>
+          <h4 class="font-serif font-bold text-navy mb-1 text-sm md:text-base">Duração Confortável</h4>
+          <p class="text-slate-500 text-xs">Jornada otimizada de 6 meses com alta densidade letiva (520h).</p>
+        </div>
+
+        <!-- Met 4 -->
+        <div class="bg-accent-light p-6 rounded-2xl text-center flex flex-col items-center">
+          <div class="w-12 h-12 rounded-full bg-gold/15 text-gold flex items-center justify-center mb-4 text-xl">
+            🛡️
+          </div>
+          <h4 class="font-serif font-bold text-navy mb-1 text-sm md:text-base">Selo FATEB</h4>
+          <p class="text-slate-500 text-xs">Padrão nacional de destaque em pós-graduação e extensão.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CERTIFICAÇÃO (fundo navy escuro - MEC) -->
+  <section id="certificacao" class="py-20 bg-navy text-creme relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-tr from-navy-dark via-navy to-navy-light opacity-50"></div>
+    <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+      <div class="mb-6 inline-block">
+        <i data-lucide="award" class="w-16 h-16 text-gold mx-auto filter drop-shadow"></i>
+      </div>
+      <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mb-3">
+        Certificação Reconhecida pelo <span class="text-gold">MEC</span>
+      </h2>
+      <p class="text-base md:text-lg text-creme/80 max-w-2xl mx-auto mb-12">
+        📜 Carga horária de 520h de certificação oficial válida em todo o Brasil. Válido como Extensão Universitária ou Pós-Graduação Lato Sensu.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-8">
+        <!-- Caixa 1 -->
+        <div class="p-8 rounded-2xl border-2 border-gold/25 bg-navy-light/40 backdrop-blur-sm text-left">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-2xl">🎓</span>
+            <h4 class="font-serif font-bold text-white text-lg">Para quem tem Ensino Médio</h4>
+          </div>
+          <p class="text-creme/70 text-sm leading-relaxed mb-4">
+            Emissão em nível de <strong>Extensão Universitária profissional certificada</strong> nacionalmente pela secretaria acadêmica.
+          </p>
+          <div class="inline-block bg-gold/10 text-gold text-xs font-semibold px-3 py-1 rounded border border-gold/20">
+            Formação Profissional Plena
+          </div>
+        </div>
+
+        <!-- Caixa 2 -->
+        <div class="p-8 rounded-2xl border-2 border-gold/25 bg-navy-light/40 backdrop-blur-sm text-left">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-2xl">🏅</span>
+            <h4 class="font-serif font-bold text-white text-lg">Para quem é Graduado (Superior)</h4>
+          </div>
+          <p class="text-creme/70 text-sm leading-relaxed mb-4">
+            Diploma oficial em nível de <strong>Pós-Graduação Lato Sensu de Especialista registrada e plenamente reconhecida pelo MEC</strong>.
+          </p>
+          <div class="inline-block bg-gold/10 text-gold text-xs font-semibold px-3 py-1 rounded border border-gold/20">
+            Pós-Graduação Lato Sensu Oficial
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 🎁 BÔNUS EXCLUSIVOS -->
+  <section id="bonus" class="py-20 bg-accent-light text-center">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest block mb-2">Presentes de Lançamento</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy leading-tight">
+          Super Bônus Inclusos Totalmente Grátis
+        </h2>
+        <div class="h-1 w-20 bg-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-8">
+        <!-- Bonus 1 -->
+        <div class="bg-white rounded-3xl p-8 custom-shadow hover-lift border border-amber-100 flex flex-col justify-between text-left relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-gold text-navy-dark text-[9px] font-black uppercase px-3.5 py-1.5 rounded-bl tracking-widest">Bônus Especial</div>
+          <div>
+            <span class="text-4xl block mb-4">🧸</span>
+            <h3 class="font-serif font-bold text-navy text-lg md:text-xl mb-3">Psicanálise na Clínica Infantil</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Uma capacitação complementar focada em desvendar o inconsciente do público infantil através da simbologia dos rabiscos, argila e ludoterapia clássica.
+            </p>
+          </div>
+          <div class="text-xs text-gold-dark font-extrabold tracking-wider uppercase border-t border-slate-100 pt-4 flex items-center gap-1">
+            <i data-lucide="check-circle" class="w-4 h-4 text-gold"></i>
+            <span>Incluso 100% Grátis na Inscrição</span>
+          </div>
+        </div>
+
+        <!-- Bonus 2 -->
+        <div class="bg-white rounded-3xl p-8 custom-shadow hover-lift border border-amber-100 flex flex-col justify-between text-left relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-gold text-navy-dark text-[9px] font-black uppercase px-3.5 py-1.5 rounded-bl tracking-widest">Bônus Prático</div>
+          <div>
+            <span class="text-4xl block mb-4">🖥️</span>
+            <h3 class="font-serif font-bold text-navy text-lg md:text-xl mb-3">Consultório Virtual Associado</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Acesso total a um ambiente tecnológico com prontuário digital integrado, agendamento simplificado e suporte exclusivo para suas primeiras consultorias orientadoras de pais.
+            </p>
+          </div>
+          <div class="text-xs text-gold-dark font-extrabold tracking-wider uppercase border-t border-slate-100 pt-4 flex items-center gap-1">
+            <i data-lucide="check-circle" class="w-4 h-4 text-gold"></i>
+            <span>Acesso Liberado Imediatamente</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. CERTIFICAÇÃO GARANTIDA / DOCUMENTOS -->
+  <section id="entregas" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest">Kit Profissional de Associado</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy mt-2 mb-4 leading-tight">
+          Documentação Digital e Filiação Garantida
+        </h2>
+        <div class="h-1 w-20 bg-gold mx-auto rounded-full"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <!-- Item 1 -->
+        <div class="flex items-start gap-4 p-5 bg-accent-light rounded-xl hover:shadow transition duration-200">
+          <span class="text-3xl shrink-0">📄</span>
+          <div>
+            <h5 class="font-sans font-bold text-navy text-sm md:text-base leading-tight mb-1">Formação em Educação e Orientação Parental</h5>
+            <p class="text-slate-500 text-xs">Diploma oficial carimbado de especialista de alto nível acadêmico.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="flex items-start gap-4 p-5 bg-accent-light rounded-xl hover:shadow transition duration-200">
+          <span class="text-3xl shrink-0">🏛️</span>
+          <div>
+            <h5 class="font-sans font-bold text-navy text-sm md:text-base leading-tight mb-1">Filiação à Sociedade Psicanalítica</h5>
+            <p class="text-slate-500 text-xs">Vínculo institucional ativo, fornecendo amparo deontológico no Brasil.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="flex items-start gap-4 p-5 bg-accent-light rounded-xl hover:shadow transition duration-200">
+          <span class="text-3xl shrink-0">🪪</span>
+          <div>
+            <h5 class="font-sans font-bold text-navy text-sm md:text-base leading-tight mb-1">Credencial Oficial de Terapeuta</h5>
+            <p class="text-slate-500 text-xs">Identidade associativa virtual e foto registrada com número único.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="flex items-start gap-4 p-5 bg-accent-light rounded-xl hover:shadow transition duration-200">
+          <span class="text-3xl shrink-0">📍</span>
+          <div>
+            <h5 class="font-sans font-bold text-navy text-sm md:text-base leading-tight mb-1 font-semibold">Registro de Linha Ativa</h5>
+            <p class="text-slate-500 text-xs">Habilitação cadastrada nos canais oficiais da Sociedade Brasileira.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. PREÇO / INVESTIMENTO -->
+  <section id="precos" class="py-20 bg-navy relative overflow-hidden">
+    <!-- Efeitos de cor sutil atrás -->
+    <div class="absolute inset-0 bg-gradient-to-b from-navy-dark via-navy to-navy pointer-events-none"></div>
+    <div class="absolute bottom-[-10%] right-[-5%] w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-16 text-creme">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest block mb-2">Garanta Sua Vaga</span>
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-white leading-tight">
+          Investimento na sua Transformação
+        </h2>
+        <div class="h-1 w-16 bg-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="max-w-xl mx-auto">
+        <!-- Card Principal com borda de Destaque -->
+        <div class="bg-white rounded-3xl p-8 md:p-10 border-4 border-gold shadow-2xl relative text-center">
+          
+          <!-- Badge no topo -->
+          <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-600 text-white font-extrabold text-[10px] md:text-xs uppercase px-5 py-2.5 rounded-full shadow-lg tracking-widest flex items-center gap-1.5 animate-bounce">
+            <span class="inline-block w-2-h-2 rounded-full bg-white animate-ping"></span>
+            🚨 VAGAS LIMITADAS
+          </div>
+
+          <div class="text-center mt-4">
+            <!-- Riscado -->
+            <p class="text-slate-400 text-sm font-semibold line-through">De 06x R$ 199,90</p>
+            
+            <!-- Label pulse -->
+            <span class="mt-2 inline-block bg-red-500/10 text-red-600 text-xs font-black tracking-wider px-3.5 py-1.5 rounded-md animate-[pulse_1s_infinite]">
+              🔥 INVESTIMENTO PROMOCIONAL HOJE:
+            </span>
+
+            <!-- Preço principal -->
+            <div class="my-4">
+              <span class="text-xs uppercase font-extrabold tracking-wide text-slate-400 bg-slate-100 rounded px-2.5 py-1">Apenas 6 parcelas de</span>
+              <p class="text-5xl md:text-6xl font-serif font-black text-navy mt-1.5">
+                R$ <span class="text-gold">100</span><span class="text-xl font-sans text-slate-400">,00</span>
+              </p>
+              <p class="text-xs text-slate-400 mt-2">ou R$ 600,00 à vista no Pix</p>
+            </div>
+
+            <!-- Chips de pagamento -->
+            <div class="flex flex-wrap justify-center gap-2 mb-6">
+              <span class="bg-slate-100 text-slate-600 text-[10px] font-black uppercase px-3 py-1.5 rounded-full">⚡ PIX</span>
+              <span class="bg-slate-100 text-slate-600 text-[10px] font-black uppercase px-3 py-1.5 rounded-full">💳 Cartão de Crédito</span>
+              <span class="bg-slate-100 text-slate-600 text-[10px] font-black uppercase px-3 py-1.5 rounded-full">📄 Boleto</span>
+            </div>
+
+            <p class="text-xs font-semibold text-slate-500 flex items-center justify-center gap-1 mb-8">
+              <i data-lucide="clock" class="w-4 h-4 text-gold shrink-0"></i>
+              <span>⏰ Início das aulas: Junho/2026</span>
+            </p>
+
+            <!-- Contador Regressivo funcional Javascript -->
+            <div class="bg-navy p-5 rounded-2xl text-creme mb-8">
+              <h6 class="text-[10px] font-black tracking-widest text-gold uppercase mb-3">A oferta promocional expira em:</h6>
+              <div class="grid grid-cols-4 gap-3 bg-navy-dark p-3.5 rounded-xl border border-gold/20">
+                <div class="text-center">
+                  <span id="days" class="block font-serif font-bold text-xl md:text-2xl text-gold">00</span>
+                  <span class="text-[8px] font-bold text-creme/50 uppercase">Dias</span>
+                </div>
+                <div class="text-center">
+                  <span id="hours" class="block font-serif font-bold text-xl md:text-2xl text-gold">00</span>
+                  <span class="text-[8px] font-bold text-creme/50 uppercase">Horas</span>
+                </div>
+                <div class="text-center">
+                  <span id="minutes" class="block font-serif font-bold text-xl md:text-2xl text-gold">00</span>
+                  <span class="text-[8px] font-bold text-creme/50 uppercase">Min</span>
+                </div>
+                <div class="text-center">
+                  <span id="seconds" class="block font-serif font-bold text-xl md:text-2xl text-gold">00</span>
+                  <span class="text-[8px] font-bold text-creme/50 uppercase">Seg</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botão de Inscrição Oficial -->
+            <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-navy-dark font-black tracking-widest uppercase text-sm md:text-base px-8 py-5 rounded-full shadow-lg gold-shadow transition-all group duration-300 transform active:scale-95 hover:brightness-110">
+              <span>QUERO GARANTIR MINHA VAGA</span>
+              <i data-lucide="chevron-right" class="w-5 h-5 shrink-0 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+
+            <p class="text-[10px] text-slate-400 mt-4 italic">
+              * Vagas extremamente limitadas por conta das turmas síncronas do Zoom.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. CTA FINAL -->
+  <section id="cta-final" class="bg-navy-dark text-creme py-20 text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-tr from-navy-dark/90 to-navy/40 opacity-70"></div>
+    <div class="max-w-5xl mx-auto px-6 relative z-10">
+      <h3 class="text-2xl md:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 leading-tight">
+        Educar é <span class="text-gold font-extrabold">dar novos rumos</span>.<br> Junte-se à FATEB neste propósito.
+      </h3>
+      <p class="text-sm md:text-base text-creme/70 max-w-xl mx-auto mb-10">
+        Seja a terapeuta ou profissional que apoia de fato o berço emocional de novos cidadãos. Matricule-se e receba todo o suporte necessário.
+      </p>
+
+      <div class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-md mx-auto">
+        <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-navy-dark font-black tracking-wider uppercase text-xs md:text-sm px-6 py-4.5 rounded-full shadow-lg text-center transition group duration-300">
+          <span>🎯 MATRICULAR AGORA</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 shrink-0 transition group-hover:translate-x-1"></i>
+        </a>
+        <a href="https://wa.me/5512991847661" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#25d366] to-[#128c7e] hover:brightness-110 text-white font-extrabold uppercase text-xs md:text-sm px-6 py-4.5 rounded-full shadow-lg transition">
+          <i class="w-4 h-4" style="background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;white&quot;><path d=&quot;M12.012 3c-4.96 0-9 4.004-9 8.96 0 1.568.413 3.117 1.2 4.48L3 21l4.704-1.215c1.315.713 2.808 1.127 4.308 1.127 4.96 0 9-4.004 9-8.96C21.012 7.004 17.012 3 12.012 3zm4.51 12.872c-.22.617-1.12 1.155-1.576 1.258-.458.102-.916.143-2.909-.646-2.545-1.008-4.173-3.574-4.298-3.738-.125-.164-1.014-1.327-1.014-2.531 0-1.204.621-1.796.843-2.039.223-.243.486-.305.648-.305.162 0 .324.004.466.012.146.008.344-.055.539.407.203.489.696 1.677.756 1.798.06.12.1.262.02.423-.08.162-.12.262-.24.403-.12.14-.251.314-.359.423-.122.12-.249.251-.107.491.142.24.631 1.026 1.353 1.66.932.818 1.716 1.072 1.959 1.192.243.12.384.102.527-.06.143-.162.612-.705.776-.948.164-.243.328-.201.551-.12.223.082 1.413.658 1.656.78.243.12.404.18.465.285.061.106.061.613-.159 1.23z&quot;/></svg>'); background-size: contain; background-repeat: no-repeat; display: inline-block;"></i>
+          <span>Falar no WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. FAQ -->
+  <section id="faq" class="py-20 bg-accent-light">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-gold font-bold uppercase text-xs tracking-widest block mb-2">Suas Dúvidas</span>
+        <h2 class="text-3xl font-serif font-bold text-navy leading-tight">
+          Perguntas Frequentes
+        </h2>
+        <div class="h-1 w-16 bg-gold mx-auto rounded-full mt-4"></div>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Q1 -->
+        <details class="group bg-white rounded-2xl border border-slate-200/50 custom-shadow overflow-hidden transition-all duration-300">
+          <summary class="flex justify-between items-center p-6 text-navy font-bold font-serif text-sm md:text-base cursor-pointer select-none list-none uppercase tracking-wide">
+            <span>Preciso possuir graduação prévia?</span>
+            <span class="text-gold shrink-0 transition-transform duration-300">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-600 text-xs md:text-sm leading-relaxed border-t border-slate-100 pt-4">
+            Não é um pré-requisito obrigatório. Alunas com Ensino Médio concluído recebem a importante titulação oficial e diploma de Extensão Universitária, emitido pela FATEB e plenamente amparado pela legislação nacional brasileira. Quem já porta graduação superior recebe o diploma e registro acadêmico pós-graduado Lato Sensu formal credenciado pelo MEC.
+          </div>
+        </details>
+
+        <!-- Q2 -->
+        <details class="group bg-white rounded-2xl border border-slate-200/50 custom-shadow overflow-hidden transition-all duration-300">
+          <summary class="flex justify-between items-center p-6 text-navy font-bold font-serif text-sm md:text-base cursor-pointer select-none list-none uppercase tracking-wide">
+            <span>Como ocorrem as videoaulas síncronas?</span>
+            <span class="text-gold shrink-0 transition-transform duration-300">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-600 text-xs md:text-sm leading-relaxed border-t border-slate-100 pt-4">
+            Ocorrem na modalidade de salas síncronas virtuais via Zoom (com 4 encontros síncronos enriquecedores mensais). O material literário e as gravações das aulas passadas podem ser confortavelmente acessados na Área de Membros oficial da FATEB.
+          </div>
+        </details>
+
+        <!-- Q3 -->
+        <details class="group bg-white rounded-2xl border border-slate-200/50 custom-shadow overflow-hidden transition-all duration-300">
+          <summary class="flex justify-between items-center p-6 text-navy font-bold font-serif text-sm md:text-base cursor-pointer select-none list-none uppercase tracking-wide">
+            <span>Quais são as formas para inscrição acadêmica?</span>
+            <span class="text-gold shrink-0 transition-transform duration-300">
+              <i data-lucide="chevron-down" class="w-5 h-5"></i>
+            </span>
+          </summary>
+          <div class="px-6 pb-6 text-slate-600 text-xs md:text-sm leading-relaxed border-t border-slate-100 pt-4">
+            A sua inscrição é realizada através do nosso portal integrado oficial, permitindo parcelamentos flexíveis através de cartões de crédito em até 6 vezes, além de transferências síncronas rápidas PIX ou faturas de boletos para o vencimento confortável das parcelas.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15. RODAPÉ -->
+  <footer class="bg-navy-dark text-creme/65 py-16 border-t border-gold/10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <!-- Col 1 -->
+      <div>
+        <span class="text-gold text-2xl font-serif font-extrabold tracking-widest uppercase block mb-4">FATEB</span>
+        <p class="text-xs leading-relaxed max-w-sm mb-4">
+          FATEB Instituto de Formação Acadêmica — Dedicado ao cuidado íntegro intelectual, promovendo formações terapêuticas profissionais baseadas em ciência rítmica, amparo legal e alta aplicabilidade clínica nas dimensões humanas.
+        </p>
+      </div>
+
+      <!-- Col 2 -->
+      <div>
+        <h6 class="text-white font-serif font-bold tracking-wide mb-4 text-sm">Escritório de Contato</h6>
+        <ul class="space-y-2 text-xs">
+          <li class="flex items-center gap-2">
+            <i data-lucide="phone" class="w-3.5 h-3.5 text-gold"></i>
+            <span>(12) 99184-7661</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i data-lucide="message-square" class="w-3.5 h-3.5 text-gold"></i>
+            <span>fatebsuzano@gmail.com</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-gold"></i>
+            <span>Atendimento das 09h às 18h</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div>
+        <h6 class="text-white font-serif font-bold tracking-wide mb-4 text-sm">Secretaria Acadêmica</h6>
+        <p class="text-xs leading-relaxed max-w-sm mb-4">
+          Faça sua matrícula diretamente no terminal unificado de admissões de forma criptografada e segura:
+        </p>
+        <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-gold hover:text-white font-bold text-xs tracking-wider transition uppercase">
+          <span>Acessar portal admissional</span>
+          <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-creme/10 text-center text-[10px] tracking-wide">
+      <p>© 2026 FATEB Instituto de Formação Acadêmica. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- 16. BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/5512991847661" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 float-wp bg-gradient-to-r from-[#25d366] to-[#128c7e] text-white flex items-center gap-2 px-5 py-3.5 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all text-sm font-extrabold tracking-wider border border-white/20">
+    <span class="relative flex h-3.5 w-3.5 shrink-0">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-red-500 border border-white"></span>
+    </span>
+    <i class="w-5 h-5 flex shrink-0" style="background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;white&quot;><path d=&quot;M12.012 3c-4.96 0-9 4.004-9 8.96 0 1.568.413 3.117 1.2 4.48L3 21l4.704-1.215c1.315.713 2.808 1.127 4.308 1.127 4.96 0 9-4.004 9-8.96C21.012 7.004 17.012 3 12.012 3zm4.51 12.872c-.22.617-1.12 1.155-1.576 1.258-.458.102-.916.143-2.909-.646-2.545-1.008-4.173-3.574-4.298-3.738-.125-.164-1.014-1.327-1.014-2.531 0-1.204.621-1.796.843-2.039.223-.243.486-.305.648-.305.162 0 .324.004.466.012.146.008.344-.055.539.407.203.489.696 1.677.756 1.798.06.12.1.262.02.423-.08.162-.12.262-.24.403-.12.14-.251.314-.359.423-.122.12-.249.251-.107.491.142.24.631 1.026 1.353 1.66.932.818 1.716 1.072 1.959 1.192.243.12.384.102.527-.06.143-.162.612-.705.776-.948.164-.243.328-.201.551-.12.223.082 1.413.658 1.656.78.243.12.404.18.465.285.061.106.061.613-.159 1.23z&quot;/></svg>'); background-size: contain; background-repeat: no-repeat; width: 1.25rem; height: 1.25rem;"></i>
+    <span class="uppercase">TIRE SUAS DÚVIDAS</span>
+  </a>
+
+  <!-- JavaScript funcional síncrono -->
+  <script>
+    // Inicializar Ícones Lucide
+    lucide.createIcons();
+
+    // Lógica do Contador Regressivo Persistente de 7 dias
+    function startCountdown() {
+      let targetDate = localStorage.getItem('fateb_countdown_target_parental');
+      if (!targetDate) {
+        // config 7 dias a partir do carregamento
+        targetDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000);
+        localStorage.setItem('fateb_countdown_target_parental', targetDate);
+      } else {
+        targetDate = parseInt(targetDate);
+      }
+
+      function updateTimer() {
+        const now = new Date().getTime();
+        let difference = targetDate - now;
+
+        // Se o contador expirou, reinicia a contagem (outros 7 dias) por gatilhos de marketing
+        if (difference < 0) {
+          const sevenDaysFromNow = now + (7 * 24 * 60 * 60 * 1000);
+          localStorage.setItem('fateb_countdown_target_parental', sevenDaysFromNow);
+          difference = sevenDaysFromNow - now;
+        }
+
+        const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const s = Math.floor((difference % (1000 * 60)) / 1000);
+
+        document.getElementById('days').innerText = String(d).padStart(2, '0');
+        document.getElementById('hours').innerText = String(h).padStart(2, '0');
+        document.getElementById('minutes').innerText = String(m).padStart(2, '0');
+        document.getElementById('seconds').innerText = String(s).padStart(2, '0');
+      }
+
+      updateTimer();
+      setInterval(updateTimer, 1000);
+    }
+
+    startCountdown();
+  </script>
+</body>
+</html>
