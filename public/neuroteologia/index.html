@@ -484,17 +484,8 @@
       <div class="max-w-xl mx-auto">
         <!-- Promo Price Box -->
         <div class="bg-white rounded-3xl p-8 md:p-10 border-4 border-gold shadow-2xl relative text-center">
-          
-          <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-600 text-white font-extrabold text-xs uppercase px-5 py-2 rounded-full shadow-lg tracking-widest badge-pulse">
-            🚨 ISENTO DE MATRÍCULA
-          </div>
 
-          <div class="text-center mt-3">
             <p class="text-slate-400 text-sm font-semibold line-through">Preço Regular: R$ 199,00/mês</p>
-            
-            <span class="mt-2 inline-block bg-red-500/10 text-red-600 text-xs font-black tracking-wider px-3 py-1 rounded">
-              HOJE PROPAGADO POR:
-            </span>
 
             <!-- Big Price tag -->
             <div class="my-5">
@@ -515,29 +506,6 @@
               <span class="bg-slate-100 text-slate-650 text-[10px] font-black uppercase px-3.5 py-1.5 rounded-full flex items-center gap-1">
                 <i data-lucide="check" class="w-3.5 h-3.5 text-tealscience"></i> Boleto Bancário
               </span>
-            </div>
-
-            <!-- Countdown Timer Block -->
-            <div class="bg-deepnavy p-4 rounded-2xl text-creme mb-8 border border-gold/15">
-              <h6 class="text-[10px] font-black tracking-widest text-gold uppercase mb-2">Tempo Restante de Valor Congelado:</h6>
-              <div class="grid grid-cols-4 gap-2 bg-deepnavy-dark p-3 rounded-xl border border-gold/10">
-                <div class="text-center">
-                  <span id="days" class="block font-serif font-bold text-xl text-gold">00</span>
-                  <span class="text-[8px] font-bold text-slate-400 uppercase">Dias</span>
-                </div>
-                <div class="text-center">
-                  <span id="hours" class="block font-serif font-bold text-xl text-gold">00</span>
-                  <span class="text-[8px] font-bold text-slate-400 uppercase">Horas</span>
-                </div>
-                <div class="text-center">
-                  <span id="minutes" class="block font-serif font-bold text-xl text-gold">00</span>
-                  <span class="text-[8px] font-bold text-slate-400 uppercase">Minutos</span>
-                </div>
-                <div class="text-center">
-                  <span id="seconds" class="block font-serif font-bold text-xl text-gold">00</span>
-                  <span class="text-[8px] font-bold text-slate-400 uppercase">Segundos</span>
-                </div>
-              </div>
             </div>
 
             <!-- Inscription button -->
@@ -708,10 +676,13 @@
         const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((difference % (1000 * 60)) / 1000);
         
-        document.getElementById('days').textContent = String(days).padStart(2, '0');
-        document.getElementById('hours').textContent = String(hours).padStart(2, '0');
-        document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
-        document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        const daysEl = document.getElementById('days');
+        if (daysEl) {
+          daysEl.textContent = String(days).padStart(2, '0');
+          document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+          document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+          document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }
       }
       
       setInterval(updateTimer, 1000);

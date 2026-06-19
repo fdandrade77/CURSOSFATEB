@@ -619,11 +619,6 @@
           <div class="text-center mt-4">
             <!-- Riscado -->
             <p class="text-slate-400 text-sm font-semibold line-through">De 06x R$ 150,00</p>
-            
-            <!-- Label pulse -->
-            <span class="mt-2 inline-block bg-red-500/10 text-red-600 text-xs font-black tracking-wider px-3.5 py-1.5 rounded-md animate-[pulse_1s_infinite]">
-              🔥 DESCONTO DE LANÇAMENTO EXCLUSIVO:
-            </span>
 
             <!-- Preço principal -->
             <div class="my-4">
@@ -647,29 +642,6 @@
               <br>
               <span class="text-slate-400 font-normal">Aulas ao vivo: Terças-feiras às 20h</span>
             </p>
-
-            <!-- Contador Regressivo funcional Javascript -->
-            <div class="bg-navy p-5 rounded-2xl text-creme mb-8">
-              <h6 class="text-[10px] font-black tracking-widest text-gold uppercase mb-3">Sua oferta personalizada expira em:</h6>
-              <div class="grid grid-cols-4 gap-3 bg-navy-dark p-3.5 rounded-xl border border-gold/20">
-                <div class="text-center">
-                  <span id="days" class="block font-serif font-bold text-xl md:text-2xl text-gold">00</span>
-                  <span class="text-[8px] font-bold text-creme/50 uppercase">Dias</span>
-                </div>
-                <div class="text-center">
-                  <span id="hours" class="block font-serif font-bold text-xl md:text-2xl text-gold">00</span>
-                  <span class="text-[8px] font-bold text-creme/50 uppercase">Horas</span>
-                </div>
-                <div class="text-center">
-                  <span id="minutes" class="block font-serif font-bold text-xl md:text-2xl text-gold">00</span>
-                  <span class="text-[8px] font-bold text-creme/50 uppercase">Min</span>
-                </div>
-                <div class="text-center">
-                  <span id="seconds" class="block font-serif font-bold text-xl md:text-2xl text-gold">00</span>
-                  <span class="text-[8px] font-bold text-creme/50 uppercase">Seg</span>
-                </div>
-              </div>
-            </div>
 
             <!-- Botão de Inscrição Oficial -->
             <a href="https://matriculafatebead.com.br/r/fernando/terapeutamentoracristamulheres" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-hover hover:from-gold-hover hover:to-gold text-navy-dark font-black tracking-widest uppercase text-sm md:text-base px-8 py-5 rounded-full shadow-lg gold-shadow transition-all group duration-300 transform active:scale-95 hover:brightness-110">
@@ -857,10 +829,13 @@
         const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
         const s = Math.floor((difference % (1000 * 60)) / 1000);
 
-        document.getElementById('days').innerText = String(d).padStart(2, '0');
-        document.getElementById('hours').innerText = String(h).padStart(2, '0');
-        document.getElementById('minutes').innerText = String(m).padStart(2, '0');
-        document.getElementById('seconds').innerText = String(s).padStart(2, '0');
+        const daysEl = document.getElementById('days');
+        if (daysEl) {
+          daysEl.innerText = String(d).padStart(2, '0');
+          document.getElementById('hours').innerText = String(h).padStart(2, '0');
+          document.getElementById('minutes').innerText = String(m).padStart(2, '0');
+          document.getElementById('seconds').innerText = String(s).padStart(2, '0');
+        }
       }
 
       updateTimer();

@@ -733,69 +733,65 @@
         </p>
       </div>
 
-      <!-- TIMER DE CONTAGEM REGRESSIVA -->
-      <div class="max-w-xl mx-auto bg-navy-dark border border-gold/20 rounded-3xl p-6 shadow-2xl">
-        <p class="text-amber-400 text-xs font-bold tracking-widest uppercase mb-4">⌛ O cronômetro promocional está rodando:</p>
-        <div class="grid grid-cols-4 gap-3">
-          <div class="bg-navy rounded-2xl p-3 border border-white/5">
-            <span id="days" class="block text-2xl sm:text-3xl font-extrabold text-white">00</span>
-            <span class="text-[9px] uppercase tracking-wider text-creme/50">Dias</span>
-          </div>
-          <div class="bg-navy rounded-2xl p-3 border border-white/5">
-            <span id="hours" class="block text-2xl sm:text-3xl font-extrabold text-white">00</span>
-            <span class="text-[9px] uppercase tracking-wider text-creme/50">Horas</span>
-          </div>
-          <div class="bg-navy rounded-2xl p-3 border border-white/5">
-            <span id="minutes" class="block text-2xl sm:text-3xl font-extrabold text-white">00</span>
-            <span class="text-[9px] uppercase tracking-wider text-creme/50">Minutos</span>
-          </div>
-          <div class="bg-navy rounded-2xl p-3 border border-white/5">
-            <span id="seconds" class="block text-2xl sm:text-3xl font-extrabold text-white">00</span>
-            <span class="text-[9px] uppercase tracking-wider text-creme/50">Segundos</span>
-          </div>
-        </div>
-      </div>
-
       <!-- CARTÃO DE PREÇO NOBRE -->
-      <div class="max-w-lg mx-auto bg-creme rounded-3xl p-8 text-slate-900 border-2 border-gold relative shadow-2xl hover-lift">
+      <div class="max-w-lg mx-auto bg-[#0c1b33] rounded-3xl p-8 text-white border-2 border-gold/40 relative shadow-2xl hover-slide duration-300">
         
-        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold text-navy font-black text-[10px] tracking-widest uppercase py-1 px-5 rounded-full shadow-md">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold text-[#0c1b33] font-black text-[10px] tracking-widest uppercase py-1 px-5 rounded-full shadow-md">
           RECONHECIDO E CHANCELADO
         </div>
 
         <div class="space-y-2 mt-4 text-center">
-          <h5 class="text-[#111a2e] font-serif font-black text-xl mb-1">Formação em Neuropsicanálise Clínica</h5>
-          <p class="text-slate-500 text-xs">Inclui suporte individualizado, análise pessoal e kits de bônus exclusivos.</p>
+          <h5 class="text-white font-serif font-black text-xl mb-1">Formação em Neuropsicanálise Clínica</h5>
+          <p class="text-slate-300 text-xs">Inclui suporte individualizado, análise pessoal e kits de bônus exclusivos.</p>
         </div>
 
-        <!-- Preços -->
-        <div class="my-8 text-center space-y-2 bg-[#f4ebd9]/30 border border-[#e2d5bd] rounded-2xl py-6 px-4">
-          <p class="text-[#111a2e]/50 line-through text-xs font-bold">De 12x de R$ 299,90</p>
-          <p class="text-xs uppercase text-slate-500 font-extrabold tracking-widest">Apenas Hoje e Exclusivo</p>
-          <div class="flex items-center justify-center gap-1">
-            <span class="text-[#111a2e] font-bold text-sm">12x de</span>
-            <span class="text-[#111a2e] font-black text-4xl leading-none">R$ 160,00</span>
+        <!-- Preços conforme imagem -->
+        <div class="text-center mt-6">
+          <p class="text-slate-400 text-sm line-through">De 12x R$ 299,90</p>
+          <p class="text-slate-200 text-sm font-medium mt-1">Por apenas</p>
+          
+          <div class="flex items-baseline justify-center gap-1.5 my-4">
+            <span class="text-gold font-extrabold text-2xl">12x</span>
+            <span class="text-gold font-serif font-bold text-4xl">R$</span>
+            <span class="text-gold font-serif font-black text-6xl tracking-tight">160</span>
+            <span class="text-gold font-extrabold text-2xl">,00</span>
           </div>
-          <p class="text-[10px] uppercase text-green-700 tracking-wider font-extrabold">Sem juros no cartão de crédito</p>
         </div>
 
-        <!-- Botão Principal Checkout -->
+        <!-- Benefícios com checkmarks em ouro/amarelo conforme imagem -->
+        <div class="space-y-3.5 my-8 text-left max-w-xs mx-auto text-slate-200">
+          <div class="flex items-start gap-3">
+            <i data-lucide="check" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+            <span class="text-sm font-medium">Acesso completo à formação</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <i data-lucide="check" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+            <span class="text-sm font-medium">Certificação reconhecida pelo MEC</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <i data-lucide="check" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+            <span class="text-sm font-medium">Análise pessoal + Supervisão clínica</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <i data-lucide="check" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+            <span class="text-sm font-medium">Todos os bônus inclusos</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <i data-lucide="check" class="w-5 h-5 text-gold shrink-0 mt-0.5"></i>
+            <span class="text-sm font-medium">Suporte contínuo via WhatsApp</span>
+          </div>
+        </div>
+
+        <!-- Botão Principal Checkout conforme imagem -->
         <div class="space-y-4">
-          <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="w-full bg-gold hover:bg-gold-hover text-navy font-black text-sm tracking-widest uppercase py-4.5 px-6 rounded-2xl shadow-lg transition-all duration-300 transform inline-flex items-center justify-center gap-1.5 border border-gold-dark/20 gold-shadow">
-            <span>Iniciar Matrícula Criptografada</span>
-            <i data-lucide="shield-check" class="w-4.5 h-4.5 text-navy"></i>
+          <a href="https://www.sistema.phlinks.com.br/inscricao/861/19/" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-yellow-500 hover:from-yellow-500 hover:to-gold text-[#0c1b33] font-black tracking-widest uppercase text-sm md:text-base px-8 py-5 rounded-full shadow-lg gold-shadow transition-all group duration-300 transform active:scale-95">
+            <span>Fazer minha matrícula agora</span>
+            <i data-lucide="chevron-right" class="w-5 h-5 shrink-0 group-hover:translate-x-1 transition-transform"></i>
           </a>
           
-          <div class="flex items-center justify-center gap-4 text-slate-500 text-[10px] tracking-wide font-medium">
-            <span class="flex items-center gap-1">
-              <i data-lucide="lock" class="w-3.5 h-3.5 text-green-600"></i>
-              Portal 100% Seguro
-            </span>
-            <span class="flex items-center gap-1">
-              <i data-lucide="check-circle" class="w-3.5 h-3.5 text-green-600"></i>
-              Acesso Imediato
-            </span>
-          </div>
+          <p class="text-center text-xs text-slate-400 leading-relaxed mt-4">
+            Após a matrícula, nossa equipe entrará em contato para liberação do acesso.
+          </p>
         </div>
 
       </div>
@@ -952,10 +948,13 @@
         const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
         const s = Math.floor((difference % (1000 * 60)) / 1000);
 
-        document.getElementById('days').innerText = String(d).padStart(2, '0');
-        document.getElementById('hours').innerText = String(h).padStart(2, '0');
-        document.getElementById('minutes').innerText = String(m).padStart(2, '0');
-        document.getElementById('seconds').innerText = String(s).padStart(2, '0');
+        const daysEl = document.getElementById('days');
+        if (daysEl) {
+          daysEl.innerText = String(d).padStart(2, '0');
+          document.getElementById('hours').innerText = String(h).padStart(2, '0');
+          document.getElementById('minutes').innerText = String(m).padStart(2, '0');
+          document.getElementById('seconds').innerText = String(s).padStart(2, '0');
+        }
       }
 
       updateTimer();
